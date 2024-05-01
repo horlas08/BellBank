@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap");
+@font-face {
+  font-family: "Aeonik";
+  src: url("/public/Aeonik-Regular.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Aeonik";
+  src: url("/public/Aeonik-Medium.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Aeonik";
+  src: url("/public/Aeonik-Bold.otf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Segoe UI";
+  src: url("/public/segoeuithibd.ttf");
+  font-weight: 400;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  @apply leading-[normal] m-0;
+}
+*,
+::before,
+::after {
+  border-width: 0;
+}
