@@ -20,7 +20,7 @@ const Feature: FunctionComponent = () => {
             individuals to thrive and achieve remarkable growth milestones.
           </div>
         </div>
-          <div className={'flex w-[80%] justify-between mx-auto mt-[50px]'}>
+          <div className={'flex w-[80%]  justify-between gap-5 mx-auto mt-[50px]'}>
               <FeatureCard title={'Personal Account'} subtitle={'Lorem ipsum dolor sit amet consectetur. Tortor nisl ullamcorperleo eget.'}>
                   <div className="mt-5 rounded-mini bg-white w-[310px] h-[188px] text-xl text-black">
                       <div className="h-[188px] w-full flex flex-col place-content-center mx-auto align-middle items-center">
