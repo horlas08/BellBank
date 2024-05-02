@@ -5,7 +5,7 @@ export type FrameComponentType = {
   propTop?: CSSProperties["top"];
 };
 
-const FrameComponent: FunctionComponent<FrameComponentType> = ({ propTop }) => {
+const Footer: FunctionComponent<FrameComponentType> = ({ propTop }) => {
   const frameDiv2Style: CSSProperties = useMemo(() => {
     return {
       top: propTop,
@@ -13,8 +13,7 @@ const FrameComponent: FunctionComponent<FrameComponentType> = ({ propTop }) => {
   }, [propTop]);
 
   return (
-    <div
-      className="absolute top-[1003px] left-[120px] w-[1200px] h-[904px] text-center text-xs text-dimgray-200 font-aeonik"
+    <div className="relative top-[1003px] left-[120px] w-[1200px] h-[904px] text-center text-xs text-dimgray-200 font-aeonik"
       style={frameDiv2Style}
     >
       <div className="absolute top-[864px] left-[0px] w-[1200px] h-10">
@@ -151,4 +150,4 @@ const FrameComponent: FunctionComponent<FrameComponentType> = ({ propTop }) => {
   );
 };
 
-export default FrameComponent;
+export default Footer;

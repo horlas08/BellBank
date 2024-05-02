@@ -1,6 +1,6 @@
 import { FunctionComponent } from "react";
 import Header from "../components/Header";
-import FrameComponent from "../components/FrameComponent";
+import Footer from "../components/Footer";
 import DivwNode4231f234A31c from "../components/DivwNode4231f234A31c";
 
 const AboutUs: FunctionComponent = () => {
@@ -35,7 +35,7 @@ const AboutUs: FunctionComponent = () => {
         propColor="#00100b"
 
       />
-      <FrameComponent propTop="4100px" />
+      <Footer propTop="4100px" />
       <div className="absolute top-[199px] left-[calc(50%_-_314px)] flex flex-col items-center justify-start gap-[20px]">
         <div className="flex flex-col items-center justify-start gap-[10px]">
           <div className="relative uppercase font-medium">Built for growth</div>
