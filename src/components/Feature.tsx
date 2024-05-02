@@ -29,8 +29,8 @@ const Feature: FunctionComponent = () => {
               </FeatureCard>
               <FeatureCard title={'Personal Account'} subtitle={'Lorem ipsum dolor sit amet consectetur. Tortor nisl ullamcorperleo eget.'}>
 
-                  <div className="flex justify-center w-full m-0 relative h-[188px] text-mini text-dimgray-100">
-                      <div className="flex justify-between items-center px-5 rounded-mini bg-white w-full h-[115px] ">
+                  <div className=" relative h-[188px] text-mini text-dimgray-100">
+                      <div className="flex justify-between items-center px-5 rounded-mini bg-white  h-[115px] ">
                           <div className="h-[54px]">
                               <div className=" font-medium mb-2">
                                   Total Expenses
@@ -47,24 +47,39 @@ const Feature: FunctionComponent = () => {
                               </div>
                           </div>
                       </div>
+                      <div className=" top-[21px] left-[calc(50%_-_140px)] w-[280px] h-[18px]">
+
+                      </div>
+                      <div className={'invoice bg-white rounded-mini flex justify-between items-center p-3'}>
+
+                      <div className=" top-[0px] left-[0px] flex flex-row items-start justify-start gap-[6px]">
+                          <img
+                              className="w-[18px] relative h-[18px] overflow-hidden shrink-0"
+                              alt=""
+                              src="/file01.svg"
+                          />
+                          <div className="relative font-medium">Invoices</div>
+                      </div>
+                      <div className=" top-[4px] left-[156px] rounded-81xl bg-whitesmoke-400 w-[124px] h-2.5"/>
+                      </div>
                   </div>
               </FeatureCard>
-              <FeatureCard title={'Personal Account'} subtitle={'Lorem ipsum dolor sit amet consectetur. Tortor nisl ullamcorperleo eget.'}>
+              <FeatureCard title={'Loan'} subtitle={'Lorem ipsum dolor sit amet consectetur. Tortor nisl ullamcorperleo eget.'}>
                   <div className="mt-5 rounded-mini bg-white w-full h-[188px] text-xl text-black">
                       <div className="h-[188px] w-full flex flex-col place-content-center mx-auto align-middle items-center">
-                          <b className="">
+                          <b className="mb-2">
                               ₦2,000,000.00
                           </b>
-                          <div className=" text-mini font-medium text-dimgray-100">
+                          <div className="mb-2 text-mini font-medium text-dimgray-100">
                               Select loan amount
                           </div>
-                          <div className=" w-[190px] h-4">
-                              <div
-                                  className=" rounded-81xl bg-whitesmoke-400 w-[190px] h-2.5"/>
-                              <div
-                                  className=" rounded-81xl bg-mediumseagreen w-[156px] h-2.5"/>
-                              <div
-                                  className=" rounded-[50%] bg-mediumseagreen w-4 h-4"/>
+                          <div className=" w-[190px] h-4 mt-3">
+                              <div className="absolute rounded-81xl bg-whitesmoke-400 w-[190px] h-2.5"/>
+                              <div className={'relative w-[156px]  grid justify-center items-center'}>
+                                  <div className="rounded-81xl bg-mediumseagreen w-[156px] h-2.5"/>
+                                  <div className="absolute rounded-[50%] bg-mediumseagreen  right-0 w-4 h-4 "/>
+                              </div>
+
                           </div>
                       </div>
                   </div>
