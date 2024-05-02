@@ -64,135 +64,136 @@ const Homepage: FunctionComponent = () => {
         {/*<div className="absolute top-[1224px] left-[0px] w-[1442px] h-[6595px] text-sm text-mediumseagreen">*/}
           <Feature />
         {/*  <div className="absolute top-[678px] left-[0px] w-[1442px] h-[5917px]">*/}
-        {/*    <div className="absolute top-[0px] right-[1px] flex flex-col items-center justify-start py-20 px-[136px] gap-[100px]">*/}
-        {/*      <div className="flex flex-col items-center justify-start gap-[20px]">*/}
-        {/*        <div className="flex flex-col items-center justify-start gap-[10px]">*/}
-        {/*          <div className="relative uppercase font-medium">FEATURES</div>*/}
-        {/*          <b className="w-[629px] relative text-23xl inline-block text-gray-500 text-center h-[50px] shrink-0">*/}
-        {/*            Experience new banking*/}
-        {/*          </b>*/}
-        {/*        </div>*/}
-        {/*        <div className="w-[533px] relative text-lg leading-[24px] font-medium text-dimgray-100 text-center inline-block">*/}
-        {/*          Providing financial solutions that empowering both business*/}
-        {/*          and individuals to thrive and achieve remarkable growth*/}
-        {/*          milestones.*/}
-        {/*        </div>*/}
-        {/*      </div>*/}
-        {/*      <div className="flex flex-col items-center justify-start gap-[80px]">*/}
-        {/*        <div className="w-[1167px] relative h-[437px]">*/}
-        {/*          <CardLeft*/}
-        {/*            debitCards="Debit cards"*/}
-        {/*            instantDebitCardsThatAlwa="Instant Debit cards that always work"*/}
-        {/*          />*/}
-        {/*          <div className="absolute top-[0px] left-[490px] rounded-11xl bg-seagreen box-border w-[677px] h-[437px] overflow-hidden mix-blend-normal border-[8px] border-solid border-whitesmoke-100">*/}
-        {/*            <div className="absolute top-[81px] left-[131px] w-[415.1px] h-[274.2px]">*/}
-        {/*              <div className="absolute top-[0px] left-[0px] w-[198px] h-[274.2px]">*/}
-        {/*                <div className="absolute top-[268.5px] left-[28.6px] rounded-[50%] [background:radial-gradient(50%_50%_at_50%_50%,_rgba(0,_0,_0,_0.6),_rgba(0,_0,_0,_0))] w-[169.4px] h-[5.7px]" />*/}
-        {/*                <img*/}
-        {/*                  className="absolute top-[0px] left-[0px] w-[193.8px] h-[270.3px] object-contain hidden"*/}
-        {/*                  alt=""*/}
-        {/*                  src="/card-7-1@2x.png"*/}
-        {/*                />*/}
-        {/*                <img*/}
-        {/*                  className="absolute top-[0px] left-[0px] w-[193.8px] h-[270.3px] object-contain"*/}
-        {/*                  alt=""*/}
-        {/*                  src="/card-5-1@2x.png"*/}
-        {/*                />*/}
-        {/*              </div>*/}
-        {/*              <div className="absolute top-[0px] left-[214px] w-[201.1px] h-[274px]">*/}
-        {/*                <div className="absolute top-[268px] left-[0px] rounded-[50%] [background:radial-gradient(50%_50%_at_50%_50%,_rgba(0,_0,_0,_0.6),_rgba(0,_0,_0,_0))] w-[178.1px] h-1.5" />*/}
-        {/*                <img*/}
-        {/*                  className="absolute top-[0px] left-[calc(50%_-_95.25px)] w-[195.8px] h-[267.7px] object-contain"*/}
-        {/*                  alt=""*/}
-        {/*                  src="/card-8-2@2x.png"*/}
-        {/*                />*/}
-        {/*              </div>*/}
-        {/*            </div>*/}
-        {/*          </div>*/}
-        {/*        </div>*/}
-        {/*        <div className="w-[1167px] relative h-[437px]">*/}
-        {/*          <CardLeft*/}
-        {/*            debitCards="Personal account"*/}
-        {/*            instantDebitCardsThatAlwa="One app for all your banking needs"*/}
-        {/*            propHeight="337px"*/}
-        {/*            propHeight1="337px"*/}
-        {/*            propBackgroundColor="unset"*/}
-        {/*            propBackground="linear-gradient(135deg, #ffdddd, #ffbfbf)"*/}
-        {/*          />*/}
-        {/*          <div className="absolute top-[0px] left-[490px] rounded-11xl bg-darkslategray-500 box-border w-[677px] h-[437px] overflow-hidden mix-blend-normal border-[8px] border-solid border-whitesmoke-100">*/}
-        {/*            <img*/}
-        {/*              className="absolute h-[104.58%] top-[20.59%] bottom-[-25.17%] left-[calc(50%_-_155.5px)] max-h-full w-[312px] overflow-hidden object-cover hidden"*/}
-        {/*              alt=""*/}
-        {/*              src="/65af3460de982dbc40497c73-frame20187869p500png@2x.png"*/}
-        {/*            />*/}
-        {/*            <img*/}
-        {/*              className="absolute top-[81px] left-[calc(50%_-_153.5px)] w-[308px] h-[622px] object-cover hidden"*/}
-        {/*              alt=""*/}
-        {/*              src="/frame-427323508-1@2x.png"*/}
-        {/*            />*/}
-        {/*            <img*/}
-        {/*              className="absolute top-[78px] left-[calc(50%_-_151.5px)] w-[303px] h-[559px] object-cover"*/}
-        {/*              alt=""*/}
-        {/*              src="/image-773@2x.png"*/}
-        {/*            />*/}
-        {/*          </div>*/}
-        {/*        </div>*/}
-        {/*        <div className="w-[1167px] relative h-[437px]">*/}
-        {/*          <div className="absolute top-[0px] left-[0px] h-[346px] flex flex-col items-start justify-start gap-[24px]">*/}
-        {/*            <div className="rounded-11xl bg-white flex flex-col items-start justify-start p-10 mix-blend-normal">*/}
-        {/*              <div className="flex flex-col items-start justify-start gap-[25px]">*/}
-        {/*                <div className="flex flex-col items-start justify-start gap-[10px]">*/}
-        {/*                  <div className="relative leading-[20px] uppercase font-medium">*/}
-        {/*                    Modular solutions*/}
-        {/*                  </div>*/}
-        {/*                  <div className="flex flex-col items-start justify-start gap-[20px] text-16xl text-gray-500">*/}
-        {/*                    <b className="w-[352px] relative flex items-center">*/}
-        {/*                      A fully integrated suite of financial and payments*/}
-        {/*                      products*/}
-        {/*                    </b>*/}
-        {/*                    <div className="w-[370px] relative text-lg leading-[25px] font-medium text-dimgray-100 flex items-center">*/}
-        {/*                      If transfers aren’t your jam, we get it. Request a*/}
-        {/*                      debit card and have it delivered to you within 48*/}
-        {/*                      hours. Activate it in minutes, and start using it*/}
-        {/*                      right away.*/}
-        {/*                    </div>*/}
-        {/*                  </div>*/}
-        {/*                </div>*/}
-        {/*                <div className="w-[150px] rounded-lg bg-mediumseagreen h-[45px] flex flex-row items-center justify-center py-[11px] px-5 box-border text-center text-base text-floralwhite">*/}
-        {/*                  <div className="relative font-medium">*/}
-        {/*                    Get started*/}
-        {/*                  </div>*/}
-        {/*                </div>*/}
-        {/*              </div>*/}
-        {/*            </div>*/}
-        {/*            <div className="w-[466px] relative rounded-13xl [background:linear-gradient(135deg,_#ffdddd,_#ffbfbf)] box-border h-[92px] hidden mix-blend-normal text-base text-gray-200 font-inter border-[2px] border-solid border-whitesmoke-200">*/}
-        {/*              <div className="absolute top-[24px] left-[calc(50%_-_105px)] shadow-[0px_4px_6px_-2px_rgba(16,_24,_40,_0.03),_0px_12px_16px_-4px_rgba(16,_24,_40,_0.08)] rounded-lg bg-white w-52 h-11 overflow-hidden mix-blend-normal">*/}
-        {/*                <img*/}
-        {/*                  className="absolute top-[14px] left-[164.5px] w-4 h-4 overflow-hidden mix-blend-normal"*/}
-        {/*                  alt=""*/}
-        {/*                  src="/icon.svg"*/}
-        {/*                />*/}
-        {/*                <div className="absolute top-[12px] left-[60px] tracking-[0.4px] leading-[20px] font-semibold">*/}
-        {/*                  Get started*/}
-        {/*                </div>*/}
-        {/*                <img*/}
-        {/*                  className="absolute top-[12px] left-[28px] w-5 h-5 overflow-hidden object-cover mix-blend-normal"*/}
-        {/*                  alt=""*/}
-        {/*                  src="/image@2x.png"*/}
-        {/*                />*/}
-        {/*              </div>*/}
-        {/*            </div>*/}
-        {/*          </div>*/}
-        {/*          <img*/}
-        {/*            className="absolute top-[0px] left-[490px] rounded-11xl w-[677px] h-[437px] overflow-hidden object-cover mix-blend-normal"*/}
-        {/*            alt=""*/}
-        {/*            src="/image@2x.png"*/}
-        {/*          />*/}
-        {/*          <div className="absolute top-[calc(50%_-_218.5px)] right-[0px] shadow-[0px_0px_0px_0.5px_#e4e5e9,_0px_0px_0px_1px_rgba(228,_229,_233,_0.6),_0px_0px_0px_3.5px_#f9f9fb,_0px_0px_0px_4px_#f3f4f7] rounded-xl bg-white w-[677px] h-[437px] overflow-hidden hidden" />*/}
-        {/*        </div>*/}
-        {/*      </div>*/}
-        {/*    </div>*/}
-        {/*    <div className="absolute top-[1916px] left-[0px] w-[1442px] h-[4001px] text-gray-500">*/}
+            <div className=" flex flex-col items-center justify-start py-20 px-[136px] gap-[100px]">
+              <div className="flex flex-col items-center justify-start gap-[20px]">
+                <div className="flex flex-col items-center justify-start gap-[10px]">
+                  <div className="relative uppercase font-medium">FEATURES</div>
+                  <b className="w-[629px] relative text-23xl inline-block text-gray-500 text-center h-[50px] shrink-0">
+                    Experience new banking
+                  </b>
+                </div>
+                <div className="w-[533px] relative text-lg leading-[24px] font-medium text-dimgray-100 text-center inline-block">
+                  Providing financial solutions that empowering both business
+                  and individuals to thrive and achieve remarkable growth
+                  milestones.
+                </div>
+              </div>
+              <div className="flex flex-col items-center justify-start gap-[80px]">
+                <div className="w-[1167px] relative h-[437px]">
+                  <CardLeft
+                    debitCards="Debit cards"
+                    instantDebitCardsThatAlwa="Instant Debit cards that always work"
+                  />
+                  <div className="absolute top-[0px] left-[490px] rounded-11xl bg-seagreen box-border w-[677px] h-[437px] overflow-hidden mix-blend-normal border-[8px] border-solid border-whitesmoke-100">
+                    <div className="absolute top-[81px] left-[131px] w-[415.1px] h-[274.2px]">
+                      <div className="absolute top-[0px] left-[0px] w-[198px] h-[274.2px]">
+                        <div className="absolute top-[268.5px] left-[28.6px] rounded-[50%] [background:radial-gradient(50%_50%_at_50%_50%,_rgba(0,_0,_0,_0.6),_rgba(0,_0,_0,_0))] w-[169.4px] h-[5.7px]" />
+                        <img
+                          className="absolute top-[0px] left-[0px] w-[193.8px] h-[270.3px] object-contain hidden"
+                          alt=""
+                          src="/card-7-1@2x.png"
+                        />
+                        <img
+                          className="absolute top-[0px] left-[0px] w-[193.8px] h-[270.3px] object-contain"
+                          alt=""
+                          src="/card-5-1@2x.png"
+                        />
+                      </div>
+                      <div className="absolute top-[0px] left-[214px] w-[201.1px] h-[274px]">
+                        <div className="absolute top-[268px] left-[0px] rounded-[50%] [background:radial-gradient(50%_50%_at_50%_50%,_rgba(0,_0,_0,_0.6),_rgba(0,_0,_0,_0))] w-[178.1px] h-1.5" />
+                        <img
+                          className="absolute top-[0px] left-[calc(50%_-_95.25px)] w-[195.8px] h-[267.7px] object-contain"
+                          alt=""
+                          src="/card-8-2@2x.png"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="w-[1167px] relative h-[437px]">
+                  <CardLeft
+                    debitCards="Personal account"
+                    instantDebitCardsThatAlwa="One app for all your banking needs"
+                    propHeight="337px"
+                    propHeight1="337px"
+                    propBackgroundColor="unset"
+                    propBackground="linear-gradient(135deg, #ffdddd, #ffbfbf)"
+                  />
+                  <div className="absolute top-[0px] left-[490px] rounded-11xl bg-darkslategray-500 box-border w-[677px] h-[437px] overflow-hidden mix-blend-normal border-[8px] border-solid border-whitesmoke-100">
+                    <img
+                      className="absolute h-[104.58%] top-[20.59%] bottom-[-25.17%] left-[calc(50%_-_155.5px)] max-h-full w-[312px] overflow-hidden object-cover hidden"
+                      alt=""
+                      src="/65af3460de982dbc40497c73-frame20187869p500png@2x.png"
+                    />
+                    <img
+                      className="absolute top-[81px] left-[calc(50%_-_153.5px)] w-[308px] h-[622px] object-cover hidden"
+                      alt=""
+                      src="/frame-427323508-1@2x.png"
+                    />
+                    <img
+                      className="absolute top-[78px] left-[calc(50%_-_151.5px)] w-[303px] h-[559px] object-cover"
+                      alt=""
+                      src="/image-773@2x.png"
+                    />
+                  </div>
+                </div>
+                <div className="w-[1167px] relative h-[437px]">
+                  <div className="absolute top-[0px] left-[0px] h-[346px] flex flex-col items-start justify-start gap-[24px]">
+                    <div className="rounded-11xl bg-white flex flex-col items-start justify-start p-10 mix-blend-normal">
+                      <div className="flex flex-col items-start justify-start gap-[25px]">
+                        <div className="flex flex-col items-start justify-start gap-[10px]">
+                          <div className="relative leading-[20px] uppercase font-medium">
+                            Modular solutions
+                          </div>
+                          <div className="flex flex-col items-start justify-start gap-[20px] text-16xl text-gray-500">
+                            <b className="w-[352px] relative flex items-center">
+                              A fully integrated suite of financial and payments
+                              products
+                            </b>
+                            <div className="w-[370px] relative text-lg leading-[25px] font-medium text-dimgray-100 flex items-center">
+                              If transfers aren’t your jam, we get it. Request a
+                              debit card and have it delivered to you within 48
+                              hours. Activate it in minutes, and start using it
+                              right away.
+                            </div>
+                          </div>
+                        </div>
+                        <div className="w-[150px] rounded-lg bg-mediumseagreen h-[45px] flex flex-row items-center justify-center py-[11px] px-5 box-border text-center text-base text-floralwhite">
+                          <div className="relative font-medium">
+                            Get started
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="w-[466px] relative rounded-13xl [background:linear-gradient(135deg,_#ffdddd,_#ffbfbf)] box-border h-[92px] hidden mix-blend-normal text-base text-gray-200 font-inter border-[2px] border-solid border-whitesmoke-200">
+                      <div className="absolute top-[24px] left-[calc(50%_-_105px)] shadow-[0px_4px_6px_-2px_rgba(16,_24,_40,_0.03),_0px_12px_16px_-4px_rgba(16,_24,_40,_0.08)] rounded-lg bg-white w-52 h-11 overflow-hidden mix-blend-normal">
+                        <img
+                          className="absolute top-[14px] left-[164.5px] w-4 h-4 overflow-hidden mix-blend-normal"
+                          alt=""
+                          src="/icon.svg"
+                        />
+                        <div className="absolute top-[12px] left-[60px] tracking-[0.4px] leading-[20px] font-semibold">
+                          Get started
+                        </div>
+                        <img
+                          className="absolute top-[12px] left-[28px] w-5 h-5 overflow-hidden object-cover mix-blend-normal"
+                          alt=""
+                          src="/image@2x.png"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <img
+                    className="absolute top-[0px] left-[490px] rounded-11xl w-[677px] h-[437px] overflow-hidden object-cover mix-blend-normal"
+                    alt=""
+                    src="/image@2x.png"
+                  />
+                  <div className="absolute top-[calc(50%_-_218.5px)] right-[0px] shadow-[0px_0px_0px_0.5px_#e4e5e9,_0px_0px_0px_1px_rgba(228,_229,_233,_0.6),_0px_0px_0px_3.5px_#f9f9fb,_0px_0px_0px_4px_#f3f4f7] rounded-xl bg-white w-[677px] h-[437px] overflow-hidden hidden" />
+                </div>
+              </div>
+            </div>
+
+          {/*    <div className="absolute top-[1916px] left-[0px] w-[1442px] h-[4001px] text-gray-500">*/}
         {/*      <div className="absolute top-[0px] left-[calc(50%_-_600px)] w-[1200px] flex flex-col items-start justify-start gap-[65px]">*/}
         {/*        <div className="self-stretch flex flex-col items-center justify-center gap-[28px]">*/}
         {/*          <div className="w-[134px] relative rounded-9980xl bg-gray-1000 h-7 hidden">*/}
