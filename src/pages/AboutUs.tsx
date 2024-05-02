@@ -30,15 +30,10 @@ const AboutUs: FunctionComponent = () => {
       <Header
         vector="/vector2.svg"
         sVG="/svg3.svg"
-        sVG1="/svg3.svg"
-        sVG2="/svg3.svg"
         propBackgroundColor="#fff"
         propBorderBottom="1px solid rgba(186, 192, 212, 0.6)"
         propColor="#00100b"
-        propColor1="#00100b"
-        propColor2="#00100b"
-        propColor3="#00100b"
-        propColor4="#00100b"
+
       />
       <FrameComponent propTop="4100px" />
       <div className="absolute top-[199px] left-[calc(50%_-_314px)] flex flex-col items-center justify-start gap-[20px]">

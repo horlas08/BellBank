@@ -1,5 +1,6 @@
 import React, { FunctionComponent } from "react";
 import FeatureCard from "./FeatureCard";
+import CardPill from "./CardPill";
 
 const Feature: FunctionComponent = () => {
   return (
@@ -20,47 +21,36 @@ const Feature: FunctionComponent = () => {
             individuals to thrive and achieve remarkable growth milestones.
           </div>
         </div>
-          <div className={'flex w-[80%]  justify-between gap-5 mx-auto mt-[50px]'}>
+          <div className={'flex w-[80%] justify-between gap-5 mx-auto mt-[50px]'}>
               <FeatureCard title={'Personal Account'} subtitle={'Lorem ipsum dolor sit amet consectetur. Tortor nisl ullamcorperleo eget.'}>
-                  <div className="mt-5 rounded-mini bg-white w-[310px] h-[188px] text-xl text-black">
-                      <div className="h-[188px] w-full flex flex-col place-content-center mx-auto align-middle items-center">
-                          <b className="">
-                              ₦2,000,000.00
-                          </b>
-                          <div className=" text-mini font-medium text-dimgray-100">
-                              Select loan amount
+                  <CardPill color={'bg-darkslategray-200'} text={'Bill payments'} svg='/group-195@2x.png'/>
+                  <CardPill color={'bg-mediumseagreen'} text={'Personal Savings'} svg='/group-195@2x.png'/>
+                  <CardPill color={'bg-white'} text={'Credit cards'} svg='/group-195@2x.png'/>
+              </FeatureCard>
+              <FeatureCard title={'Personal Account'} subtitle={'Lorem ipsum dolor sit amet consectetur. Tortor nisl ullamcorperleo eget.'}>
+
+                  <div className="flex justify-center w-full m-0 relative h-[188px] text-mini text-dimgray-100">
+                      <div className="flex justify-between items-center px-5 rounded-mini bg-white w-full h-[115px] ">
+                          <div className="h-[54px]">
+                              <div className=" font-medium mb-2">
+                                  Total Expenses
+                              </div>
+                              <b className=" text-xl text-black">
+                                  ₦32,000.40
+                              </b>
                           </div>
-                          <div className=" w-[190px] h-4">
-                              <div
-                                  className=" rounded-81xl bg-whitesmoke-400 w-[190px] h-2.5"/>
-                              <div
-                                  className=" rounded-81xl bg-mediumseagreen w-[156px] h-2.5"/>
-                              <div
-                                  className=" rounded-[50%] bg-mediumseagreen w-4 h-4"/>
-                          </div>
-                      </div>
-                  </div>
-              </FeatureCard> <FeatureCard title={'Personal Account'} subtitle={'Lorem ipsum dolor sit amet consectetur. Tortor nisl ullamcorperleo eget.'}>
-                  <div className="mt-5 rounded-mini bg-white w-[310px] h-[188px] text-xl text-black">
-                      <div className="h-[188px] w-full flex flex-col place-content-center mx-auto align-middle items-center">
-                          <b className="">
-                              ₦2,000,000.00
-                          </b>
-                          <div className=" text-mini font-medium text-dimgray-100">
-                              Select loan amount
-                          </div>
-                          <div className=" w-[190px] h-4">
-                              <div
-                                  className=" rounded-81xl bg-whitesmoke-400 w-[190px] h-2.5"/>
-                              <div
-                                  className=" rounded-81xl bg-mediumseagreen w-[156px] h-2.5"/>
-                              <div
-                                  className=" rounded-[50%] bg-mediumseagreen w-4 h-4"/>
+                          <div className="relative w-[71px] h-[71px] text-center text-black flex justify-center">
+                              <div className="absolute top-[0px] left-[0px] rounded-[50%] box-border w-[71px] h-[71px] border-[8px] border-solid border-whitesmoke-400"/>
+                              <div className="absolute top-[0px] left-[0px] rounded-[50%] box-border w-[71px] h-[71px] border-[6px] border-solid border-mediumseagreen"/>
+                              <div className=" flext h[71px] place-content-center font-medium">
+                                  85%
+                              </div>
                           </div>
                       </div>
                   </div>
-              </FeatureCard> <FeatureCard title={'Personal Account'} subtitle={'Lorem ipsum dolor sit amet consectetur. Tortor nisl ullamcorperleo eget.'}>
-                  <div className="mt-5 rounded-mini bg-white w-[310px] h-[188px] text-xl text-black">
+              </FeatureCard>
+              <FeatureCard title={'Personal Account'} subtitle={'Lorem ipsum dolor sit amet consectetur. Tortor nisl ullamcorperleo eget.'}>
+                  <div className="mt-5 rounded-mini bg-white w-full h-[188px] text-xl text-black">
                       <div className="h-[188px] w-full flex flex-col place-content-center mx-auto align-middle items-center">
                           <b className="">
                               ₦2,000,000.00
@@ -79,6 +69,7 @@ const Feature: FunctionComponent = () => {
                       </div>
                   </div>
               </FeatureCard>
+
           </div>
 
           {/*<div className=" w-full flex">*/}
@@ -98,122 +89,66 @@ const Feature: FunctionComponent = () => {
           {/*          <div className="relative font-medium">Bill payments</div>*/}
           {/*        </div>*/}
           {/*        <img*/}
-        {/*            className=" object-contain"*/}
-        {/*            alt=""*/}
-        {/*            src="/group-195@2x.png"*/}
-        {/*        />*/}
-        {/*      </div>*/}
-        {/*      <div className="w-[283px] relative rounded-81xl bg-mediumseagreen h-[51px] overflow-hidden shrink-0">*/}
-        {/*        <div className="absolute top-[17px] left-[17px] flex flex-row items-center justify-start gap-[6px]">*/}
-        {/*          <div*/}
-        {/*              className="w-2 relative shadow-[0px_8px_24px_rgba(146,_143,_255,_0.4)] rounded-[50%] bg-white h-2"/>*/}
-        {/*          <div className="relative font-medium">Personal Savings</div>*/}
-        {/*        </div>*/}
-        {/*        <img*/}
-        {/*            className="absolute top-[calc(50%_-_14.6px)] left-[calc(50%_+_88.5px)] w-[30.7px] h-[30.7px] hidden"*/}
-        {/*            alt=""*/}
-        {/*            src="/ellipse-26.svg"*/}
-        {/*        />*/}
-        {/*        <div*/}
-        {/*            className="absolute top-[calc(50%_-_19.1px)] left-[225.5px] rounded-[50%] box-border w-[39.7px] h-[39.7px] hidden border-[9px] border-solid border-whitesmoke-300"/>*/}
-        {/*        <img*/}
-        {/*            className="absolute top-[12.5px] left-[262.9px] w-[25.4px] h-[25.5px] object-contain"*/}
-        {/*            alt=""*/}
-        {/*            src="/group-195@2x.png"*/}
-        {/*        />*/}
-        {/*      </div>*/}
-        {/*      <div className="w-[283px] relative rounded-81xl bg-white h-[51px] overflow-hidden shrink-0 text-gray-500">*/}
-        {/*        <div className="absolute top-[17px] left-[17px] flex flex-row items-center justify-start gap-[6px]">*/}
-        {/*          <div*/}
-        {/*              className="w-2 relative shadow-[0px_8px_24px_rgba(146,_143,_255,_0.4)] rounded-[50%] bg-mediumseagreen h-2"/>*/}
-        {/*          <div className="relative font-medium">Credit cards</div>*/}
-        {/*        </div>*/}
-        {/*        <img*/}
-        {/*            className="absolute top-[40px] left-[260.2px] w-[29.6px] h-[29.5px] object-contain"*/}
-        {/*            alt=""*/}
-        {/*            src="/group-195@2x.png"*/}
-        {/*        />*/}
-        {/*      </div>*/}
-        {/*    </div>*/}
-        {/*    <img*/}
-        {/*        className="absolute top-[159px] left-[calc(50%_-_141px)] w-[282.7px] h-[178px] object-cover hidden"*/}
-        {/*        alt=""*/}
-        {/*        src="/frame1618872633-1-1@2x.png"*/}
-        {/*    />*/}
-        {/*    <img*/}
-        {/*        className="absolute top-[162px] left-[calc(50%_-_133px)] w-[266px] h-[167px] object-cover hidden"*/}
-        {/*        alt=""*/}
-        {/*        src="/frame1618872633-2-1@2x.png"*/}
-        {/*    />*/}
-        {/*    <img*/}
-        {/*        className="absolute top-[122px] left-[56px] w-[273px] h-[171.9px] object-cover hidden"*/}
-        {/*        alt=""*/}
-        {/*        src="/frame1618872633-3-1@2x.png"*/}
-        {/*    />*/}
-        {/*    <img*/}
-        {/*        className="absolute top-[159px] left-[43px] w-[286px] h-[178px] object-cover hidden"*/}
-        {/*        alt=""*/}
-        {/*        src="/newfile-1@2x.png"*/}
-        {/*    />*/}
-        {/*    <div className="absolute top-[37px] left-[43px] w-[298px] h-[296px] text-3xl text-gray-500">*/}
-        {/*      <div className="absolute top-[0px] left-[43px] flex flex-col items-start justify-start gap-[12px]">*/}
-        {/*        <b className="relative">Personal account</b>*/}
-        {/*        <div*/}
-        {/*            className="w-[298px] relative text-base leading-[24px] font-medium text-dimgray-100 inline-block h-12 shrink-0">*/}
-        {/*          Lorem ipsum dolor sit amet consectetur. Tortor nisl ullamcorper*/}
-        {/*          leo eget.*/}
-        {/*        </div>*/}
-        {/*      </div>*/}
-        {/*      <div*/}
-        {/*          className="absolute top-[118px] left-[0px] flex flex-col items-start justify-start gap-[12px] text-sm text-white">*/}
-        {/*        <div*/}
-        {/*            className="w-[283px] relative rounded-81xl bg-darkslategray-200 h-[52px] overflow-hidden shrink-0 text-mini">*/}
-        {/*          <div className="absolute top-[17px] left-[17px] flex flex-row items-center justify-start gap-[6px]">*/}
-        {/*            <div*/}
-        {/*                className="w-2 relative shadow-[0px_8px_24px_rgba(146,_143,_255,_0.4)] rounded-[50%] bg-mediumseagreen h-2"/>*/}
-        {/*            <div className="relative font-medium">Bill payments</div>*/}
-        {/*          </div>*/}
-        {/*          <img*/}
-        {/*              className="absolute top-[10.6px] left-[236.8px] w-[29.6px] h-[29.5px] object-contain"*/}
-        {/*              alt=""*/}
-        {/*              src="/group-195@2x.png"*/}
-        {/*          />*/}
-        {/*        </div>*/}
-        {/*        <div className="w-[283px] relative rounded-81xl bg-mediumseagreen h-[51px] overflow-hidden shrink-0">*/}
-        {/*          <div className="absolute top-[17px] left-[17px] flex flex-row items-center justify-start gap-[6px]">*/}
-        {/*            <div*/}
-        {/*                className="w-2 relative shadow-[0px_8px_24px_rgba(146,_143,_255,_0.4)] rounded-[50%] bg-white h-2"/>*/}
-        {/*            <div className="relative font-medium">Personal Savings</div>*/}
-        {/*          </div>*/}
-        {/*          <img*/}
-        {/*              className="absolute top-[calc(50%_-_14.6px)] left-[calc(50%_+_88.5px)] w-[30.7px] h-[30.7px] hidden"*/}
-        {/*              alt=""*/}
-        {/*              src="/ellipse-26.svg"*/}
-        {/*          />*/}
-        {/*          <div*/}
-        {/*              className="absolute top-[calc(50%_-_19.1px)] left-[225.5px] rounded-[50%] box-border w-[39.7px] h-[39.7px] hidden border-[9px] border-solid border-whitesmoke-300"/>*/}
-        {/*          <img*/}
-        {/*              className="absolute top-[12.5px] left-[238.9px] w-[25.4px] h-[25.5px] object-contain"*/}
-        {/*              alt=""*/}
-        {/*              src="/group-195@2x.png"*/}
-        {/*          />*/}
-        {/*        </div>*/}
-        {/*        <div*/}
-        {/*            className="w-[283px] relative rounded-81xl bg-white h-[51px] overflow-hidden shrink-0 text-gray-500">*/}
-        {/*          <div className="absolute top-[17px] left-[17px] flex flex-row items-center justify-start gap-[6px]">*/}
-        {/*            <div*/}
-        {/*                className="w-2 relative shadow-[0px_8px_24px_rgba(146,_143,_255,_0.4)] rounded-[50%] bg-mediumseagreen h-2"/>*/}
-        {/*            <div className="relative font-medium">Credit cards</div>*/}
-        {/*          </div>*/}
-        {/*          <img*/}
-        {/*              className="absolute top-[10.6px] left-[236.8px] w-[29.6px] h-[29.5px] object-contain"*/}
-        {/*              alt=""*/}
-        {/*              src="/group-195@2x.png"*/}
-        {/*          />*/}
-        {/*        </div>*/}
-        {/*      </div>*/}
-        {/*    </div>*/}
-        {/*  </div>*/}
+          {/*          className=" object-contain"*/}
+          {/*          alt=""*/}
+          {/*          src="/group-195@2x.png"*/}
+          {/*      />*/}
+          {/*    </div>*/}
+          {/*    <div className="w-[283px] relative rounded-81xl bg-mediumseagreen h-[51px] overflow-hidden shrink-0">*/}
+          {/*      <div className="absolute top-[17px] left-[17px] flex flex-row items-center justify-start gap-[6px]">*/}
+          {/*        <div*/}
+          {/*            className="w-2 relative shadow-[0px_8px_24px_rgba(146,_143,_255,_0.4)] rounded-[50%] bg-white h-2"/>*/}
+          {/*        <div className="relative font-medium">Personal Savings</div>*/}
+          {/*      </div>*/}
+          {/*      <img*/}
+          {/*          className="absolute top-[calc(50%_-_14.6px)] left-[calc(50%_+_88.5px)] w-[30.7px] h-[30.7px] hidden"*/}
+          {/*          alt=""*/}
+          {/*          src="/ellipse-26.svg"*/}
+          {/*      />*/}
+          {/*      <div*/}
+          {/*          className="absolute top-[calc(50%_-_19.1px)] left-[225.5px] rounded-[50%] box-border w-[39.7px] h-[39.7px] hidden border-[9px] border-solid border-whitesmoke-300"/>*/}
+          {/*      <img*/}
+          {/*          className="absolute top-[12.5px] left-[262.9px] w-[25.4px] h-[25.5px] object-contain"*/}
+          {/*          alt=""*/}
+          {/*          src="/group-195@2x.png"*/}
+          {/*      />*/}
+          {/*    </div>*/}
+          {/*    <div className="w-[283px] relative rounded-81xl bg-white h-[51px] overflow-hidden shrink-0 text-gray-500">*/}
+          {/*      <div className="absolute top-[17px] left-[17px] flex flex-row items-center justify-start gap-[6px]">*/}
+          {/*        <div*/}
+          {/*            className="w-2 relative shadow-[0px_8px_24px_rgba(146,_143,_255,_0.4)] rounded-[50%] bg-mediumseagreen h-2"/>*/}
+          {/*        <div className="relative font-medium">Credit cards</div>*/}
+          {/*      </div>*/}
+          {/*      <img*/}
+          {/*          className="absolute top-[40px] left-[260.2px] w-[29.6px] h-[29.5px] object-contain"*/}
+          {/*          alt=""*/}
+          {/*          src="/group-195@2x.png"*/}
+          {/*      />*/}
+          {/*    </div>*/}
+          {/*  </div>*/}
+          {/*  <img*/}
+          {/*      className="absolute top-[159px] left-[calc(50%_-_141px)] w-[282.7px] h-[178px] object-cover hidden"*/}
+          {/*      alt=""*/}
+          {/*      src="/frame1618872633-1-1@2x.png"*/}
+          {/*  />*/}
+          {/*  <img*/}
+          {/*      className="absolute top-[162px] left-[calc(50%_-_133px)] w-[266px] h-[167px] object-cover hidden"*/}
+          {/*      alt=""*/}
+          {/*      src="/frame1618872633-2-1@2x.png"*/}
+          {/*  />*/}
+          {/*  <img*/}
+          {/*      className="absolute top-[122px] left-[56px] w-[273px] h-[171.9px] object-cover hidden"*/}
+          {/*      alt=""*/}
+          {/*      src="/frame1618872633-3-1@2x.png"*/}
+          {/*  />*/}
+          {/*  <img*/}
+          {/*      className="absolute top-[159px] left-[43px] w-[286px] h-[178px] object-cover hidden"*/}
+          {/*      alt=""*/}
+          {/*      src="/newfile-1@2x.png"*/}
+          {/*  />*/}
+          {/* */}
+          {/*</div>*/}
+
           {/*<div*/}
           {/*    className="absolute h-full w-[calc(100%_-_816px)] top-[0px] right-[408px] bottom-[0px] left-[408px] rounded-3xl bg-gray-900 overflow-hidden text-mini text-dimgray-100">*/}
           {/*  <div className="absolute top-[150px] left-[30px] w-[324px] h-[188px] hidden">*/}

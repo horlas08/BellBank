@@ -8,19 +8,21 @@ type FeatureCardType = {
 export default function FeatureCard({title, subtitle, children}: FeatureCardType) {
     return (
         <div
-            className=" rounded-3xl bg-gray-900 overflow-hidden p-10 text-3xl text-gray-500">
+            className=" rounded-3xl bg-gray-900 overflow-hidden p-7 text-3xl text-gray-500">
 
-            <div className=" w-[311px] h-[306px]">
+            <div className="  h-[306px]">
                 <div className="  flex flex-col items-start justify-start gap-[12px]">
                     <b className="relative">{title}</b>
                     <div
-                        className="w-[310px] relative text-base leading-[24px] font-medium text-dimgray-100 inline-block h-12 shrink-0">
+                        className=" relative text-base leading-[24px] font-medium text-dimgray-100 inline-block h-12 overflow-hidden shrink-0">
                         {subtitle}
                     </div>
-                    {children}
+
+                    <div className={'mt-4 w-[100%] mx-auto gap-3 flex flex-col'}>
+                        {children}
+                    </div>
                 </div>
 
-                {/**/}
             </div>
 
         </div>
