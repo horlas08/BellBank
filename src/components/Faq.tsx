@@ -7,14 +7,10 @@ import FaqItem from "./FaqItem";
 export default function Faq() {
     return (
         <div className={'relative w-full mx-auto py-[50px]'}>
-        <div className={'relative w-[80%]  mx-auto flex justify-center items-start'}>
+        <div className={'relative w-[80%] flex-col lg:flex-row mx-auto flex justify-center items-start'}>
             <div className="h-[232px] flex flex-col items-start justify-start gap-[16px]">
                 <div className="flex flex-col items-start justify-start gap-[16px]">
-                    <div className="w-[196px] relative rounded-[1000px] bg-gray-1000 h-7 hidden">
-                        <div className="absolute top-[6px] left-[12px] leading-[16px] uppercase font-medium">
-                            FREQUENTLY ASK QUESTIONS
-                        </div>
-                    </div>
+
                     <b className="w-[406px] relative text-23xl flex text-gray-400 items-center">
                                       <span className="w-full">
                                         <p className="m-0">Let's put your</p>
@@ -22,8 +18,7 @@ export default function Faq() {
                                       </span>
                     </b>
                 </div>
-                <div
-                    className="w-[361px] relative text-lg leading-[25px] font-medium flex items-center text-dimgray-100">
+                <div className="w-[361px] relative text-lg leading-[25px] font-medium flex items-center text-dimgray-100">
                                     <span className="w-full">
                                       <span>{`Can’t find the answer you’re looking for? Reach out to our `}</span>
                                       <span className="text-mediumseagreen">
@@ -33,15 +28,16 @@ export default function Faq() {
                                     </span>
                 </div>
             </div>
+
             <div className="flex-1 flex flex-col items-start justify-start gap-[18px]">
                 <FaqItem
                     doINeedToPayForAnythingEl="Do I need to pay for anything else besides Numeral to file my sales tax?"
-                    plusCircle="/pluscircle.svg"
+                    plusCircle="/assets/images/svg/pluscircle.svg"
                     showThereAreAContainer
                 />
                 <FaqItem
                     doINeedToPayForAnythingEl="Lorem ipsum dolor sit amet consectetur. Lorem risus vestibulum consectetur mi."
-                    plusCircle="/pluscircle1.svg"
+                    plusCircle="/assets/images/svg/pluscircle1.svg"
                     showThereAreAContainer={false}
                     propWidth="463px"
                     propWidth1="463px"

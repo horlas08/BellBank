@@ -1,22 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap");
 @font-face {
   font-family: "Aeonik";
-  src: url("/public/Aeonik-Regular.otf");
+  src: url("/public/assets/fonts/Aeonik-Regular.otf");
   font-weight: 400;
 }
 @font-face {
   font-family: "Aeonik";
-  src: url("/public/Aeonik-Medium.otf");
+  src: url("/public/assets/fonts/Aeonik-Medium.otf");
   font-weight: 500;
 }
 @font-face {
   font-family: "Aeonik";
-  src: url("/public/Aeonik-Bold.otf");
+  src: url("/public/assets/fonts/Aeonik-Bold.otf");
   font-weight: 700;
 }
 @font-face {
   font-family: "Segoe UI";
-  src: url("/public/segoeuithibd.ttf");
+  src: url("/public/assets/fonts/segoeuithibd.ttf");
   font-weight: 400;
 }
 

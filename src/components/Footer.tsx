@@ -53,7 +53,7 @@ const Footer: FunctionComponent<FrameComponentType> = ({ propTop }) => {
             <img
                 className="flex-1 relative max-w-full overflow-hidden h-[207px]"
               alt=""
-              src="/divcolumn.svg"
+              src="/assets/images/svg/divcolumn.svg"
           />
           <div className="flex-1 relative h-[207px]">
             <div className="absolute top-[0px] left-[29.9px] leading-[21px]">

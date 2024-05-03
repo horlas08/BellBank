@@ -20,14 +20,14 @@ const AboutUs: FunctionComponent = () => {
             <img
               className="absolute top-[0px] left-[469px] w-4 h-4 overflow-hidden"
               alt=""
-              src="/link--svg.svg"
+              src="/assets/images/svg/link--svg.svg"
             />
           </div>
         </div>
       </div>
       <Header
-        vector="/vector2.svg"
-        sVG="/svg3.svg"
+        vector="/assets/images/svg/vector2.svg"
+        sVG="/assets/images/svg/svg3.svg"
         propBackgroundColor="#fff"
         propBorderBottom="dimgray"
         propColor="dimgray"

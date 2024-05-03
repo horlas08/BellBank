@@ -9,19 +9,19 @@ const Feature: FunctionComponent = () => {
 
         <div
             className="flex flex-col items-center justify-start gap-[20px] mt-[60px] text-mediumseagreen">
-          <div className="flex flex-col items-center justify-start gap-[10px]">
+          <div className="flex flex-col sm:w-[80%] md:w-[90%] items-center justify-start gap-[10px]">
             <div className="relative uppercase font-medium">Built for growth</div>
-            <b className="w-[629px] relative text-23xl leading-[50px] inline-block text-gray-500 text-center h-[107px] shrink-0">
+            <b className="max-w-[629px] relative text-[30px] md:text-23xl w-[80%] leading-[34px] md:leading-[50px] inline-block text-gray-500 text-center">
               Banking designed for personal and business growth
             </b>
           </div>
           <div
-              className="w-[533px] relative text-lg leading-[24px] font-medium text-dimgray-100 text-center inline-block">
+              className="max-w-[533px] w-[95%] md:w-[90%] mx-auto relative text-lg leading-[24px] font-medium text-dimgray-100 text-center inline-block">
             Providing financial solutions that empowering both business and
             individuals to thrive and achieve remarkable growth milestones.
           </div>
         </div>
-          <div className={'flex w-[80%] justify-between gap-5 mx-auto mt-[50px]'}>
+          <div className={' my-2 md:my-0 flex md:flex-row flex-col w-[80%] justify-between gap-5 mx-auto mt-[50px]'}>
               <FeatureCard title={'Personal Account'} subtitle={'Lorem ipsum dolor sit amet consectetur. Tortor nisl ullamcorperleo eget.'}>
                   <CardPill color={'bg-darkslategray-200'} text={'Bill payments'} svg='/group-195@2x.png'/>
                   <CardPill color={'bg-mediumseagreen'} text={'Personal Savings'} svg='/group-195@2x.png'/>
@@ -56,7 +56,7 @@ const Feature: FunctionComponent = () => {
                           <img
                               className="w-[18px] relative h-[18px] overflow-hidden shrink-0"
                               alt=""
-                              src="/file01.svg"
+                              src="/assets/images/svg/file01.svg"
                           />
                           <div className="relative font-medium">Invoices</div>
                       </div>
@@ -65,8 +65,8 @@ const Feature: FunctionComponent = () => {
                   </div>
               </FeatureCard>
               <FeatureCard title={'Loan'} subtitle={'Lorem ipsum dolor sit amet consectetur. Tortor nisl ullamcorperleo eget.'}>
-                  <div className="mt-5 rounded-mini bg-white w-full h-[188px] text-xl text-black">
-                      <div className="h-[188px] w-full flex flex-col place-content-center mx-auto align-middle items-center">
+                  <div className="mt-5 rounded-mini bg-white w-full h-[168px] mb-6 text-xl text-black">
+                      <div className="h-[100%] justify-center w-full flex flex-col  mx-auto align-middle items-center">
                           <b className="mb-2">
                               ₦2,000,000.00
                           </b>

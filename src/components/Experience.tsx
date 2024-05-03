@@ -75,7 +75,7 @@ export default function Experience() {
                                 <img
                                     className=" mx-auto object-contain"
                                     alt=""
-                                    src="/ClipGroup.svg"
+                                    src="/assets/images/svg/ClipGroup.svg"
                                 />
                             </div>
                         </div>

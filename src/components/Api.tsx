@@ -34,7 +34,7 @@ export default function Api() {
                                 <img
                                     className="w-5 relative h-5"
                                     alt=""
-                                    src="/checkmarkcircle01.svg"
+                                    src="/assets/images/svg/checkmarkcircle01.svg"
                                 />
                                 <div className="w-[360px] relative leading-[24px] flex items-center shrink-0">
                                     Collect one-time and recurring payments from your
@@ -45,7 +45,7 @@ export default function Api() {
                                 <img
                                     className="w-5 relative h-5"
                                     alt=""
-                                    src="/checkmarkcircle01.svg"
+                                    src="/assets/images/svg/checkmarkcircle01.svg"
                                 />
                                 <div className="w-[360px] relative leading-[20px] flex items-center shrink-0">
                                     Make instant transfers
@@ -55,7 +55,7 @@ export default function Api() {
                                 <img
                                     className="w-5 relative h-5"
                                     alt=""
-                                    src="/checkmarkcircle01.svg"
+                                    src="/assets/images/svg/checkmarkcircle01.svg"
                                 />
                                 <div className="w-[360px] relative leading-[20px] flex items-center shrink-0">
                                     Retrieve all your transaction and customer data
@@ -65,7 +65,7 @@ export default function Api() {
                                 <img
                                     className="w-5 relative h-5"
                                     alt=""
-                                    src="/checkmarkcircle01.svg"
+                                    src="/assets/images/svg/checkmarkcircle01.svg"
                                 />
                                 <div className="w-[360px] relative leading-[20px] flex items-center shrink-0">
                                     Verify the identity of customers
@@ -198,7 +198,7 @@ export default function Api() {
                                 <img
                                     className="absolute top-[calc(50%_-_8px)] left-[calc(50%_+_82.15px)] w-4 h-4 overflow-hidden"
                                     alt=""
-                                    src="/svg2.svg"
+                                    src="/assets/images/svg/svg2.svg"
                                 />
                             </div>
                         </div>
