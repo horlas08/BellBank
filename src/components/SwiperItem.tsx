@@ -1,4 +1,4 @@
-import { FunctionComponent, useMemo, type CSSProperties } from "react";
+import {FunctionComponent, useMemo, type CSSProperties, useEffect, useRef} from "react";
 
 export type SwiperItemType = {
   /** Style props */
@@ -9,16 +9,38 @@ export type SwiperItemType = {
 
 const SwiperItem: FunctionComponent<SwiperItemType> = ({
 }) => {
+    const swiperElRef = useRef(null);
+
+    useEffect(() => {
+        // listen for Swiper events using addEventListener
+        swiperElRef.current.addEventListener('swiperprogress', (e) => {
+            const [swiper, progress] = e.detail;
+            console.log(progress);
+        });
+
+        swiperElRef.current.addEventListener('swiperslidechange', (e) => {
+            console.log('slide changed');
+        });
+    }, []);
 
   // @ts-ignore
     return (
       <div className="w-full flex place-content-center mx-auto ">
-          <swiper-container>
-              <img
-                  className=" w-[80%] mx-auto rounded-xl mt-5"
-                  alt=""
-                  src="/rectangle-34624197@2x.png"
-              />
+          <swiper-container className={'w-80'}>
+              <swiper-slide>
+                  <img
+                      className=" w-[80%] mx-auto rounded-xl mt-5"
+                      alt=""
+                      src="/rectangle-34624197@2x.png"
+                  />
+              </swiper-slide>
+              <swiper-slide>
+                  <img
+                      className=" w-[80%] mx-auto rounded-xl mt-5"
+                      alt=""
+                      src="/rectangle-34624197@2x.png"
+                  />
+              </swiper-slide>
           </swiper-container>
 
           {/*<div className=" h-[1.65%]  flex flex-row items-start justify-start gap-[5px]">*/}

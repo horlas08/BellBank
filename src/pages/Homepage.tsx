@@ -13,7 +13,7 @@ import Faq from "../components/Faq";
 
 const Homepage: FunctionComponent = () => {
     return (
-        <div className="w-full relative bg-white h-full text-left text-xs text-white font-aeonik">
+        <div className="w-full relative bg-white h-full text-left text-xs text-white font-aeonik overflow-hidden!">
             <div className="w-full">
                 <Header
                     vector="/vector.svg"
