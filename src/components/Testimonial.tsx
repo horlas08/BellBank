@@ -52,7 +52,7 @@ const Testimonial: FunctionComponent<TestimonialType> = ({
                           </p>
                       </span>
                 </TestimonialItem>
- <TestimonialItem title={'Founder, Fresh Sends'} username={'Jesse Hiss'}
+                <TestimonialItem title={'Founder, Fresh Sends'} username={'Jesse Hiss'}
                                  image={'/659fa9238d96a7bdeceaf7ee-jesse20hiss2020fresh20sendsjpeg@2x.png'}>
                     <span className="text-black">
                           <p className="m-0">
@@ -69,7 +69,7 @@ const Testimonial: FunctionComponent<TestimonialType> = ({
                           </p>
                       </span>
                 </TestimonialItem>
- <TestimonialItem title={'Founder, Fresh Sends'} username={'Jesse Hiss'}
+                <TestimonialItem title={'Founder, Fresh Sends'} username={'Jesse Hiss'}
                                  image={'/659fa9238d96a7bdeceaf7ee-jesse20hiss2020fresh20sendsjpeg@2x.png'}>
                     <span className="text-black">
                           <p className="m-0">

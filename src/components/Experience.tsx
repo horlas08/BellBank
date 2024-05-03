@@ -20,7 +20,7 @@ export default function Experience() {
                     milestones.
                 </div>
             </div>
-            <div className="flex flex-col items-center justify-start gap-[80px]">
+            <div className="w-full mx-auto flex flex-col items-center justify-start gap-[80px]">
                 <ExperienceItem title={'Debit cards'} subtitle={'Instant Debit cards that always work'}>
                     <div
                         className="rounded-11xl bg-seagreen box-border w-[677px] h-[437px] overflow-hidden mix-blend-normal border-[8px] border-solid border-whitesmoke-100">

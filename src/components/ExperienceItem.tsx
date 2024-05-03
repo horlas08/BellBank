@@ -10,7 +10,7 @@ type ExperienceItem ={
 export default function ExperienceItem({title, subtitle, children}:ExperienceItem) {
     return (
 
-            <div className="w-[100%] flex relative h-[437px]">
+            <div className="w-[100%] justify-between flex relative h-[437px]">
                 <CardLeft
                     debitCards={title}
                     desc={'If transfers aren’t your jam, we get it. Request a debit card and have it delivered to you within 48 hours. Activate it in minutes, and start using it right away.'}

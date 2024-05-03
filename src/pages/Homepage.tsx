@@ -56,8 +56,10 @@ const Homepage: FunctionComponent = () => {
                 <Protecting/>
 
                 <Api/>
-                <Testimonial fa9238d96a7bdeceaf7eeJess="/659fa9238d96a7bdeceaf7ee-jesse20hiss2020fresh20sendsjpeg@2x.png"/>
+                <Testimonial
+                    fa9238d96a7bdeceaf7eeJess="/659fa9238d96a7bdeceaf7ee-jesse20hiss2020fresh20sendsjpeg@2x.png"/>
                 <Footer/>
+
             </div>
         </div>
     );

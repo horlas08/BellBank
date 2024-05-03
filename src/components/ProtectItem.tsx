@@ -14,12 +14,12 @@ export default function ProtectItem({number, title, desc}:ProtectItem) {
 
 
             </div>
-            <div className="flex mt-[24px] flex-col items-start justify-start gap-[15px] text-mediumseagreen">
+            <div className="flex mt-[24px] w-full flex-col items-start justify-start gap-[15px] text-mediumseagreen">
                 <b className="relative text-xl tracking-[-0.33px] leading-[24.2px]">
                     {title}
                 </b>
                 <div
-                    className="w-[315px] relative text-lg leading-[24px] font-medium text-dimgray-100 flex items-center">
+                    className="relative text-lg leading-[24px] w-[70%] font-medium text-dimgray-100 flex items-center">
                     {desc}
                 </div>
             </div>
