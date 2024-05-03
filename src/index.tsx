@@ -4,10 +4,12 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import "./global.css";
+import { register } from 'swiper/element/bundle';
 
 const container = document.getElementById("root");
 const root = createRoot(container!);
 
+register();
 root.render(
   <BrowserRouter>
     <App />

@@ -4,11 +4,7 @@ import SwiperItem from "./SwiperItem";
 const Banner: FunctionComponent = () => {
   return (
       <div className="bg-darkslategray-500 pt-[100px] pb-[50px] text-left text-sm text-gray-1100 font-aeonik">
-          {/*<img*/}
-          {/*  className=" h-[50.73%] top-[38.93%] bottom-[10.34%] left-[calc(50%_-_599px)] rounded-3xs max-h-full w-[1199px] object-cover hidden"*/}
-          {/*  alt=""*/}
-          {/*  src="/rectangle-34624197@2x.png"*/}
-          {/*/>*/}
+
           <div className="w-[80%] mx-auto flex justify-between">
               <div
                   className="  flex flex-col items-start justify-start gap-[20px] text-41xl text-white">

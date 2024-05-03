@@ -1,7 +1,7 @@
 import { FunctionComponent } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import DivwNode4231f234A31c from "../components/DivwNode4231f234A31c";
+import Testimonial from "../components/Testimonial";
 
 const AboutUs: FunctionComponent = () => {
   return (
@@ -191,7 +191,7 @@ const AboutUs: FunctionComponent = () => {
               </div>
             </div>
           </div>
-          <DivwNode4231f234A31c
+          <Testimonial
             fa9238d96a7bdeceaf7eeJess="/659fa9238d96a7bdeceaf7ee-jesse20hiss2020fresh20sendsjpeg@2x.png"
             propBorderRadius="100px"
           />

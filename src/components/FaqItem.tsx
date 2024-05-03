@@ -38,7 +38,7 @@ const FaqItem: FunctionComponent<FaqItemType> = ({
   }, [propColor]);
 
   return (
-    <div className="self-stretch rounded-3xl bg-whitesmoke-100 flex flex-col items-start justify-start p-8 relative gap-[10px] text-left text-xl text-gray-500 font-aeonik">
+    <div className="self-stretch min-w-[400px] rounded-3xl bg-whitesmoke-100 flex flex-row items-start justify-between p-8 relative gap-[10px] text-left text-xl text-gray-500 font-aeonik">
       <div
         className="flex flex-col items-start justify-start gap-[16px] z-[0]"
         style={frameDiv1Style}
@@ -69,7 +69,7 @@ const FaqItem: FunctionComponent<FaqItemType> = ({
         )}
       </div>
       <img
-        className="w-10 absolute !m-[0] top-[37px] left-[595px] h-10 overflow-hidden shrink-0 z-[1]"
+        className="w-10 h-10 overflow-hidden shrink-0 z-[1]"
         alt=""
         src={plusCircle}
       />
