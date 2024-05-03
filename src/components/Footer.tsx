@@ -123,9 +123,9 @@ const Footer: FunctionComponent<FrameComponentType> = ({ propTop }) => {
             </div>
             <div className="w-[179.6px] flex flex-col items-start justify-start gap-[12px] text-xs text-gray-100">
               <div
-                  className="w-[179.6px] h-8 rounded-md bg-white box-border flex flex-row items-start justify-start  border-[1px] border-solid border-whitesmoke-600">
+                  className="w-[179.6px] h-8 bg-white box-border flex flex-row items-start justify-start  border-[0px] border-solid border-whitesmoke-600">
                 <input
-                    className="w-full h-full focus-visible:border-[1px]! border-[1px] border-solid border-whitesmoke-600 focus-visible:border-red-500 overflow-hidden shrink-0 flex flex-row items-start justify-start  box-border"/>
+                    className="w-full border-1 input h-full overflow-hidden shrink-0 flex flex-row items-start justify-start  box-border"/>
 
               </div>
               <div
