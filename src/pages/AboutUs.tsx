@@ -7,8 +7,8 @@ const AboutUs: FunctionComponent = () => {
   return (
     <div className="w-full relative bg-white overflow-hidden text-left text-sm text-mediumseagreen font-aeonik">
 
-      <div className="relative top-[0px] left-[calc(50%_-_721px)] bg-gray-500 w-[1442px] h-[45px] text-xs text-white">
-        <div className="absolute top-[calc(50%_-_11.5px)] left-[calc(50%_-_275px)] flex flex-row items-center justify-start gap-[10px]">
+      <div className="relative  bg-gray-500 h-[45px] text-xs text-white">
+        <div className="relative h-full justify-center items-center  flex flex-row  gap-[10px]">
           <div className="rounded-81xl bg-gray-800 flex flex-row items-center justify-center py-1 px-[15px]">
             <div className="relative">New</div>
           </div>
@@ -29,8 +29,8 @@ const AboutUs: FunctionComponent = () => {
         vector="/vector2.svg"
         sVG="/svg3.svg"
         propBackgroundColor="#fff"
-        propBorderBottom="1px solid rgba(186, 192, 212, 0.6)"
-        propColor="#00100b"
+        propBorderBottom="dimgray"
+        propColor="dimgray"
 
       />
 

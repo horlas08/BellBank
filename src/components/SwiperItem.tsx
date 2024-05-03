@@ -1,4 +1,6 @@
 import {FunctionComponent, useMemo, type CSSProperties, useEffect, useRef} from "react";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules';
 
 export type SwiperItemType = {
     /** Style props */
@@ -13,28 +15,30 @@ const SwiperItem: FunctionComponent<SwiperItemType> = () => {
     // @ts-ignore
     return (
         <div className="w-full flex place-content-center mx-auto ">
-            {/*<swiper-container className={'w-80'}>*/}
-            {/*    <swiper-slide>*/}
-            <img
-                className=" w-[80%] mx-auto rounded-xl mt-5"
-                alt=""
-                src="/rectangle-34624197@2x.png"
-            />
-            {/*</swiper-slide>*/}
-            {/*<swiper-slide>*/}
-            {/*    <img*/}
-            {/*        className=" w-[80%] mx-auto rounded-xl mt-5"*/}
-            {/*        alt=""*/}
-            {/*        src="/rectangle-34624197@2x.png"*/}
-            {/*    />*/}
-            {/*    </swiper-slide>*/}
-            {/*</swiper-container>*/}
+            <Swiper autoplay={true} pagination={true} modules={[Pagination]} className="mySwiper">
+                <SwiperSlide >
+                    <img
+                        className=" w-[80%] mx-auto rounded-xl mt-5"
+                        alt=""
+                        src="/rectangle-34624197@2x.png"
+                    />
+                </SwiperSlide>
+                <SwiperSlide >
+                    <img
+                        className=" w-[80%] mx-auto rounded-xl mt-5"
+                        alt=""
+                        src="/rectangle-34624197@2x.png"
+                    />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img
+                        className=" w-[80%] mx-auto rounded-xl mt-5"
+                        alt=""
+                        src="/rectangle-34624197@2x.png"
+                    />
+                </SwiperSlide>
 
-            {/*<div className=" h-[1.65%]  flex flex-row items-start justify-start gap-[5px]">*/}
-            {/*  <div className="w-2 relative rounded-[50%] bg-mediumseagreen h-2" />*/}
-            {/*  <div className="w-2 relative rounded-[50%] bg-gray-700 h-2" />*/}
-            {/*  <div className="w-2 relative rounded-[50%] bg-gray-700 h-2" />*/}
-            {/*</div>*/}
+            </Swiper>
 
         </div>
     );

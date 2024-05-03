@@ -14,41 +14,44 @@ const Footer: FunctionComponent<FrameComponentType> = ({ propTop }) => {
   }, [propTop]);
 
   return (
-    <div className="relative top-[83px]  w-[90%] mx-auto  text-center text-xs text-dimgray-200 font-aeonik !overflow-hidden"
-      style={frameDiv2Style}
-    >
 
-      <div className=" flex flex-col items-center justify-start gap-[50px] text-left text-sm text-white">
-        <div className="w-[100%] mx-auto relative rounded-3xl bg-cadetblue h-[440px] overflow-hidden text-38xl">
-          <img className=" w-full h-[440px] object-cover"
-               alt=""
-               src="/image-761@2x.png"
-          />
 
-          <div
-              className="absolute top-[calc(50%_-_147px)] left-[66px] flex flex-col items-start justify-start gap-[30px]">
-            <div className="flex flex-col items-start justify-start gap-[15px]">
-              <b className="w-[420px] relative leading-[60px] inline-block h-[132px] shrink-0">
-                Get an account that suits you.
-              </b>
+
+      <div className="relative top-[83px]  w-[90%] mx-auto  text-center text-xs text-dimgray-200 font-aeonik !overflow-hidden"
+        style={frameDiv2Style}
+      >
+
+        <div className=" flex flex-col items-center justify-start gap-[50px] text-left text-sm text-white">
+          <div className="w-[100%] mx-auto relative rounded-3xl bg-cadetblue h-[440px] overflow-hidden text-38xl">
+            <img className=" w-full h-[440px] object-cover"
+                 alt=""
+                 src="/image-761@2x.png"
+            />
+
+            <div
+                className="absolute top-[calc(50%_-_147px)] left-[66px] flex flex-col items-start justify-start gap-[30px]">
+              <div className="flex flex-col items-start justify-start gap-[15px]">
+                <b className="w-[420px] relative leading-[60px] inline-block h-[132px] shrink-0">
+                  Get an account that suits you.
+                </b>
+                <div
+                    className="w-[420px] relative text-lg leading-[24px] font-medium text-gray-1100 inline-block h-[72px] shrink-0">
+                  Lorem ipsum dolor sit amet consectetur. Sit sagittis
+                  pellentesque mauris venenatis diam. Nibh diam ipsum massa sed
+                  arcu. Sit sed egestas sempe.
+                </div>
+              </div>
               <div
-                  className="w-[420px] relative text-lg leading-[24px] font-medium text-gray-1100 inline-block h-[72px] shrink-0">
-                Lorem ipsum dolor sit amet consectetur. Sit sagittis
-                pellentesque mauris venenatis diam. Nibh diam ipsum massa sed
-                arcu. Sit sed egestas sempe.
+                  className="w-[166px] rounded-lg bg-mediumseagreen h-[45px] flex flex-row items-center justify-center py-[11px] px-5 box-border text-center text-mini text-floralwhite">
+                <div className="relative font-medium">Get started today</div>
               </div>
             </div>
-            <div
-                className="w-[166px] rounded-lg bg-mediumseagreen h-[45px] flex flex-row items-center justify-center py-[11px] px-5 box-border text-center text-mini text-floralwhite">
-              <div className="relative font-medium">Get started today</div>
-            </div>
           </div>
-        </div>
 
-        <div className="w-[1201px] relative box-border h-px border-t-[1px] border-solid border-whitesmoke-500"/>
-        <div className="w-full flex flex-row items-start justify-start text-gray-500">
-          <img
-              className="flex-1 relative max-w-full overflow-hidden h-[207px]"
+          <div className="w-[1201px] relative box-border h-px border-t-[1px] border-solid border-whitesmoke-500"/>
+          <div className="w-full flex flex-row items-start justify-start text-gray-500">
+            <img
+                className="flex-1 relative max-w-full overflow-hidden h-[207px]"
               alt=""
               src="/divcolumn.svg"
           />

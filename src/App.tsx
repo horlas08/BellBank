@@ -8,6 +8,14 @@ import {
 import Homepage from "./pages/Homepage";
 import AboutUs from "./pages/AboutUs";
 
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+// import './styles.css';
+
+// import required modules
+
 function App() {
   const action = useNavigationType();
   const location = useLocation();
