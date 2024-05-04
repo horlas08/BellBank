@@ -3,24 +3,24 @@ import {Link} from "react-router-dom";
 import ExperienceItem from "./ExperienceItem";
 import React from "react";
 
-export default function Api() {
+export default function  Api() {
     return (
         <div className={'relative w-full'}>
-            <div className=" bg-darkslategray-500 h-[784px] w-full">
-                <div className=" flex justify-between p-[10rem] overflow-hidden mx-auto h-[484px]">
-                    <div className="relative  flex flex-col items-start justify-start gap-[35px] text-left text-xs text-mediumseagreen font-inter">
+            <div className=" bg-darkslategray-500 w-full">
+                <div className="flex justify-between p-[4rem] md:py-[10rem] flex-col lg:flex-row overflow-hidden mx-auto gap-10">
+                    <div className="relative w-full lg:w-[50%] flex flex-col items-stretch justify-start gap-[35px] text-left text-xs text-mediumseagreen font-inter">
                         <div className="flex flex-col items-start justify-start gap-[25px]">
                             <div className="flex flex-col items-start justify-start gap-[12px]">
                                 <div className="relative leading-[16px] uppercase font-medium">
                                     Designed for developers
                                 </div>
-                                <b className="w-[520px] relative text-23xl inline-block font-aeonik text-white h-[150px] shrink-0">
+
+                                <b className=" relative text-23xl inline-block font-aeonik text-white">
                                     Build quickly with our powerful and easy-to-use
                                     documented APIs
                                 </b>
                             </div>
-                            <div
-                                className="w-[517px] relative text-lg leading-[24px] font-aeonik text-lightgray flex items-center">
+                            <div className=" relative text-lg leading-[24px] font-aeonik text-lightgray flex items-center">
                                 Save engineering time with unified payments
                                 functionality. We obsess over the maze of gateways,
                                 payments rails, and financial institutions that make
@@ -28,8 +28,7 @@ export default function Api() {
                                 can build what you need on one platform.
                             </div>
                         </div>
-                        <div
-                            className="flex flex-col items-start justify-start gap-[14px] text-base text-lightgray font-aeonik">
+                        <div className="flex flex-col items-start justify-start gap-[14px] text-base text-lightgray font-aeonik">
                             <div className="flex flex-row items-start justify-start gap-[12px]">
                                 <img
                                     className="w-5 relative h-5"
@@ -72,12 +71,14 @@ export default function Api() {
                                 </div>
                             </div>
                         </div>
+
                     </div>
-                    <div className="relative codeBlock h-[calc(100%_-_29px)] w-[calc(100%_-_660px)] top-[14px] rounded-xl box-border overflow-hidden border-[1px] border-solid border-darkslategray-100">
+
+                    <div className="relative codeBlock flex-1 rounded-xl box-border overflow-hidden border-[1px] border-solid border-darkslategray-100">
                         <div className="relative bg-darkslategray-400 h-[262px]">
-                            <div className="relative  w-full top-[0px] right-[0px] left-[0px] h-60 overflow-hidden">
-                                <div className="absolute number top-[20px] right-[501.8px] leading-[20px] flex items-center w-[16.8px] h-[200px]">
-                                    <span className="[line-break:anywhere] w-full">
+                            <div className="relative flex flex-row w-full items-center h-full ml-5 overflow-hidden">
+                                <div className="relative number leading-[20px] flex items-center w-[16.8px] h-[200px]">
+                                    <span className="[line-break:anywhere] ">
                                       <p className="m-0">1</p>
                                       <p className="m-0">2</p>
                                       <p className="m-0">3</p>
@@ -90,7 +91,7 @@ export default function Api() {
                                       <p className="m-0">10</p>
                                     </span>
                                 </div>
-                                <div className="absolute code top-[20px] left-[52px] leading-[20px] text-left flex items-center w-[389px] h-[200px] text-white">
+                                <div className=" code leading-[20px] text-left flex items-center w-[389px] h-[200px] text-white">
                                     <span className="w-full">
                                       <p className="m-0">
                                         <span className="text-deepskyblue">await</span>

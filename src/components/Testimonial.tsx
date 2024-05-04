@@ -20,7 +20,7 @@ const Testimonial: FunctionComponent<TestimonialType> = ({
 
     return (
 
-        <div className={'relative w-full mt-[50px]'}>
+        <div className={'relative  w-full mt-[50px]'}>
             <div className={'w-full text-black text-center'}>
                 <h1 className="w-[678px] text-23xl mx-auto">
                     Loved by people and businesses that care about their
@@ -34,7 +34,8 @@ const Testimonial: FunctionComponent<TestimonialType> = ({
                 </div>
 
             </div>
-            <div className="flex max-w-[80%] justify-between mx-auto my-[30px]">
+            <div
+                className="flex flex-col md:flex-row gap-[30px] max-w-[80%] md:justify-between justify-center mx-auto my-[60px]">
                 <TestimonialItem title={'Founder, Fresh Sends'} username={'Jesse Hiss'}
                                  image={'/659fa9238d96a7bdeceaf7ee-jesse20hiss2020fresh20sendsjpeg@2x.png'}>
                     <span className="text-black">
@@ -54,19 +55,19 @@ const Testimonial: FunctionComponent<TestimonialType> = ({
                 </TestimonialItem>
                 <TestimonialItem title={'Founder, Fresh Sends'} username={'Jesse Hiss'}
                                  image={'/frame-1618872600@2x.png'}>
-                    <span className="text-black">
-                         <p className="m-0">I I was spending way too many hours</p>
-                    <p className="m-0">every month on sales tax. And if you</p>
-                    <p className="m-0">wanted someone on customer</p>
-                    <p className="m-0">support from my tax service, there</p>
-                    <p className="m-0">
-                      was no one. Numeral has made it to identify and know the
-                      tax
-                    </p>
-                    <p className="m-0 whitespace-pre-wrap">
-                      laws And then on your behalf, registering, managing
-                      everything, is kind of taking the worry off my plate.
-                    </p>
+                        <span className="text-black">
+                          <p className="m-0">
+                              Lorem ipsum dolor sit amet consectetur. Lorem
+                              nulla nisl urna a dui habitant. Odio fringilla
+                              habitasse donec consequat. Enim diam urna in
+                              id placerat tempor quam. Aliquam nec eget
+                              ipsum vitae ipsum.
+                          </p>
+                          <p className="m-0">
+                              Pellentesque aliquam faucibus ac faucibus.
+                              Eget neque eget ullamcorper duis. Mauris eu
+                              ultrices ultricies ut.
+                          </p>
                       </span>
                 </TestimonialItem>
                 <TestimonialItem title={'Founder, Fresh Sends'} username={'Jesse Hiss'}

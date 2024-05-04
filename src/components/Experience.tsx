@@ -5,7 +5,7 @@ import React from "react";
 
 export default function Experience() {
     return (
-        <div className=" flex flex-col items-center justify-start py-20 px-[136px] gap-[100px]">
+        <div className=" flex flex-col items-center justify-start py-20 px-[36px] lg:px-[136px] gap-[100px]">
             <div className="flex flex-col items-center justify-start gap-[20px]">
                 <div className="flex flex-col items-center justify-start gap-[10px]">
                     <div className="relative uppercase font-medium">FEATURES</div>
