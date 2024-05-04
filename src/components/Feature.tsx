@@ -5,7 +5,7 @@ import CardPill from "./CardPill";
 const Feature: FunctionComponent = () => {
   return (
       <div
-          className=" text-left text-sm text-white font-aeonik">
+          className="mt-[100px] text-left text-sm text-white font-aeonik">
 
         <div
             className="flex flex-col items-center justify-start gap-[20px] mt-[60px] text-mediumseagreen">
@@ -16,7 +16,7 @@ const Feature: FunctionComponent = () => {
             </b>
           </div>
           <div
-              className="max-w-[533px] w-[95%] md:w-[90%] mx-auto relative text-lg leading-[24px] font-medium text-dimgray-100 text-center inline-block">
+              className="max-w-[533px] w-[95%] md:w-[90%] mx-auto relative text-lg leading-[24px] font-medium text-dimgray-100 text-center mb-[44px] inline-block">
             Providing financial solutions that empowering both business and
             individuals to thrive and achieve remarkable growth milestones.
           </div>

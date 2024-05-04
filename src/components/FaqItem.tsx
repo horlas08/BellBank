@@ -1,10 +1,11 @@
 import { FunctionComponent, useMemo, type CSSProperties } from "react";
 
 export type FaqItemType = {
-  doINeedToPayForAnythingEl?: string;
-  plusCircle?: string;
-  showThereAreAContainer?: boolean;
-
+  title?: string;
+  show: boolean;
+  answer?: string;
+  index: number;
+  handleFold: (index: number)=>void,
   /** Style props */
   propWidth?: CSSProperties["width"];
   propWidth1?: CSSProperties["width"];
@@ -12,9 +13,11 @@ export type FaqItemType = {
 };
 
 const FaqItem: FunctionComponent<FaqItemType> = ({
-  doINeedToPayForAnythingEl,
-  plusCircle,
-  showThereAreAContainer,
+  title,
+  show,
+  answer,
+  index,
+    handleFold,
   propWidth,
   propWidth1,
   propColor,
@@ -38,40 +41,39 @@ const FaqItem: FunctionComponent<FaqItemType> = ({
   }, [propColor]);
 
   return (
-    <div className="self-stretch min-w-[400px] rounded-3xl bg-whitesmoke-100 flex flex-row items-start justify-between p-8 relative gap-[10px] text-left text-xl text-gray-500 font-aeonik">
+    <div className="self-stretch  min-w-[400px] rounded-3xl bg-whitesmoke-100 flex flex-row items-start justify-between p-8 relative gap-[10px] text-left text-xl text-gray-500 font-aeonik">
       <div
-        className="flex flex-col items-start justify-start gap-[16px] z-[0]"
-        style={frameDiv1Style}
+          className="flex flex-col items-start  lg:justify-start gap-[16px] z-[0]"
+          style={frameDiv1Style}
       >
         <b
-          className="w-[421px] relative leading-[29px] flex items-center"
-          style={doINeedStyle}
+            className="w-[421px] relative leading-[29px] flex items-center"
+            style={doINeedStyle}
         >
-          {doINeedToPayForAnythingEl}
+          {title}
         </b>
-        {showThereAreAContainer && (
-          <div
+        <div
             className="w-[503px] relative text-lg leading-[25px] font-medium text-dimgray-100 flex items-center"
             style={thereAreAContainerStyle}
-          >
+        >
             <span className="w-full">
-              <p className="m-0">
-                There are a few states that require a registration fee;
+             {show &&
+             <p className="m-0">
+                {answer}
               </p>
-              <p className="m-0">
-                however, most states are free. Besides that, the only
-              </p>
-              <p className="m-0">
-                recurring charge are your monthly/quarterly/annual filings.
-              </p>
+              }
             </span>
-          </div>
-        )}
+        </div>
       </div>
       <img
-        className="w-10 h-10 overflow-hidden shrink-0 z-[1]"
-        alt=""
-        src={plusCircle}
+          onClick={() => {
+            handleFold(index)
+            console.log(show)
+          }}
+          className="w-10 h-10 cursor-pointer overflow-hidden shrink-0 z-[1]"
+          alt=""
+
+          src={show? '/assets/images/svg/pluscircle.svg': '/assets/images/svg/pluscircle1.svg'}
       />
     </div>
   );

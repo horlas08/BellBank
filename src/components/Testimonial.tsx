@@ -2,14 +2,14 @@ import {FunctionComponent, useMemo, type CSSProperties} from "react";
 import TestimonialItem from "./TestimonialItem";
 
 export type TestimonialType = {
-    fa9238d96a7bdeceaf7eeJess?: string;
+    image?: string;
 
     /** Style props */
     propBorderRadius?: CSSProperties["borderRadius"];
 };
 
 const Testimonial: FunctionComponent<TestimonialType> = ({
-                                                             fa9238d96a7bdeceaf7eeJess,
+                                                             image,
                                                              propBorderRadius,
                                                          }) => {
     const fa9238d96a7bdeceaf7eeJesse20IconStyle: CSSProperties = useMemo(() => {
@@ -34,7 +34,7 @@ const Testimonial: FunctionComponent<TestimonialType> = ({
                 </div>
 
             </div>
-            <div className="flex w-[80%] justify-between mx-auto my-[30px]">
+            <div className="flex max-w-[80%] justify-between mx-auto my-[30px]">
                 <TestimonialItem title={'Founder, Fresh Sends'} username={'Jesse Hiss'}
                                  image={'/659fa9238d96a7bdeceaf7ee-jesse20hiss2020fresh20sendsjpeg@2x.png'}>
                     <span className="text-black">

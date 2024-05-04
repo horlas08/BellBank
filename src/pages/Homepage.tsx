@@ -22,30 +22,39 @@ const Homepage: FunctionComponent = () => {
 
                 <Banner/>
 
-                <div
-                    className="block md:flex flex-row w-[90%] mx-auto items-center justify-center my-4 gap-[50px] text-center text-lg text-dimgray-100">
+                <div className="block md:flex flex-row w-[85%] lg:w-[80%] mx-auto items-center justify-center my-4 gap-[50px] text-center text-lg text-dimgray-100">
                     <div className="mb-4 md:mb-0 relative font-medium">License and supported by:</div>
-                    <div className="flex flex-row sm:w-[80%] overflow-hidden mx-auto items-center justify-start gap-[50px]">
-                        <img
-                            className="relative h-[51px] object-cover"
-                            alt=""
-                            src="/image-769@2x.png"
-                        />
-                        <img
-                            className=" relative h-[41px] object-cover"
-                            alt=""
-                            src="/image-767@2x.png"
-                        />
-                        <img
-                            className=" relative h-[41px] object-cover"
-                            alt=""
-                            src="/image-768@2x.png"
-                        />
-                        <img
-                            className="relative h-[49px] object-cover"
-                            alt=""
-                            src="/image-770@2x.png"
-                        />
+                    <div className="flex  flex-row sm:w-[80%] sm:flex-wrap md:flex-nowrap mx-auto items-center justify-center lg:justify-evenly gap-4 md:gap-[50px]">
+                        <div className="">
+                            <img
+                                className="relative  h-[51px] object-cover"
+                                alt=""
+                                src="/image-769@2x.png"
+                            />
+                        </div>
+                        <div className="">
+
+                            <img
+                                className=" relative h-[41px] object-cover"
+                                alt=""
+                                src="/image-767@2x.png"
+                            />
+                        </div>
+                        <div className="">
+                            <img
+                                className=" relative h-[41px] object-cover"
+                                alt=""
+                                src="/image-768@2x.png"
+                            />
+                        </div>
+                        <div className="">
+                            <img
+                                className="relative h-[49px] object-cover"
+                                alt=""
+                                src="/image-770@2x.png"
+                            />
+                        </div>
+
                     </div>
                 </div>
 
@@ -58,7 +67,7 @@ const Homepage: FunctionComponent = () => {
                 <Api/>
                 <Faq/>
                 <Testimonial
-                    fa9238d96a7bdeceaf7eeJess="/659fa9238d96a7bdeceaf7ee-jesse20hiss2020fresh20sendsjpeg@2x.png"/>
+                    image="/659fa9238d96a7bdeceaf7ee-jesse20hiss2020fresh20sendsjpeg@2x.png"/>
                 <Footer/>
 
             </div>
