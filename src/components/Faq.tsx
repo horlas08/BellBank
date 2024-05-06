@@ -39,7 +39,7 @@ export default function Faq() {
 
     }
     return (
-        <div className={'relative w-full mx-auto py-[50px]'}>
+        <div className={'relative w-full mx-auto py-[50px] overflow-hidden'}>
         <div className={'relative w-[80%] flex-col lg:flex-row mx-auto flex justify-center items-start'}>
             <div className="h-[232px] flex flex-col items-start justify-start gap-[16px]">
                 <div className="flex w-full flex-col items-start justify-start gap-[16px]">

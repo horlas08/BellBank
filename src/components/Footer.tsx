@@ -1,22 +1,80 @@
-import { FunctionComponent, useMemo, type CSSProperties } from "react";
+import {FunctionComponent, useMemo, type CSSProperties} from "react";
 import {Link} from "react-router-dom";
 
 export type FrameComponentType = {
-  /** Style props */
-  propTop?: CSSProperties["top"];
+    /** Style props */
+    propTop?: CSSProperties["top"];
 };
 
-const Footer: FunctionComponent<FrameComponentType> = ({ propTop }) => {
-  const frameDiv2Style: CSSProperties = useMemo(() => {
-    return {
-      top: propTop,
-    };
-  }, [propTop]);
+const Footer: FunctionComponent<FrameComponentType> = ({propTop}) => {
+    const frameDiv2Style: CSSProperties = useMemo(() => {
+        return {
+            top: propTop,
+        };
+    }, [propTop]);
 
-  return (
+    return (
 
+        <footer className="">
+            <div className="overflow-hidden my-[45px] w-[80%] h-[340px] lg:h-[440px]  mx-auto rounded-2xl">
+                <img className=" w-full h-full object-cover"
+                     alt=""
+                     src="/image-761@2x.png"
+                />
+                <b className="max-w-[420px] z-10 relative leading-[60px] inline-block  shrink-0">
+                    Get an account that suits you.
+                </b>
+            </div>
 
+            <div className="footer sm:auto-rows-auto w-[90%] flex flex-col md:flex-row  p-10 place-content-around text-base-content">
+                <aside className="">
+                    <img
+                        className=""
+                        alt=""
+                        src="/assets/images/bellbank.png"
+                    />
+                    <p>ACME Industries Ltd.<br/>Providing reliable tech since 1992</p>
+                </aside>
+                <nav className="">
+                    <h6 className="footer-title">Services</h6>
+                    <a className="link link-hover">Branding</a>
+                    <a className="link link-hover">Design</a>
+                    <a className="link link-hover">Marketing</a>
+                    <a className="link link-hover">Advertisement</a>
+                </nav>
+                <nav className="">
+                    <h6 className="footer-title">Company</h6>
+                    <a className="link link-hover">About us</a>
+                    <a className="link link-hover">Contact</a>
+                    <a className="link link-hover">Jobs</a>
+                    <a className="link link-hover">Press kit</a>
+                </nav>
+                <nav className="">
+                    <h6 className="footer-title">Legal</h6>
+                    <a className="link link-hover">Terms of use</a>
+                    <a className="link link-hover">Privacy policy</a>
+                    <a className="link link-hover">Cookie policy</a>
+                </nav>
+            </div>
+            <div className="w-[80%] mx-auto text-center leading-[22px] text-gray-100">
+                <p className={'my-6'}>
+                    © 2024. Bellbank is a bank powered by BellBank MFB Limited and duly licensed by the Central Bank of
+                    Nigeria. Unauthorized reproduction or redistribution of copyrighted materials on this website and
+                    our digital media pages is strictly prohibited. BellBank Microfinance Bank Limited (RC: 1088210),
+                    Our registered address is at Old People Bank, Along Katsina Road, Tsanyawa L.G.A, Kano State,
+                    Nigeria.
+                    All deposits are insured by Nigeria Deposit Insurance Corporation(NDIC). Additional disclosures can
+                    be found in the resources section of our website.
+                </p>
+                <div className="relative text-gray-100 text-center">
+                    © 2024 BellBank MFB Limited. All rights reserved.
+                </div>
+            </div>
+        </footer>
 
+    );
+};
+{/*
       <div className="relative top-[83px]  w-[90%] mx-auto  text-center text-xs text-dimgray-200 font-aeonik !overflow-hidden"
         style={frameDiv2Style}
       >
@@ -29,9 +87,9 @@ const Footer: FunctionComponent<FrameComponentType> = ({ propTop }) => {
             />
 
             <div
-                className="absolute top-[calc(50%_-_147px)] left-[66px] flex flex-col items-start justify-start gap-[30px]">
+                className=" flex flex-col items-start justify-start gap-[30px]">
               <div className="flex flex-col items-start justify-start gap-[15px]">
-                <b className="w-[420px] relative leading-[60px] inline-block h-[132px] shrink-0">
+                <b className="max-w-[420px] relative leading-[60px] inline-block  shrink-0">
                   Get an account that suits you.
                 </b>
                 <div
@@ -53,7 +111,7 @@ const Footer: FunctionComponent<FrameComponentType> = ({ propTop }) => {
             <img
                 className="flex-1 relative max-w-full overflow-hidden h-[207px]"
               alt=""
-              src="/assets/images/svg/divcolumn.svg"
+              src="/assets/images/svg/BellBankGreen.svg"
           />
           <div className="flex-1 relative h-[207px]">
             <div className="absolute top-[0px] left-[29.9px] leading-[21px]">
@@ -161,8 +219,6 @@ const Footer: FunctionComponent<FrameComponentType> = ({ propTop }) => {
               className="absolute top-[-0.5px] left-[calc(50%_-_600.5px)] box-border w-[1201px] h-px border-t-[1px] border-solid border-whitesmoke-500"/>
         </div>
       </div>
-    </div>
-  );
-};
-
+    </div>*/
+}
 export default Footer;

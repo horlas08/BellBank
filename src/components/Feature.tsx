@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from "react";
 import FeatureCard from "./FeatureCard";
 import CardPill from "./CardPill";
-
+import { motion } from "framer-motion"
 const Feature: FunctionComponent = () => {
   return (
       <div
@@ -21,13 +21,27 @@ const Feature: FunctionComponent = () => {
             individuals to thrive and achieve remarkable growth milestones.
           </div>
         </div>
-          <div className={' my-2 md:my-0 flex md:flex-row flex-col w-[80%] justify-between gap-5 mx-auto mt-[50px]'}>
-              <FeatureCard title={'Personal Account'} subtitle={'Lorem ipsum dolor sit amet consectetur. Tortor nisl ullamcorperleo eget.'}>
-                  <CardPill color={'bg-darkslategray-200'} text={'Bill payments'} svg='/group-195@2x.png'/>
-                  <CardPill color={'bg-mediumseagreen'} text={'Personal Savings'} svg='/group-195@2x.png'/>
-                  <CardPill color={'bg-white'} text={'Credit cards'} svg='/group-195@2x.png'/>
+          <div className={' my-2 md:my-0 flex md:flex-row flex-wrap md:flex-nowrap flex-col w-[80%] justify-between gap-5 mx-auto mt-[50px]'}>
+
+              <FeatureCard title={'Personal Account'}
+                           subtitle={'Lorem ipsum dolor sit amet consectetur. Tortor nisl ullamcorperleo eget.'}>
+                  <motion.div initial={{scale: 0}} animate={{scale: 1}} transition={{
+                      type: "keyframes",
+                      stiffness: 260,
+                      damping: 20,
+                      duration: 0.7,
+                      delay: 0.2
+                  }}>
+                      <CardPill color={'bg-darkslategray-200'} text={'Bill payments'} svg='/group-195@2x.png'/>
+                  </motion.div>
+
+                      <CardPill color={'bg-mediumseagreen'} text={'Personal Savings'} svg='/group-195@2x.png'/>
+                      <CardPill color={'bg-white'} text={'Credit cards'} svg='/group-195@2x.png'/>
               </FeatureCard>
-              <FeatureCard title={'Personal Account'} subtitle={'Lorem ipsum dolor sit amet consectetur. Tortor nisl ullamcorperleo eget.'}>
+
+
+              <FeatureCard title={'Personal Account'}
+                           subtitle={'Lorem ipsum dolor sit amet consectetur. Tortor nisl ullamcorperleo eget.'}>
 
                   <div className=" relative h-[188px] text-mini text-dimgray-100">
                       <div className="flex justify-between items-center px-5 rounded-mini bg-white  h-[115px] ">
@@ -39,12 +53,8 @@ const Feature: FunctionComponent = () => {
                                   ₦32,000.40
                               </b>
                           </div>
-                          <div className="relative w-[71px] h-[71px] text-center text-black flex justify-center">
-                              <div className="absolute top-[0px] left-[0px] rounded-[50%] box-border w-[71px] h-[71px] border-[8px] border-solid border-whitesmoke-400"/>
-                              <div className="absolute top-[0px] left-[0px] rounded-[50%] box-border w-[71px] h-[71px] border-[6px] border-solid border-mediumseagreen"/>
-                              <div className=" flext h[71px] place-content-center font-medium">
-                                  85%
-                              </div>
+                          <div className="relative  text-center text-black flex justify-center">
+                             <img className='w-[50px] md-w-[auto] aspect-square' src={'assets/images/chart.png'} alt={''}/>
                           </div>
                       </div>
                       <div className=" top-[21px] left-[calc(50%_-_140px)] w-[280px] h-[18px]">
@@ -73,7 +83,7 @@ const Feature: FunctionComponent = () => {
                           <div className="mb-2 text-mini font-medium text-dimgray-100">
                               Select loan amount
                           </div>
-                          <div className=" w-[190px] h-4 mt-3">
+                          <div className=" mx-w-[190px] h-4 mt-3">
                               <div className="absolute rounded-81xl bg-whitesmoke-400 w-[190px] h-2.5"/>
                               <div className={'relative w-[156px]  grid justify-center items-center'}>
                                   <div className="rounded-81xl bg-mediumseagreen w-[156px] h-2.5"/>

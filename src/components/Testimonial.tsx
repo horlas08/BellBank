@@ -20,7 +20,7 @@ const Testimonial: FunctionComponent<TestimonialType> = ({
 
     return (
 
-        <div className={'relative  w-full mt-[50px]'}>
+        <div className={'relative  w-full mt-[50px] overflow-hidden'}>
             <div className={'w-full text-black text-center'}>
                 <h1 className="w-[678px] text-23xl mx-auto">
                     Loved by people and businesses that care about their

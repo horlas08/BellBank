@@ -1,6 +1,6 @@
 import {FunctionComponent, useMemo, type CSSProperties, useEffect, useRef} from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
+import { Pagination,EffectFade } from 'swiper/modules';
 
 export type SwiperItemType = {
     /** Style props */
@@ -15,7 +15,7 @@ const SwiperItem: FunctionComponent<SwiperItemType> = () => {
     // @ts-ignore
     return (
         <div className="w-full flex place-content-center mx-auto ">
-            <Swiper autoplay={true} pagination={true} modules={[Pagination]} className="mySwiper">
+            <Swiper autoplay={true} pagination={true}  effect="fade" modules={[Pagination, EffectFade]} className="mySwiper">
                 <SwiperSlide >
                     <img
                         className=" w-[80%] mx-auto rounded-xl mt-5"

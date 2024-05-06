@@ -22,9 +22,9 @@ const Homepage: FunctionComponent = () => {
 
                 <Banner/>
 
-                <div className="block md:flex flex-row w-[85%] lg:w-[80%] mx-auto items-center justify-center my-4 gap-[50px] text-center text-lg text-dimgray-100">
+                <div className="block md:flex flex-row w-[85%] lg:w-[60%] mx-auto items-center justify-center my-4 gap-[40px] text-center text-lg text-dimgray-100">
                     <div className="mb-4 md:mb-0 relative font-medium">License and supported by:</div>
-                    <div className="flex  flex-row sm:w-[80%] sm:flex-wrap md:flex-nowrap mx-auto items-center justify-center lg:justify-evenly gap-4 md:gap-[50px]">
+                    <div className="flex  flex-row w-[80%] md:w-[60%] justify-self-end flex-wrap md:flex-nowrap mx-auto items-center justify-center  gap-4 md:gap-[50px]">
                         <div className="">
                             <img
                                 className="relative  h-[51px] object-cover"
@@ -47,13 +47,7 @@ const Homepage: FunctionComponent = () => {
                                 src="/image-768@2x.png"
                             />
                         </div>
-                        <div className="">
-                            <img
-                                className="relative h-[49px] object-cover"
-                                alt=""
-                                src="/image-770@2x.png"
-                            />
-                        </div>
+
 
                     </div>
                 </div>
