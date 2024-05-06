@@ -141,17 +141,14 @@ const AboutUs: FunctionComponent = () => {
                 </div>
 
                 <div className=" w-full ">
-                    <img
-                        className="h-[500px] float-end w-full object-cover"
-                        alt=""
-                        src="/rectangle-34624375@2x.png"
-                    />
+                    <img className="h-[500px] float-end w-full object-cover" alt="" src="/rectangle-34624375@2x.png"/>
                 </div>
 
 
             </div>
 
             <Testimonial image="/659fa9238d96a7bdeceaf7ee-jesse20hiss2020fresh20sendsjpeg@2x.png"/>
+
             <Footer/>
         </div>
     );
