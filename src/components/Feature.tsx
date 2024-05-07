@@ -25,7 +25,7 @@ const Feature: FunctionComponent = () => {
 
               <FeatureCard title={'Personal Account'}
                            subtitle={'Lorem ipsum dolor sit amet consectetur. Tortor nisl ullamcorperleo eget.'}>
-                  <motion.div initial={{scale: 0}} animate={{scale: 1}} transition={{
+                  <motion.div initial={{scale: 0}} whileInView={{scale: 1}}  transition={{
                       type: "keyframes",
                       stiffness: 260,
                       damping: 20,

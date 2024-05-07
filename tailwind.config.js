@@ -28,6 +28,7 @@ module.exports = {
         },
         dimgray: {
           "100": "#636866",
+          "light": "rgba(66, 84, 102, 0.05)",
           "200": "#5b5a55",
           "300": "#505553",
         },
@@ -49,6 +50,7 @@ module.exports = {
         deepskyblue: "#33bbff",
         slategray: "#687887",
         seagreen: "#005f39",
+        lightgreen: "rgba(233, 246, 236, 1)",
         black: "#000",
         lightsteelblue: "rgba(186, 192, 212, 0.6)",
       },

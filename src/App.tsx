@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import {lazy, useEffect} from "react";
 import {
   Routes,
   Route,
@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import AboutUs from "./pages/AboutUs";
+import Portfolio from "./pages/Portfolio";
 
 // Import Swiper styles
 import 'swiper/css';
@@ -60,7 +61,9 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Homepage />} />
-      <Route path="/aboutus" element={<AboutUs />} />
+      <Route path="/about-us" element={<AboutUs />} />
+      <Route path="/portfolio" element={<Portfolio />} />
+      <Route path="*" element={<Homepage />} />
     </Routes>
   );
 }
