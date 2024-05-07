@@ -122,8 +122,8 @@ const AboutUs: FunctionComponent = () => {
                 </div>
 
             </div>
-            <div className="my-[70px] w-[90%] ml-auto overflow-hidden gap-[54px] flex ">
-                <div className="text-left rounded-lg max-w-[400px]  box-border text-base text-floralwhite">
+            <div className="my-[70px] w-full lg:w-[90%] lg:ml-auto overflow-hidden gap-[54px] flex flex-col lg:flex-row ">
+                <div className="text-center lg:text-left rounded-lg w-[70%] mx-auto lg:mx-0 lg:max-w-[400px]  box-border text-base text-floralwhite">
                     <div className={''}>
                         <div className="relative text-mediumseagreen uppercase font-medium">
                             Built for growth
@@ -140,11 +140,10 @@ const AboutUs: FunctionComponent = () => {
                     <AppBtn text={'See all open positions'}/>
                 </div>
 
-                <div className=" w-full ">
+                <div className="w-full ">
                     <img className="h-[500px] float-end w-full object-cover" alt="" src="/rectangle-34624375@2x.png"/>
                 </div>
-
-
+                
             </div>
 
             <Testimonial image="/659fa9238d96a7bdeceaf7ee-jesse20hiss2020fresh20sendsjpeg@2x.png"/>

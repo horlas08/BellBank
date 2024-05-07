@@ -21,12 +21,12 @@ const Footer: FunctionComponent<FrameComponentType> = ({propTop}) => {
                      alt=""
                      src="/image-761@2x.png"
                 />
-                <b className="max-w-[420px] z-10 relative leading-[60px] inline-block  shrink-0">
+                <b className="max-w-[420px] z-10 relative leading-[60px] ">
                     Get an account that suits you.
                 </b>
             </div>
 
-            <div className="footer sm:auto-rows-auto w-[90%] flex flex-col md:flex-row  p-10 place-content-around text-base-content">
+            <div className="footer sm:auto-rows-auto w-[90%] !flex flex-col sm:flex-row  p-10 place-content-around text-base-content">
                 <aside className="">
                     <img
                         className=""
@@ -35,26 +35,28 @@ const Footer: FunctionComponent<FrameComponentType> = ({propTop}) => {
                     />
                     <p>ACME Industries Ltd.<br/>Providing reliable tech since 1992</p>
                 </aside>
-                <nav className="">
-                    <h6 className="footer-title">Services</h6>
-                    <a className="link link-hover">Branding</a>
-                    <a className="link link-hover">Design</a>
-                    <a className="link link-hover">Marketing</a>
-                    <a className="link link-hover">Advertisement</a>
-                </nav>
-                <nav className="">
-                    <h6 className="footer-title">Company</h6>
-                    <a className="link link-hover">About us</a>
-                    <a className="link link-hover">Contact</a>
-                    <a className="link link-hover">Jobs</a>
-                    <a className="link link-hover">Press kit</a>
-                </nav>
-                <nav className="">
-                    <h6 className="footer-title">Legal</h6>
-                    <a className="link link-hover">Terms of use</a>
-                    <a className="link link-hover">Privacy policy</a>
-                    <a className="link link-hover">Cookie policy</a>
-                </nav>
+                <div className="flex flex-1 flex-col sm:flex-row w-full md:auto place-content-around">
+                    <nav className="flex flex-col">
+                        <h6 className="footer-title text-xl sm:text-inherit">Services</h6>
+                        <a className="link link-hover">Branding</a>
+                        <a className="link link-hover">Design</a>
+                        <a className="link link-hover">Marketing</a>
+                        <a className="link link-hover">Advertisement</a>
+                    </nav>
+                    <nav className="flex flex-col">
+                        <h6 className="footer-title text-xl sm:text-inherit">Company</h6>
+                        <a className="link link-hover">About us</a>
+                        <a className="link link-hover">Contact</a>
+                        <a className="link link-hover">Jobs</a>
+                        <a className="link link-hover">Press kit</a>
+                    </nav>
+                    <nav className="flex flex-col">
+                        <h6 className="footer-title text-xl sm:text-inherit">Legal</h6>
+                        <a className="link link-hover">Terms of use</a>
+                        <a className="link link-hover">Privacy policy</a>
+                        <a className="link link-hover">Cookie policy</a>
+                    </nav>
+                </div>
             </div>
             <div className="w-[80%] mx-auto text-center leading-[22px] text-gray-100">
                 <p className={'my-6'}>
