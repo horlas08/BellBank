@@ -25,7 +25,7 @@ const Feature: FunctionComponent = () => {
 
               <FeatureCard title={'Personal Account'}
                            subtitle={'Lorem ipsum dolor sit amet consectetur. Tortor nisl ullamcorperleo eget.'}>
-                  <motion.div initial={{scale: 0}} whileInView={{scale: 1}}  transition={{
+                  <motion.div initial={{scale: 0}} viewport={{once: true}} whileInView={{scale: 1}}  transition={{
                       type: "keyframes",
                       stiffness: 260,
                       damping: 20,
@@ -34,7 +34,6 @@ const Feature: FunctionComponent = () => {
                   }}>
                       <CardPill color={'bg-darkslategray-200'} text={'Bill payments'} svg='/group-195@2x.png'/>
                   </motion.div>
-
                       <CardPill color={'bg-mediumseagreen'} text={'Personal Savings'} svg='/group-195@2x.png'/>
                       <CardPill color={'bg-white'} text={'Credit cards'} svg='/group-195@2x.png'/>
               </FeatureCard>

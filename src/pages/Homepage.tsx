@@ -10,7 +10,7 @@ import Experience from "../components/Experience";
 import Protecting from "../components/Protecting";
 import Api from "../components/Api";
 import Faq from "../components/Faq";
-import ApproveBy from "./ApproveBy";
+import ApproveBy from "../components/ApproveBy";
 
 const Homepage: FunctionComponent = () => {
     return (
@@ -19,6 +19,7 @@ const Homepage: FunctionComponent = () => {
                 <Header
                     vector="/assets/images/svg/vector.svg"
                     sVG="/assets/images/svg/svg.svg"
+                    chevronColor={'white'}
                 />
 
                 <Banner/>

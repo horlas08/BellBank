@@ -26,12 +26,14 @@ const AboutUs: FunctionComponent = () => {
                     </div>
                 </div>
             </div>
+
             <Header
                 vector="/assets/images/svg/vector2.svg"
                 sVG="/assets/images/svg/svg3.svg"
                 propBackgroundColor="#fff"
-                propBorderBottom="dimgray"
+                propBorderBottom="border-gray-1005"
                 propColor="dimgray"
+                chevronColor="black"
 
             />
 

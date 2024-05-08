@@ -3,9 +3,9 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Testimonial from "../components/Testimonial";
 import AppBtn from "../components/AppBtn";
-import ApproveBy from "./ApproveBy";
+import ApproveBy from "../components/ApproveBy";
 
-const AboutUs: FunctionComponent = () => {
+const Personal: FunctionComponent = () => {
     return (
         <div className="w-full relative bg-white overflow-hidden text-left text-sm text-mediumseagreen font-aeonik">
 
@@ -13,8 +13,9 @@ const AboutUs: FunctionComponent = () => {
                 vector="/assets/images/svg/vector2.svg"
                 sVG="/assets/images/svg/svg3.svg"
                 propBackgroundColor="bg-lightgreen"
-                propBorderBottom="dimgray"
+                propBorderBottom="border-gray-1005"
                 propColor="dimgray"
+                chevronColor="black"
             />
             <div className="text-black flex flex-col items-center bg-lightgreen">
                 <div className="max-w-[550px] mx-auto mt-[20px]">
@@ -127,6 +128,7 @@ const AboutUs: FunctionComponent = () => {
 
                 </div>
             </div>
+
             <div className="w-full bg-darkslategray-500 py-[100px]">
                 <div className="w-[80%] mx-auto">
                     <div className="top  w-full text-center">
@@ -166,9 +168,38 @@ const AboutUs: FunctionComponent = () => {
                     </div>
                 </div>
             </div>
+            <div className="container mx-auto pt-[100px] pb-[200px]">
+                <div className="w-[90%] mx-auto ">
+                    <div className="flex md:flex-row flex-col justify-between gap-[70px]">
+                        <div className="left flex flex-col justify-between">
+                            <div className="top">
+                                <div className="relative text-mediumseagreen uppercase font-medium">Built for growth
+                                </div>
+                                <h3 className="text-16xl md:text-23xl text-black mt-0 max-w-[500px] text-left mb-0">
+                                    Grow globally with annual savings of $40k+</h3>
+                                <p className={'text-left max-w-[550px] font-aeonik text-gray-100'}>
+                                    Lorem ipsum dolor sit amet consectetur. Varius mattis quam risus eget proin posuere
+                                    eu
+                                    bibendum tristique dolor tortor.
+                                </p>
+                            </div>
+                            <div className="bottom">
+                                <h4 className="text-black text-[25px]">1. Download the app</h4>
+                                <p className="text-gray-100 w-[60%]">Download the BellBank app on Google Play store or Apple store to get started</p>
+                            </div>
+                        </div>
+                        <div className="right">
+                            <div className="bg-dimgray-light grid place-content-center p-[40px]">
+                                <img src="/public/assets/images/group_phone.png" alt={'d'}/>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
             <Footer/>
         </div>
     );
 };
 
-export default AboutUs;
+export default Personal;

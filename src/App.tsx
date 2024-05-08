@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import AboutUs from "./pages/AboutUs";
-import Portfolio from "./pages/Portfolio";
+import Portfolio from "./pages/Personal";
 
 // Import Swiper styles
 import 'swiper/css';
@@ -62,7 +62,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Homepage />} />
       <Route path="/about-us" element={<AboutUs />} />
-      <Route path="/portfolio" element={<Portfolio />} />
+      <Route path="/personal" element={<Portfolio />} />
       <Route path="*" element={<Homepage />} />
     </Routes>
   );
