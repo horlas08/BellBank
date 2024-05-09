@@ -14,27 +14,27 @@ const SwiperItem: FunctionComponent<SwiperItemType> = () => {
 
     // @ts-ignore
     return (
-        <div className="w-full flex place-content-center mx-auto ">
-            <Swiper autoplay={true} pagination={true}  effect="fade" modules={[Pagination, EffectFade]} className="mySwiper">
-                <SwiperSlide >
+        <div className="w-full flex place-content-center mx-auto">
+            <Swiper autoplay={true}  pagination={true}  effect="fade" modules={[Pagination, EffectFade]} className="mySwiper bg-red-700">
+                <SwiperSlide className={''} >
                     <img
-                        className=" w-[80%] mx-auto rounded-xl mt-5"
+                        className="max-w-[90%] w-[1500px] mx-auto rounded-xl mt-5"
                         alt=""
-                        src="/rectangle-34624197@2x.png"
+                        src="/public/assets/images/sw.png"
                     />
                 </SwiperSlide>
                 <SwiperSlide >
                     <img
-                        className=" w-[80%] mx-auto rounded-xl mt-5"
+                        className=" bg-red-700 mx-auto rounded-xl mt-5"
                         alt=""
-                        src="/rectangle-34624197@2x.png"
+                        src="/public/assets/images/sw1.png"
                     />
                 </SwiperSlide>
                 <SwiperSlide>
                     <img
-                        className=" w-[80%] mx-auto rounded-xl mt-5"
+                        className="w-[90%] mx-auto rounded-xl mt-5"
                         alt=""
-                        src="/rectangle-34624197@2x.png"
+                        src="/public/assets/images/sw2.png"
                     />
                 </SwiperSlide>
 

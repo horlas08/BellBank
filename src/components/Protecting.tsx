@@ -16,7 +16,7 @@ export default function Protecting() {
                     </div>
                 </div>
             </div>
-            <div className="w-[90%] relative  mx-auto text-xs text-gray-300">
+            <div className="w-[80%] relative  mx-auto text-xs text-gray-300">
 
                 {/*<div className="absolute z-[-1] w-full top-[14px] right-[0px] left-[0px] bg-whitesmoke-500 h-px"/>*/}
                 <div className="flex flex-col md:flex-row gap-x-5 gap-y-9  z-[-9] my-[50px]  justify-center w-full  mx-auto">

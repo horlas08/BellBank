@@ -1,5 +1,6 @@
 import {FunctionComponent, useMemo, type CSSProperties} from "react";
 import {Link} from "react-router-dom";
+import AppBtn from "./AppBtn";
 
 export type FrameComponentType = {
     /** Style props */
@@ -16,17 +17,28 @@ const Footer: FunctionComponent<FrameComponentType> = ({propTop}) => {
     return (
 
         <footer className="">
-            <div className="overflow-hidden my-[45px] w-[80%] h-[340px] lg:h-[440px]  mx-auto rounded-2xl">
-                <img className=" w-full h-full object-cover"
-                     alt=""
-                     src="/image-761@2x.png"
-                />
-                <b className="max-w-[420px] z-10 relative leading-[60px] ">
-                    Get an account that suits you.
-                </b>
+            <div className="w-[70%] flex flex-col justify-center pl-[50px] bg-[url('/image-761@2x.png')] bg-no-repeat bg-cover mx-auto relative rounded-3xl bg-cadetblue h-[440px] overflow-hidden text-38xl">
+
+                <div
+                    className=" flex flex-col items-start justify-start gap-[30px]">
+                    <div className="flex flex-col items-start justify-start gap-[15px]">
+                        <b className="max-w-[420px] relative leading-[60px] inline-block  shrink-0">
+                            Get an account that suits you.
+                        </b>
+                        <div
+                            className="w-[420px] relative text-lg leading-[24px] font-medium text-gray-1100 inline-block h-[72px] shrink-0">
+                            Lorem ipsum dolor sit amet consectetur. Sit sagittis
+                            pellentesque mauris venenatis diam. Nibh diam ipsum massa sed
+                            arcu. Sit sed egestas sempe.
+                        </div>
+                    </div>
+                   <AppBtn text={'Get started today'} />
+                </div>
             </div>
 
-            <div className="footer sm:auto-rows-auto w-[90%] !flex flex-col sm:flex-row  p-10 place-content-around text-base-content">
+
+            <div
+                className="footer sm:auto-rows-auto w-[90%] !flex flex-col sm:flex-row  p-10 place-content-around text-base-content">
                 <aside className="">
                     <img
                         className=""
@@ -218,7 +230,7 @@ const Footer: FunctionComponent<FrameComponentType> = ({propTop}) => {
             © 2024 BellBank MFB Limited. All rights reserved.
           </div>
           <div
-              className="absolute top-[-0.5px] left-[calc(50%_-_600.5px)] box-border w-[1201px] h-px border-t-[1px] border-solid border-whitesmoke-500"/>
+                className="absolute top-[-0.5px] left-[calc(50%_-_600.5px)] box-border w-[1201px] h-px border-t-[1px] border-solid border-whitesmoke-500"/>
         </div>
       </div>
     </div>*/

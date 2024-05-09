@@ -5,7 +5,7 @@ const Banner: FunctionComponent = () => {
   return (
       <div className="bg-darkslategray-500 pt-[100px] pb-[50px] text-left text-sm text-gray-1100 font-aeonik">
 
-          <div className="w-[80%] md:w-[90%] mx-auto block  md:flex justify-between">
+          <div className="w-[80%]  md:w-[80%] mx-auto block  md:flex justify-between">
               <div
                   className="flex flex-col items-start justify-start gap-[20px] lg:text-41xl md:text-38xl text-23xl text-white">
                   <b className="max-w-[634px]  relative leading-[68px] inline-block">
