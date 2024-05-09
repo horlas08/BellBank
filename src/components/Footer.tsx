@@ -16,29 +16,32 @@ const Footer: FunctionComponent<FrameComponentType> = ({propTop}) => {
 
     return (
 
-        <footer className="">
+        <footer className="w-full mt-[200px]">
             <div className="w-[70%] flex flex-col justify-center pl-[50px] bg-[url('/image-761@2x.png')] bg-no-repeat bg-cover mx-auto relative rounded-3xl bg-cadetblue h-[440px] overflow-hidden text-38xl">
 
                 <div
                     className=" flex flex-col items-start justify-start gap-[30px]">
                     <div className="flex flex-col items-start justify-start gap-[15px]">
-                        <b className="max-w-[420px] relative leading-[60px] inline-block  shrink-0">
+                        <b className="max-w-[420px] text-white relative text-xl sm:text-16xl md:text-23xl leading-[60px] ">
                             Get an account that suits you.
                         </b>
                         <div
-                            className="w-[420px] relative text-lg leading-[24px] font-medium text-gray-1100 inline-block h-[72px] shrink-0">
+                            className="max-w-[420px] relative text-sm lg:text-lg leading-[24px] font-medium text-gray-1100 inline-block h-[72px] shrink-0">
                             Lorem ipsum dolor sit amet consectetur. Sit sagittis
                             pellentesque mauris venenatis diam. Nibh diam ipsum massa sed
                             arcu. Sit sed egestas sempe.
                         </div>
                     </div>
-                   <AppBtn text={'Get started today'} />
+                    <div
+                        className="w-[166px] rounded-lg cursor-pointer  bg-mediumseagreen h-[45px] flex flex-row items-center justify-center py-[11px] px-5 box-border text-center text-mini text-floralwhite">
+                        <div className="relative font-medium">Get started today</div>
+                    </div>
                 </div>
             </div>
 
 
             <div
-                className="footer sm:auto-rows-auto w-[90%] !flex flex-col sm:flex-row  p-10 place-content-around text-base-content">
+                className="footer  sm:auto-rows-auto w-[80%] my-[25px] mx-auto !flex flex-col sm:flex-row p-10 !justify-center text-base-content">
                 <aside className="">
                     <img
                         className=""
@@ -47,23 +50,23 @@ const Footer: FunctionComponent<FrameComponentType> = ({propTop}) => {
                     />
                     <p>ACME Industries Ltd.<br/>Providing reliable tech since 1992</p>
                 </aside>
-                <div className="flex flex-1 flex-col sm:flex-row w-full md:auto place-content-around">
+                <div className="flex  flex-1 flex-col sm:flex-row w-full md:auto justify-around items-start">
                     <nav className="flex flex-col">
-                        <h6 className="footer-title text-xl sm:text-inherit">Services</h6>
+                        <h6 className="footer-title mt-0 text-xl sm:text-inherit">Services</h6>
                         <a className="link link-hover">Branding</a>
                         <a className="link link-hover">Design</a>
                         <a className="link link-hover">Marketing</a>
                         <a className="link link-hover">Advertisement</a>
                     </nav>
                     <nav className="flex flex-col">
-                        <h6 className="footer-title text-xl sm:text-inherit">Company</h6>
+                        <h6 className="mt-0 footer-title text-xl sm:text-inherit">Company</h6>
                         <a className="link link-hover">About us</a>
                         <a className="link link-hover">Contact</a>
                         <a className="link link-hover">Jobs</a>
                         <a className="link link-hover">Press kit</a>
                     </nav>
                     <nav className="flex flex-col">
-                        <h6 className="footer-title text-xl sm:text-inherit">Legal</h6>
+                        <h6 className="mt-0 footer-title text-xl sm:text-inherit">Legal</h6>
                         <a className="link link-hover">Terms of use</a>
                         <a className="link link-hover">Privacy policy</a>
                         <a className="link link-hover">Cookie policy</a>

@@ -5,18 +5,16 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
+import 'swiper/css';
+import 'swiper/css/effect-fade';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
 import Homepage from "./pages/Homepage";
 import AboutUs from "./pages/AboutUs";
 import Portfolio from "./pages/Personal";
+import Product from "./pages/Product";
 
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/effect-fade';
-import 'swiper/css/navigation';
-// import './styles.css';
-
-// import required modules
 
 function App() {
   const action = useNavigationType();
@@ -38,7 +36,7 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-      case "/aboutus":
+      case "/about-us":
         title = "";
         metaDescription = "";
         break;
@@ -63,6 +61,7 @@ function App() {
       <Route path="/" element={<Homepage />} />
       <Route path="/about-us" element={<AboutUs />} />
       <Route path="/personal" element={<Portfolio />} />
+      <Route path="/product" element={<Product />} />
       <Route path="*" element={<Homepage />} />
     </Routes>
   );
