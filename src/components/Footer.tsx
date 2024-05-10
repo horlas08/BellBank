@@ -52,28 +52,46 @@ const Footer: FunctionComponent<FrameComponentType> = ({propTop}) => {
                 </aside>
                 <div className="flex flex-1 flex-col sm:flex-row  w-full md:auto justify-around items-start">
                     <nav className="flex flex-col my-[25px] sm:my-0">
-                        <h6 className="footer-title mt-0 text-xl sm:text-inherit">Services</h6>
-                        <a className="link link-hover">Branding</a>
-                        <a className="link link-hover">Design</a>
-                        <a className="link link-hover">Marketing</a>
-                        <a className="link link-hover">Advertisement</a>
+                        <h6 className="footer-title mt-0 text-xl sm:text-inherit">Company</h6>
+                        <a className="link link-hover">About Us</a>
+                        <a className="link link-hover">Security</a>
+                        <a className="link link-hover">Help center</a>
+                        <a className="link link-hover">API documentation</a>
                     </nav>
                     <nav className="flex flex-col my-[25px] sm:my-0">
-                        <h6 className="mt-0 footer-title text-xl sm:text-inherit">Company</h6>
-                        <a className="link link-hover">About us</a>
-                        <a className="link link-hover">Contact</a>
-                        <a className="link link-hover">Jobs</a>
-                        <a className="link link-hover">Press kit</a>
+                        <h6 className="mt-0 footer-title text-xl sm:text-inherit">Resources</h6>
+                        <a className="link link-hover">Blog</a>
+                        <a className="link link-hover">FAQs</a>
+                        <a className="link link-hover">Terms and condition</a>
+                        <a className="link link-hover">Privacy Policy</a>
                     </nav>
                     <nav className="flex flex-col my-[25px] sm:my-0">
-                        <h6 className="mt-0 footer-title text-xl sm:text-inherit">Legal</h6>
-                        <a className="link link-hover">Terms of use</a>
-                        <a className="link link-hover">Privacy policy</a>
-                        <a className="link link-hover">Cookie policy</a>
+                        <h6 className="mt-0 footer-title text-xl sm:text-inherit">Get in touch</h6>
+                        <a className="link link-hover">LinkedIn</a>
+                        <a className="link link-hover">Instagram</a>
+                        <a className="link link-hover">Twitter</a>
+                        <a className="link link-hover">Facebook</a>
+                    </nav>
+                    <nav className="flex flex-col my-[25px] sm:my-0">
+                        <h6 className="mt-0 footer-title text-xl sm:text-inherit">
+                            Join over 2k+ using BellBank
+                        </h6>
+
+                        <div className="relative mt-2 rounded-md shadow-sm">
+                            <input type="text" name="sub" id="sub"
+                                   className="block !border-gray-200 rounded-md !border-[2px] py-2 my-4 px-3
+                                   text-black
+                                    placeholder:text-gray-100
+                                     sm:text-sm sm:leading-6"
+                                   placeholder="Your email"/>
+                        </div>
+
+
+                        <AppBtn text={'Subscribe Now'}/>
                     </nav>
                 </div>
             </div>
-            <div className="w-[80%] mx-auto text-center leading-[22px] text-gray-100">
+            <div className="w-[80%] mx-auto text-left leading-[22px] text-gray-100">
                 <p className={'my-6'}>
                     © 2024. Bellbank is a bank powered by BellBank MFB Limited and duly licensed by the Central Bank of
                     Nigeria. Unauthorized reproduction or redistribution of copyrighted materials on this website and

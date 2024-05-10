@@ -54,3 +54,7 @@ body{
   border: none;
   outline: none;
 }
+
+nav a{
+  margin-bottom: 10px;
+}
