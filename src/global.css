@@ -58,3 +58,7 @@ body{
 nav a{
   margin-bottom: 10px;
 }
+
+input,input:focus{
+  border: 1px solid;
+}

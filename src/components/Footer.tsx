@@ -41,7 +41,7 @@ const Footer: FunctionComponent<FrameComponentType> = ({propTop}) => {
 
 
             <div
-                className="footer  sm:auto-rows-auto w-[80%] my-[25px] mx-auto !flex flex-col sm:flex-row p-10 !justify-center text-base-content">
+                className="footer  sm:auto-rows-auto w-[80%] my-[25px] mx-auto !flex flex-col md:flex-row p-10 !justify-center text-base-content">
                 <aside className="">
                     <img
                         className=""
@@ -77,17 +77,18 @@ const Footer: FunctionComponent<FrameComponentType> = ({propTop}) => {
                             Join over 2k+ using BellBank
                         </h6>
 
-                        <div className="relative mt-2 rounded-md shadow-sm">
-                            <input type="text" name="sub" id="sub"
-                                   className="block !border-gray-200 rounded-md !border-[2px] py-2 my-4 px-3
+                        <div className="relative mt-2 overflow-hidden rounded-md shadow-sm">
+                            <input type="text"
+                                   className="w-fit focus:border-gray-100 border-gray-100 rounded-md focus:border-[2px]
+                                   border-[2px] py-3 my-4 px-5
                                    text-black
-                                    placeholder:text-gray-100
-                                     sm:text-sm sm:leading-6"
+                                   placeholder:text-gray-100
+                                   sm:text-sm sm:leading-6"
                                    placeholder="Your email"/>
                         </div>
 
 
-                        <AppBtn text={'Subscribe Now'}/>
+                        <AppBtn text={'Subscribe Now'} className={'w-fit md:w-full '}/>
                     </nav>
                 </div>
             </div>
