@@ -83,7 +83,7 @@ const Header: FunctionComponent<DivcPJLVType> = ({
                         onClick={() => setMobileMenuOpen(true)}
                     >
 
-                        <Bars3Icon className="h-6 w-6" color={chevronColor} aria-hidden="true"/>
+                        <Bars3Icon className="h-6 w-6 cursor-pointer" color={chevronColor} aria-hidden="true"/>
                     </div>
                 </div>
                 {/*larger area */}
@@ -141,7 +141,7 @@ const Header: FunctionComponent<DivcPJLVType> = ({
                     <Link to="/personal" style={productsStyle} className="text-sm text-gray-1100 no-underline font-semibold leading-6 .text-gray-1100">
                         Personal
                     </Link>
-                    <a href="#" style={productsStyle} className="text-sm text-gray-1100 no-underline font-semibold leading-6 .text-gray-1100">
+                    <a href="/company" style={productsStyle} className="text-sm text-gray-1100 no-underline font-semibold leading-6 .text-gray-1100">
                         Companys
                     </a>
                 </Popover.Group>
@@ -162,9 +162,8 @@ const Header: FunctionComponent<DivcPJLVType> = ({
                 </div>
             </nav>
             <Dialog className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
-                <div className="fixed inset-0 z-10"/>
-                <Dialog.Panel
-                    className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                <div className="fixed  inset-0 z-10"/>
+                <Dialog.Panel className="fixed  inset-y-0 right-0 z-10 w-full max-w-[90%] overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                     <div className="flex items-center justify-between">
                         <Link to="#" className="-m-1.5 p-1.5 !focus-visible:border-none">
 
@@ -174,16 +173,14 @@ const Header: FunctionComponent<DivcPJLVType> = ({
                                 src={'./Bellgreen.png'}
                             />
                         </Link>
-                        <div
-
-                            className="-m-2.5 rounded-md p-2.5"
+                        <div className="-m-2.5 rounded-md p-2.5"
                             onClick={() => setMobileMenuOpen(false)}
                         >
 
-                            <XMarkIcon className="h-6 w-6" fill={chevronColor} aria-hidden="true"/>
+                            <XMarkIcon className="h-6 w-6 cursor-pointer" fill={chevronColor} aria-hidden="true"/>
                         </div>
                     </div>
-                    <div className="mt-6 flow-root">
+                    <div className="mt-6  flow-root">
                         <div className="-my-6 divide-y divide-gray-500/10">
                             <div className="space-y-2 py-6">
 
@@ -191,7 +188,7 @@ const Header: FunctionComponent<DivcPJLVType> = ({
                                     {({open}) => (
                                         <>
                                             <Disclosure.Button
-                                                className="flex w-full items-center bg-transparent justify-between  border-0 rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 .text-gray-1100 hover:bg-gray-50">
+                                                className="flex  w-full items-center bg-transparent justify-between  border-0 rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 .text-gray-1100 hover:bg-gray-50">
                                                 Product
                                                 <ChevronDownIcon
                                                     className={classNames(open ? 'rotate-180' : '', 'h-5 w-5 flex-none')}
@@ -220,13 +217,13 @@ const Header: FunctionComponent<DivcPJLVType> = ({
                                     About us
                                 </Link>
                                 <Link
-                                    to="#"
+                                    to="/personal"
                                     className="-mx-3 block font-aeonik rounded-lg px-3 py-2 text-base text-black no-underline font-semibold leading-7 .text-gray-1100 hover:bg-gray-50"
                                 >
                                     Personal
                                 </Link>
                                 <Link
-                                    to="#"
+                                    to="/company"
                                     className="-mx-3 block font-aeonik rounded-lg px-3 py-2 text-black no-underline text-base font-semibold leading-7 .text-gray-1100 hover:bg-gray-50"
                                 >
                                     Company

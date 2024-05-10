@@ -13,7 +13,7 @@ import 'swiper/css/pagination';
 import Homepage from "./pages/Homepage";
 import AboutUs from "./pages/AboutUs";
 import Portfolio from "./pages/Personal";
-import Product from "./pages/Product";
+import Company from "./pages/Company";
 
 
 function App() {
@@ -61,7 +61,7 @@ function App() {
       <Route path="/" element={<Homepage />} />
       <Route path="/about-us" element={<AboutUs />} />
       <Route path="/personal" element={<Portfolio />} />
-      <Route path="/product" element={<Product />} />
+      <Route path="/company" element={<Company />} />
       <Route path="*" element={<Homepage />} />
     </Routes>
   );

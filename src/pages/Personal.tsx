@@ -144,9 +144,8 @@ const Personal: FunctionComponent = () => {
                         </p>
                     </div>
                     <div className="bottom my-[30px]">
-                        <div className="flex justify-center mt-[100px] gap-5 flex-card">
-                            <div
-                                className="body border-l-[1px] border-opacity-[50%] pl-2 border-solid border-l-mediumseagreen">
+                        <div className="flex flex-col md:flex-row justify-center mt-[100px] gap-[35px] md:gap-5 flex-card">
+                            <div className="body md:border-l-[1px] border-opacity-[50%] pl-2 border-solid border-l-mediumseagreen">
                                 <img src='/public/assets/images/p1.png' alt={''}/>
                                 <h5 className={'text-white text-xl my-1'}>Protection and peace of mind</h5>
                                 <p className={'mt-1 text-gray-1100 font-inter w-[79%]'}>
@@ -154,14 +153,14 @@ const Personal: FunctionComponent = () => {
                                     components for a professional look and feel.
                                 </p>
                             </div>
-                            <div className="body border-l-[1px] border-opacity-[50%] pl-2 border-solid border-l-mediumseagreen">
+                            <div className="body md:border-l-[1px] border-opacity-[50%] pl-2 border-solid border-l-mediumseagreen">
                                 <img src='/public/assets/images/p2.png' alt={''}/>
                                 <h5 className={'text-white text-xl my-1'}>Protection and peace of mind</h5>
                                 <p className={'mt-1 text-gray-1100 font-inter w-[79%]'}>
                                     Glide apps adapt to look great on mobile, desktop, and tablet for a consistent, unified user experience across your app.
                                 </p>
                             </div>
-                            <div className="body border-l-[1px] border-opacity-[50%] pl-2 border-solid border-l-mediumseagreen">
+                            <div className="body md:border-l-[1px] border-opacity-[50%] pl-2 border-solid border-l-mediumseagreen">
                                 <img src='/public/assets/images/p3.png' alt={''}/>
                                 <h5 className={'text-white text-xl my-1'}>Protection and peace of mind</h5>
                                 <p className={'mt-1 text-gray-1100 font-inter w-[85%]'}>
@@ -194,7 +193,7 @@ const Personal: FunctionComponent = () => {
                             </div>
                         </div>
                         <div className="right">
-                            <div className="bg-dimgray-light grid place-content-center p-[40px]">
+                            <div className="md:bg-dimgray-light grid place-content-center p-[40px]">
                                 <img src="/public/assets/images/group_phone.png" alt={'d'}/>
                             </div>
                         </div>
