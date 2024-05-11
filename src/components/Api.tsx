@@ -166,7 +166,7 @@ export default function  Api() {
                             <img
                                 className="absolute top-[calc(50%_-_44.5px)] left-[20px] w-4 h-4 overflow-hidden object-cover"
                                 alt=""
-                                src="/svg1@2x.png"
+                                src="/assets/images/svg1@2x.png"
                             />
                             <div
                                 className="absolute top-[49px] left-[44px] text-sm-7 leading-[20px] flex items-center w-[331.9px] h-5">
@@ -175,7 +175,7 @@ export default function  Api() {
                             <img
                                 className="absolute top-[calc(50%_-_20.5px)] left-[20px] w-4 h-4 overflow-hidden object-cover"
                                 alt=""
-                                src="/svg1@2x.png"
+                                src="/assets/images/svg1@2x.png"
                             />
                             <div
                                 className="absolute top-[73px] left-[44px] leading-[20px] flex items-center w-[241.5px] h-5">
@@ -184,7 +184,7 @@ export default function  Api() {
                             <img
                                 className="absolute top-[calc(50%_+_3.5px)] left-[20px] w-4 h-4 overflow-hidden object-cover"
                                 alt=""
-                                src="/svg1@2x.png"
+                                src="/assets/images/svg1@2x.png"
                             />
                             <div
                                 className="absolute top-[97px] left-[44px] text-sm-7 leading-[20px] flex items-center w-[386.1px] h-5">

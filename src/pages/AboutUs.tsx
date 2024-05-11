@@ -40,14 +40,14 @@ const AboutUs: FunctionComponent = () => {
                     <img
                         className="!w-auto h-[429px] object-cover"
                         alt=""
-                        src="/rectangle-34624433@2x.png"
+                        src="/assets/images/rectangle-34624433@2x.png"
                     />
                 </div>
                 <div className="overflow-hidden rounded-xl">
                     <img
                         className="  !w-full !lg:max-w-[468px] h-[429px] object-cover"
                         alt=""
-                        src="/rectangle-34624349@2x.png"
+                        src="/assets/images/rectangle-34624349@2x.png"
                     />
                 </div>
 
@@ -125,7 +125,7 @@ const AboutUs: FunctionComponent = () => {
                 </div>
 
                 <div className="w-full ">
-                    <img className="h-[500px] float-end w-full object-cover" alt="" src="/rectangle-34624375@2x.png"/>
+                    <img className="h-[500px] float-end w-full object-cover" alt="" src="/assets/images/rectangle-34624375@2x.png"/>
                 </div>
                 
             </div>

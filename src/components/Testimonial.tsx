@@ -37,7 +37,7 @@ const Testimonial: FunctionComponent<TestimonialType> = ({
             <div
                 className="flex flex-col md:flex-row gap-[30px] max-w-[80%] md:justify-between justify-center mx-auto my-[60px]">
                 <TestimonialItem title={'Founder, Fresh Sends'} username={'Jesse Hiss'}
-                                 image={'/659fa9238d96a7bdeceaf7ee-jesse20hiss2020fresh20sendsjpeg@2x.png'}>
+                                 image={'/assets/images/testimonial.png'}>
                     <span className="text-black">
                           <p className="m-0">
                               Lorem ipsum dolor sit amet consectetur. Lorem
@@ -54,7 +54,7 @@ const Testimonial: FunctionComponent<TestimonialType> = ({
                       </span>
                 </TestimonialItem>
                 <TestimonialItem title={'Founder, Fresh Sends'} username={'Jesse Hiss'}
-                                 image={'/frame-1618872600@2x.png'}>
+                                 image={'/assets/images/testimonial2.png'}>
                         <span className="text-black">
                           <p className="m-0">
                               Lorem ipsum dolor sit amet consectetur. Lorem
@@ -71,7 +71,7 @@ const Testimonial: FunctionComponent<TestimonialType> = ({
                       </span>
                 </TestimonialItem>
                 <TestimonialItem title={'Founder, Fresh Sends'} username={'Jesse Hiss'}
-                                 image={'/659fa9238d96a7bdeceaf7ee-jesse20hiss2020fresh20sendsjpeg@2x.png'}>
+                                 image={'/assets/images/testimonial.png'}>
                     <span className="text-black">
                           <p className="m-0">
                               Lorem ipsum dolor sit amet consectetur. Lorem

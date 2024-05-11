@@ -23,7 +23,7 @@ const ApproveBy: FunctionComponent = () => {
                     <img
                         className="relative  h-[51px] object-cover"
                         alt=""
-                        src="/image-769@2x.png"
+                        src="/assets/images/image-769@2x.png"
                     />
                 </div>
                 <div className="">
@@ -31,14 +31,14 @@ const ApproveBy: FunctionComponent = () => {
                     <img
                         className=" relative h-[41px] object-cover"
                         alt=""
-                        src="/image-767@2x.png"
+                        src="/assets/images/image-767@2x.png"
                     />
                 </div>
                 <div className="">
                     <img
                         className=" relative h-[41px] object-cover"
                         alt=""
-                        src="/image-768@2x.png"
+                        src="/assets/images/image-768@2x.png"
                     />
                 </div>
 

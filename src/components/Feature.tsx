@@ -32,10 +32,10 @@ const Feature: FunctionComponent = () => {
                       duration: 0.7,
                       delay: 0.2
                   }}>
-                      <CardPill color={'bg-darkslategray-200'} text={'Bill payments'} svg='/group-195@2x.png'/>
+                      <CardPill color={'bg-darkslategray-200'} text={'Bill payments'} svg='/assets/images/group-195@2x.png'/>
                   </motion.div>
-                      <CardPill color={'bg-mediumseagreen'} text={'Personal Savings'} svg='/group-195@2x.png'/>
-                      <CardPill color={'bg-white'} text={'Credit cards'} svg='/group-195@2x.png'/>
+                      <CardPill color={'bg-mediumseagreen'} text={'Personal Savings'} svg='/assets/images/group-195@2x.png'/>
+                      <CardPill color={'bg-white'} text={'Credit cards'} svg='/assets/images/group-195@2x.png'/>
               </FeatureCard>
 
 

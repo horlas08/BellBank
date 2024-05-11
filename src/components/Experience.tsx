@@ -31,7 +31,7 @@ export default function Experience() {
                                 <img
                                     className=" w-[193.8px] h-[270.3px] object-contain"
                                     alt=""
-                                    src="/card-5-1@2x.png"
+                                    src="/assets/images/card-5-1@2x.png"
                                 />
                             </div>
                             <div className=" relative w-[201.1px]  h-[274px]">
@@ -40,7 +40,7 @@ export default function Experience() {
                                 <img
                                     className=" w-[195.8px] h-[267.7px] object-contain"
                                     alt=""
-                                    src="/card-8-2@2x.png"
+                                    src="/assets/images/card-8-2@2x.png"
                                 />
                             </div>
                         </div>
@@ -55,7 +55,7 @@ export default function Experience() {
                             <img
                                 className="absolute top-[78px] left-[calc(50%_-_151.5px)] w-[303px] h-[559px] object-cover"
                                 alt=""
-                                src="/image-773@2x.png"
+                                src="/assets/images/image-773@2x.png"
                             />
 
                         </div>

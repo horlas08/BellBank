@@ -35,7 +35,7 @@ const Homepage: FunctionComponent = () => {
                 <Api/>
                 <Faq/>
                 <Testimonial
-                    image="/659fa9238d96a7bdeceaf7ee-jesse20hiss2020fresh20sendsjpeg@2x.png"/>
+                    image="/assets/images/testimonial.png"/>
                 <Footer/>
 
             </div>

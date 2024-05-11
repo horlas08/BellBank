@@ -17,7 +17,7 @@ const Footer: FunctionComponent<FrameComponentType> = ({propTop}) => {
     return (
 
         <footer className="w-full mt-[200px]">
-            <div className="w-[70%] flex flex-col justify-center pl-[50px] bg-[url('/image-761@2x.png')] bg-no-repeat bg-cover mx-auto relative rounded-3xl bg-cadetblue h-[440px] overflow-hidden text-38xl">
+            <div className="w-[70%] flex flex-col justify-center pl-[50px] bg-[url('/assets/images/image-761@2x.png')] bg-no-repeat bg-cover mx-auto relative rounded-3xl bg-cadetblue h-[440px] overflow-hidden text-38xl">
 
                 <div
                     className=" flex flex-col items-start justify-start gap-[30px]">

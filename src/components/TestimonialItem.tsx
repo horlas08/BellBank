@@ -15,7 +15,7 @@ const TestimonialItem: FunctionComponent<TestimonialItemType> = ({image,username
                 <div className="flex flex-col items-start justify-center gap-[20px]">
                     <div className="w-[136px] h-[76px] overflow-hidden flex flex-col items-center justify-center">
                         <img className="w-[136px] relative h-[76px] overflow-hidden shrink-0 object-cover" alt=""
-                             src="/64da4217614b0b7b23201f7e-freshsendssvg@2x.png"/>
+                             src="/assets/images/64da4217614b0b7b23201f7e-freshsendssvg@2x.png"/>
                     </div>
                     <div className="md:max-w-[325px] md:my-auto my-5 relative leading-[26px] font-medium flex items-center">
                         {children}
