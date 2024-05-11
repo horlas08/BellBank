@@ -8,7 +8,7 @@ export type FrameComponentType = {
 };
 
 const Footer: FunctionComponent<FrameComponentType> = ({propTop}) => {
-    const frameDiv2Style: CSSProperties = useMemo(() => {
+    const styleMemo: CSSProperties = useMemo(() => {
         return {
             top: propTop,
         };
@@ -17,23 +17,23 @@ const Footer: FunctionComponent<FrameComponentType> = ({propTop}) => {
     return (
 
         <footer className="w-full mt-[200px]">
-            <div className="w-[70%] flex flex-col justify-center pl-[50px] bg-[url('/assets/images/image-761@2x.png')] bg-no-repeat bg-cover mx-auto relative rounded-3xl bg-cadetblue h-[440px] overflow-hidden text-38xl">
+            <div className="w-[70%] flex flex-col justify-center py-5 md:py-0 px-9 md:px-0 !md:pl-[50px] bg-[url('/assets/images/image-761@2x.png')] bg-no-repeat bg-cover mx-auto relative rounded-3xl bg-cadetblue h-[240px] md:h-[440px] overflow-hidden text-38xl">
 
                 <div
                     className=" flex flex-col items-start justify-start gap-[30px]">
                     <div className="flex flex-col items-start justify-start gap-[15px]">
-                        <b className="max-w-[420px] text-white relative text-xl sm:text-16xl md:text-23xl leading-[60px] ">
+                        <b className="max-w-[420px] text-white relative text-xl sm:text-16xl md:text-23xl leading-9 md:leading-[60px] ">
                             Get an account that suits you.
                         </b>
                         <div
-                            className="max-w-[420px] relative text-sm lg:text-lg leading-[24px] font-medium text-gray-1100 inline-block h-[72px] shrink-0">
+                            className="max-w-[420px] relative text-sm lg:text-lg leading-[24px] font-medium text-gray-1100 inline-block md:h-[72px] shrink-0">
                             Lorem ipsum dolor sit amet consectetur. Sit sagittis
                             pellentesque mauris venenatis diam. Nibh diam ipsum massa sed
                             arcu. Sit sed egestas sempe.
                         </div>
                     </div>
                     <div
-                        className="w-[166px] rounded-lg cursor-pointer  bg-mediumseagreen h-[45px] flex flex-row items-center justify-center py-[11px] px-5 box-border text-center text-mini text-floralwhite">
+                        className="w-[166px] rounded-lg cursor-pointer  bg-mediumseagreen md:h-[45px] flex flex-row items-center justify-center py-[11px] px-5 box-border text-center text-mini text-floralwhite">
                         <div className="relative font-medium">Get started today</div>
                     </div>
                 </div>

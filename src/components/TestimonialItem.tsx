@@ -18,7 +18,7 @@ const TestimonialItem: FunctionComponent<TestimonialItemType> = ({image,username
                         <img className="max-w-[110px] relative max-h-[100px] " alt=""
                              src={imageTop}/>
                     </div>
-                    <div className="md:max-w-[325px] md:my-auto my-5 relative leading-[26px] font-medium flex items-center">
+                    <div className="md:max-w-[325px] md:my-auto my-3 relative leading-[26px] font-medium flex items-center">
                         {children}
                     </div>
 

@@ -14,22 +14,23 @@ import Faq from "./Faq";
 const Notification: FunctionComponent = () => {
     return (
 
-        <div className="relative  bg-gray-500 h-[45px] text-xs text-white">
-            <div className="relative h-full justify-center items-center  flex flex-row  gap-[10px]">
+        <div className="relative  bg-gray-500 min-h-[45px] text-xs text-white">
+            <div className="relative h-full justify-center items-center p-3 flex flex-row gap-5 md:gap-[10px]">
                 <div className="rounded-81xl bg-gray-800 flex flex-row items-center justify-center py-1 px-[15px]">
                     <div className="relative">New</div>
                 </div>
-                <div className="w-[485px] relative h-4 text-smi">
-                    <div className="absolute top-[0px] left-[0px]">
+                <div className=" relative  text-smi">
+                    <div className="">
                         Lorem ipsum dolor sit amet consectetur. Odio libero nulla aliquet
                         tortor. Turpis...
                     </div>
-                    <img
-                        className="absolute cursor-pointer top-[0px] left-[469px] w-4 h-4 overflow-hidden"
-                        alt=""
-                        src="/assets/images/svg/link--svg.svg"
-                    />
+
                 </div>
+                <img
+                    className=" cursor-pointer  h-4"
+                    alt=""
+                    src="/assets/images/svg/link--svg.svg"
+                />
             </div>
         </div>
     );

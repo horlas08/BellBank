@@ -138,7 +138,7 @@ const Personal: FunctionComponent = () => {
                 <div className="w-[80%] mx-auto">
                     <div className="top  w-full text-center">
                         <p>Designed for developers</p>
-                        <h2 className={'text-23xl text-white max-w-[700px] mx-auto my-2'}>Build quickly with our
+                        <h2 className={'text-16xl md:text-23xl text-white max-w-[700px] mx-auto my-2'}>Build quickly with our
                             powerful and easy-to-use documented APIs</h2>
                         <p className={'text-gray-1100 font-bold max-w-[500px] mx-auto '}>
                             Bellbank offers a hassle-free, protected and efficient way to instantly send, receive, pay
@@ -149,7 +149,7 @@ const Personal: FunctionComponent = () => {
                         <div className="flex flex-col md:flex-row justify-center mt-[100px] gap-[35px] md:gap-5 flex-card">
                             <div className="body md:border-l-[1px] border-opacity-[50%] pl-2 border-solid border-l-mediumseagreen">
                                 <img src='/assets/images/p1.png' alt={''}/>
-                                <h5 className={'text-white text-xl my-1'}>Protection and peace of mind</h5>
+                                <h5 className={'text-white text-xl my-3'}>Protection and peace of mind</h5>
                                 <p className={'mt-1 text-gray-1100 font-inter w-[79%]'}>
                                     Elevate your brand with expertly designed themes, fonts, colors, and high-quality
                                     components for a professional look and feel.
@@ -157,14 +157,14 @@ const Personal: FunctionComponent = () => {
                             </div>
                             <div className="body md:border-l-[1px] border-opacity-[50%] pl-2 border-solid border-l-mediumseagreen">
                                 <img src='/assets/images/p2.png' alt={''}/>
-                                <h5 className={'text-white text-xl my-1'}>Protection and peace of mind</h5>
+                                <h5 className={'text-white text-xl my-3'}>Protection and peace of mind</h5>
                                 <p className={'mt-1 text-gray-1100 font-inter w-[79%]'}>
                                     Glide apps adapt to look great on mobile, desktop, and tablet for a consistent, unified user experience across your app.
                                 </p>
                             </div>
                             <div className="body md:border-l-[1px] border-opacity-[50%] pl-2 border-solid border-l-mediumseagreen">
                                 <img src='/assets/images/p3.png' alt={''}/>
-                                <h5 className={'text-white text-xl my-1'}>Protection and peace of mind</h5>
+                                <h5 className={'text-white text-xl my-3'}>Protection and peace of mind</h5>
                                 <p className={'mt-1 text-gray-1100 font-inter w-[85%]'}>
                                     Glide apps update their design automatically with current trends so your apps will always remain modern and fresh.
                                 </p>

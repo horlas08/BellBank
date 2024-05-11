@@ -38,14 +38,14 @@ const AboutUs: FunctionComponent = () => {
                 className="relative w-[75%] overflow-hidden my-[70px] mx-auto flex-col lg:flex-row flex gap-6 justify-center">
                 <div className="overflow-hidden flex-1 rounded-xl">
                     <img
-                        className="!w-auto h-[429px] object-cover"
+                        className="!w-auto h-[200px] md:h-[429px] object-cover"
                         alt=""
                         src="/assets/images/rectangle-34624433@2x.png"
                     />
                 </div>
                 <div className="overflow-hidden rounded-xl">
                     <img
-                        className="  !w-full !lg:max-w-[468px] h-[429px] object-cover"
+                        className="  !w-full !lg:max-w-[468px] h-[200px] md:h-[429px] object-cover"
                         alt=""
                         src="/assets/images/rectangle-34624349@2x.png"
                     />
@@ -55,9 +55,9 @@ const AboutUs: FunctionComponent = () => {
 
             <div className="relative w-[85%] flex-col lg:flex-row items-start mx-auto flex justify-between">
                 <div
-                    className="relative lg:max-w-[425px] overflow-hidden flex flex-col items-start justify-end pt-0 px-0 pb-[100px] box-border gap-[10px]">
+                    className="relative lg:max-w-[425px] overflow-hidden flex flex-col items-start justify-end pt-0 px-0 pb-[50px] md:pb-[100px] box-border gap-[10px]">
                     <div className="relative uppercase font-medium">Built for growth</div>
-                    <b className="w-auto relative text-23xl leading-[50px] inline-block text-gray-500 ">
+                    <b className="w-auto relative text-[20px] md:text-23xl leading-[30px] md:leading-[50px] inline-block text-gray-500 ">
                         {`Constantly coming up with new creative ideas & working on improving the existing methods in consulting.`}</b>
                 </div>
 

@@ -48,7 +48,7 @@ const Company: FunctionComponent = () => {
                     <div className="top text-center mb-[5rem]">
                         <div className="relative text-mediumseagreen uppercase font-medium">Built for growth
                         </div>
-                        <h3 className="text-16xl md:text-23xl text-black mt-0 mx-auto md:w-[50%] text-center mb-0">
+                        <h3 className="text-[25px] md:text-23xl text-black mt-0 mx-auto text-center md:w-[50%] text-center mb-0">
                             All the tools you need to run your business with ease</h3>
                         <p className={'text-center max-w-[550px] mx-auto font-aeonik text-gray-100'}>
                             Lorem ipsum dolor sit amet consectetur. Varius mattis quam risus eget proin posuere
@@ -60,7 +60,7 @@ const Company: FunctionComponent = () => {
                         <div className="left md:w-[35%] flex flex-col justify-center">
 
                             <div className="_">
-                                <h4 className="text-black text-[35px]">A free bank account to power your business</h4>
+                                <h4 className="text-black text-[25px] md:text-[35px]">A free bank account to power your business</h4>
                                 <p className="text-gray-100">
                                     Open a free bank account in your business name, in minutes. Access round the clock support, with no hidden fees and complete control over your account.
                                 </p>
@@ -69,7 +69,7 @@ const Company: FunctionComponent = () => {
                         </div>
                         <div className="right">
                             <div className="grid place-content-center p-[40px]">
-                                <img src="/assets/images/w_ads.png" alt={'d'}/>
+                                <img src="/assets/images/w_ads.png" className={'w-[94%] aspect-square'} alt={'d'}/>
                             </div>
                         </div>
 

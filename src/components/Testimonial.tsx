@@ -12,7 +12,7 @@ const Testimonial: FunctionComponent<TestimonialType> = ({
                                                              image,
                                                              propBorderRadius,
                                                          }) => {
-    const fa9238d96a7bdeceaf7eeJesse20IconStyle: CSSProperties = useMemo(() => {
+    const styleMemo: CSSProperties = useMemo(() => {
         return {
             borderRadius: propBorderRadius,
         };
@@ -22,12 +22,12 @@ const Testimonial: FunctionComponent<TestimonialType> = ({
 
         <div className={'relative  w-full mt-[50px] overflow-hidden'}>
             <div className={'w-full text-black text-center'}>
-                <h1 className="w-[678px] text-23xl mx-auto">
+                <h1 className="md:w-[678px] text-16xl md:text-23xl mx-auto">
                     Loved by people and businesses that care about their
                     finances
                 </h1>
                 <div
-                    className="w-[544px] text-3xl  mx-auto">
+                    className="md:w-[544px] md:text-3xl text-sm px-4 md:px-0  mx-auto">
                     Providing financial solutions that empowering both
                     business and individuals to thrive and achieve
                     remarkable growth milestones.
@@ -35,7 +35,7 @@ const Testimonial: FunctionComponent<TestimonialType> = ({
 
             </div>
             <div
-                className="flex flex-col md:flex-row gap-[30px] max-w-[80%] md:justify-between justify-center mx-auto my-[60px]">
+                className="flex flex-col md:flex-row gap-y-[5rem] md:gap-[30px] max-w-[80%] md:justify-between justify-center mx-auto my-[60px]">
                 <TestimonialItem title={'Founder, Fresh Sends'} username={'Jesse Hiss'}
                                  image={'/assets/images/testimonial/testimonial.png'} imageTop={'/assets/images/testimonial/1.png'}>
                     <span className="text-black">
@@ -124,7 +124,7 @@ const Testimonial: FunctionComponent<TestimonialType> = ({
                                     className="w-full flex-1 relative max-w-[64px] overflow-hidden max-h-full object-cover"
                                     alt=""
                                     src={fa9238d96a7bdeceaf7eeJess}
-                                    style={fa9238d96a7bdeceaf7eeJesse20IconStyle}/>
+                                    style={styleMemo}/>
                             </div>
                             <div className="h-[51px] flex flex-col items-start justify-start">
                                 <b className="relative leading-[22px]">Kevin Chanthasiriphan</b>
