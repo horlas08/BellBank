@@ -25,7 +25,7 @@ const Notification: FunctionComponent = () => {
                         tortor. Turpis...
                     </div>
                     <img
-                        className="absolute top-[0px] left-[469px] w-4 h-4 overflow-hidden"
+                        className="absolute cursor-pointer top-[0px] left-[469px] w-4 h-4 overflow-hidden"
                         alt=""
                         src="/assets/images/svg/link--svg.svg"
                     />

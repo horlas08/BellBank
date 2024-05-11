@@ -2,20 +2,21 @@ import React, {FunctionComponent} from "react";
 
 type TestimonialItemType ={
     image: string,
+    imageTop: string,
     username: string,
     title: string,
     children: React.ReactNode
 }
 
-const TestimonialItem: FunctionComponent<TestimonialItemType> = ({image,username,title, children}) => {
+const TestimonialItem: FunctionComponent<TestimonialItemType> = ({image,username,title,imageTop, children}) => {
     return (
         <div className="flex flex-col items-start justify-start gap-[24px]">
             <div className="mx-au">
 
                 <div className="flex flex-col items-start justify-center gap-[20px]">
-                    <div className="w-[136px] h-[76px] overflow-hidden flex flex-col items-center justify-center">
-                        <img className="w-[136px] relative h-[76px] overflow-hidden shrink-0 object-cover" alt=""
-                             src="/assets/images/64da4217614b0b7b23201f7e-freshsendssvg@2x.png"/>
+                    <div className="w-auto h-auto overflow-hidden flex flex-col items-center justify-center">
+                        <img className="max-w-[110px] relative max-h-[100px] " alt=""
+                             src={imageTop}/>
                     </div>
                     <div className="md:max-w-[325px] md:my-auto my-5 relative leading-[26px] font-medium flex items-center">
                         {children}
