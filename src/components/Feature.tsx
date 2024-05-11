@@ -25,72 +25,25 @@ const Feature: FunctionComponent = () => {
 
               <FeatureCard title={'Personal Account'}
                            subtitle={'Lorem ipsum dolor sit amet consectetur. Tortor nisl ullamcorperleo eget.'}>
-                  <motion.div initial={{scale: 0}} viewport={{once: true}} whileInView={{scale: 1}}  transition={{
-                      type: "keyframes",
-                      stiffness: 260,
-                      damping: 20,
-                      duration: 0.7,
-                      delay: 0.2
-                  }}>
-                      <CardPill color={'bg-darkslategray-200'} text={'Bill payments'} svg='/assets/images/group-195@2x.png'/>
-                  </motion.div>
-                      <CardPill color={'bg-mediumseagreen'} text={'Personal Savings'} svg='/assets/images/group-195@2x.png'/>
-                      <CardPill color={'bg-white'} text={'Credit cards'} svg='/assets/images/group-195@2x.png'/>
+                  <div className=" relative h-[188px] text-mini text-dimgray-100">
+                      <img className={' w-full mx-auto'} src={'/assets/gif/PersonalAccount.gif'} height={188} alt={''}/>
+
+                  </div>
               </FeatureCard>
 
 
-              <FeatureCard title={'Personal Account'}
+              <FeatureCard title={'Business account'}
                            subtitle={'Lorem ipsum dolor sit amet consectetur. Tortor nisl ullamcorperleo eget.'}>
 
                   <div className=" relative h-[188px] text-mini text-dimgray-100">
-                      <div className="flex justify-between items-center px-5 rounded-mini bg-white  h-[115px] ">
-                          <div className="h-[54px]">
-                              <div className=" font-medium mb-2">
-                                  Total Expenses
-                              </div>
-                              <b className=" text-xl text-black">
-                                  ₦32,000.40
-                              </b>
-                          </div>
-                          <div className="relative  text-center text-black flex justify-center">
-                             <img className='w-[50px] md-w-[auto] aspect-square' src={'assets/images/chart.png'} alt={''}/>
-                          </div>
-                      </div>
-                      <div className=" top-[21px] left-[calc(50%_-_140px)] w-[280px] h-[18px]">
+                      <img className={' w-full mx-auto'} src={'/assets/gif/Loans.gif'} height={188} alt={''}/>
 
-                      </div>
-                      <div className={'invoice bg-white rounded-mini flex justify-between items-center p-3'}>
-
-                      <div className=" top-[0px] left-[0px] flex flex-row items-start justify-start gap-[6px]">
-                          <img
-                              className="w-[18px] relative h-[18px] overflow-hidden shrink-0"
-                              alt=""
-                              src="/assets/images/svg/file01.svg"
-                          />
-                          <div className="relative font-medium">Invoices</div>
-                      </div>
-                      <div className=" top-[4px] left-[156px] rounded-81xl bg-whitesmoke-400 w-[124px] h-2.5"/>
-                      </div>
                   </div>
               </FeatureCard>
-              <FeatureCard title={'Loan'} subtitle={'Lorem ipsum dolor sit amet consectetur. Tortor nisl ullamcorperleo eget.'}>
+              <FeatureCard title={'Loans'} subtitle={'Lorem ipsum dolor sit amet consectetur. Tortor nisl ullamcorperleo eget.'}>
                   <div className="mt-5 rounded-mini bg-white w-full h-[168px] mb-6 text-xl text-black">
-                      <div className="h-[100%] justify-center w-full flex flex-col  mx-auto align-middle items-center">
-                          <b className="mb-2">
-                              ₦2,000,000.00
-                          </b>
-                          <div className="mb-2 text-mini font-medium text-dimgray-100">
-                              Select loan amount
-                          </div>
-                          <div className=" mx-w-[190px] h-4 mt-3">
-                              <div className="absolute rounded-81xl bg-whitesmoke-400 w-[190px] h-2.5"/>
-                              <div className={'relative w-[156px]  grid justify-center items-center'}>
-                                  <div className="rounded-81xl bg-mediumseagreen w-[156px] h-2.5"/>
-                                  <div className="absolute rounded-[50%] bg-mediumseagreen  right-0 w-4 h-4 "/>
-                              </div>
+                      <img className={' w-full mx-auto'} src={'/assets/gif/BusinessAccount.gif'} height={188} alt={''}/>
 
-                          </div>
-                      </div>
                   </div>
               </FeatureCard>
 
