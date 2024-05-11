@@ -4,18 +4,20 @@ import Footer from "../components/Footer";
 import Testimonial from "../components/Testimonial";
 import AppBtn from "../components/AppBtn";
 import ApproveBy from "../components/ApproveBy";
+import Notification from "../components/Notification";
 
 const Company: FunctionComponent = () => {
     return (
         <div className="w-full relative bg-white overflow-hidden text-left text-sm text-mediumseagreen font-aeonik">
-
+            <Notification/>
             <Header
                 vector="/assets/images/svg/vector.svg"
                 sVG="/assets/images/svg/svg3.svg"
                 propBackgroundColor="bg-mediumseagreen"
                 propBorderBottom="border-gray-1005"
-                propColor="dimgray"
+                propColor="white"
                 chevronColor="black"
+                buttonBgColor={'bg-black'}
             />
             <div className="text-black flex flex-col items-center bg-mediumseagreen">
                 <div className="max-w-[550px] mx-auto mt-[20px]">

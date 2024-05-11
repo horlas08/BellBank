@@ -27,7 +27,7 @@ function classNames(...classes: any[]) {
     return classes.filter(Boolean).join(' ')
 }
 
-export type DivcPJLVType = {
+export type HeaderProps = {
     vector?: string;
     sVG: string;
 
@@ -36,16 +36,20 @@ export type DivcPJLVType = {
     propBorderBottom?: CSSProperties["borderBottom"];
     propColor?: CSSProperties["color"];
     chevronColor?: CSSProperties["color"];
+    textColor?: CSSProperties["color"];
+    buttonBgColor?: CSSProperties["color"];
 
 };
 
-const Header: FunctionComponent<DivcPJLVType> = ({
+const Header: FunctionComponent<HeaderProps> = ({
                                                      vector,
                                                      sVG,
                                                      propBackgroundColor = 'bg-darkslategray-500',
                                                      propBorderBottom ='border-gray-800' ,
                                                      propColor = 'whitesmoke',
-                                                     chevronColor = 'black'
+                                                     chevronColor = 'black',
+                                                     textColor = 'text-gray-1100',
+                                                    buttonBgColor = 'bg-mediumseagreen '
                                                  }) => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
@@ -92,7 +96,7 @@ const Header: FunctionComponent<DivcPJLVType> = ({
                         <Popover.Button as={'div'}  onMouseEnter={()=>{
 
                         }}
-                            className={`flex cursor-pointer dropDown bg-transparent  border-0 focus-visible:border-none items-center gap-x-1 text-sm font-semibold leading-6 .text-gray-1100 ${propColor}`}>
+                            className={`flex cursor-pointer dropDown bg-transparent  border-0 focus-visible:border-none items-center gap-x-1 text-sm leading-6 .text-gray-1100 ${propColor}`}>
                             Product
                             <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" fill={chevronColor}
                                              aria-hidden="true"/>
@@ -134,18 +138,18 @@ const Header: FunctionComponent<DivcPJLVType> = ({
                         </Transition>
                     </Popover>
 
-                    <Link to="/about-us" style={productsStyle} className={` text-sm  no-underline font-semibold leading-6 `}>
+                    <Link to="/about-us" style={productsStyle} className={` text-sm  no-underline leading-6 `}>
                         About us
                     </Link>
 
-                    <Link to="/personal" style={productsStyle} className="text-sm text-gray-1100 no-underline font-semibold leading-6 .text-gray-1100">
+                    <Link to="/personal" style={productsStyle} className={`text-sm  no-underline leading-6`}>
                         Personal
                     </Link>
-                    <a href="/company" style={productsStyle} className="text-sm text-gray-1100 no-underline font-semibold leading-6 .text-gray-1100">
-                        Companys
-                    </a>
+                    <Link to="/company" style={productsStyle} className={`text-sm  no-underline  leading-6`}>
+                        Company
+                    </Link>
                 </Popover.Group>
-                <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+                <div className="hidden lg:flex gap-x-[20px] lg:flex-1 lg:justify-end">
 
                     <div className="w-[42px] relative h-12">
                     <Link to={'/'} style={productsStyle} className={'text-white hover:text-white'}>
@@ -158,7 +162,7 @@ const Header: FunctionComponent<DivcPJLVType> = ({
                         </Link>
 
                     </div>
-                    <AppBtn text={'Create account'}/>
+                    <AppBtn text={'Create account'} bg={`${buttonBgColor}`}/>
                 </div>
             </nav>
             <Dialog className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>

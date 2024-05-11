@@ -11,10 +11,12 @@ import Protecting from "../components/Protecting";
 import Api from "../components/Api";
 import Faq from "../components/Faq";
 import ApproveBy from "../components/ApproveBy";
+import Notification from "../components/Notification";
 
 const Homepage: FunctionComponent = () => {
     return (
         <div className="w-full relative bg-white h-full text-left text-xs text-white font-aeonik overflow-hidden!">
+            <Notification/>
             <div className="w-full">
                 <Header
                     vector="/assets/images/svg/vector.svg"

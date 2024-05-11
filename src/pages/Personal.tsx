@@ -4,11 +4,12 @@ import Footer from "../components/Footer";
 import Testimonial from "../components/Testimonial";
 import AppBtn from "../components/AppBtn";
 import ApproveBy from "../components/ApproveBy";
+import Notification from "../components/Notification";
 
 const Personal: FunctionComponent = () => {
     return (
         <div className="w-full relative bg-white overflow-hidden text-left text-sm text-mediumseagreen font-aeonik">
-
+            <Notification/>
             <Header
                 vector="/assets/images/svg/vector2.svg"
                 sVG="/assets/images/svg/svg3.svg"
@@ -16,6 +17,7 @@ const Personal: FunctionComponent = () => {
                 propBorderBottom="border-gray-1005"
                 propColor="dimgray"
                 chevronColor="black"
+
             />
             <div className="text-black flex flex-col items-center bg-lightgreen">
                 <div className="max-w-[550px] mx-auto mt-[20px]">
