@@ -7,7 +7,7 @@ export default function  Api() {
     return (
         <div className={'relative w-full'}>
             <div className=" bg-darkslategray-500 w-full">
-                <div className="flex justify-between p-[4rem] md:py-[10rem] flex-col lg:flex-row overflow-hidden mx-auto gap-10">
+                <div className="flex justify-between p-[2rem] md:p-[4rem] md:py-[10rem] flex-col lg:flex-row overflow-hidden mx-auto gap-10">
                     <div className="relative w-full lg:w-[50%] flex flex-col items-stretch justify-start gap-[35px] text-left text-xs text-mediumseagreen font-inter">
                         <div className="max-w-[550px] flex flex-col items-start justify-start gap-[25px]">
                             <div className="flex flex-col items-start justify-start gap-[12px]">
@@ -15,7 +15,7 @@ export default function  Api() {
                                     Designed for developers
                                 </div>
 
-                                <b className=" relative text-23xl inline-block font-aeonik text-white">
+                                <b className=" relative text-16xl  md:text-23xl inline-block font-aeonik text-white">
                                     Build quickly with our powerful and easy-to-use
                                     documented APIs
                                 </b>
@@ -35,7 +35,7 @@ export default function  Api() {
                                     alt=""
                                     src="/assets/images/svg/checkmarkcircle01.svg"
                                 />
-                                <div className="w-[360px] relative leading-[24px] flex items-center shrink-0">
+                                <div className="md:w-[360px] relative leading-[24px] flex items-center">
                                     Collect one-time and recurring payments from your
                                     app or website
                                 </div>
@@ -46,7 +46,7 @@ export default function  Api() {
                                     alt=""
                                     src="/assets/images/svg/checkmarkcircle01.svg"
                                 />
-                                <div className="w-[360px] relative leading-[20px] flex items-center shrink-0">
+                                <div className="md:w-[360px] relative leading-[20px] flex items-center">
                                     Make instant transfers
                                 </div>
                             </div>
@@ -56,7 +56,7 @@ export default function  Api() {
                                     alt=""
                                     src="/assets/images/svg/checkmarkcircle01.svg"
                                 />
-                                <div className="w-[360px] relative leading-[20px] flex items-center shrink-0">
+                                <div className="md:w-[360px] relative leading-[20px] flex items-center">
                                     Retrieve all your transaction and customer data
                                 </div>
                             </div>
@@ -66,7 +66,7 @@ export default function  Api() {
                                     alt=""
                                     src="/assets/images/svg/checkmarkcircle01.svg"
                                 />
-                                <div className="w-[360px] relative leading-[20px] flex items-center shrink-0">
+                                <div className="md:w-[360px] relative leading-[20px] flex items-center">
                                     Verify the identity of customers
                                 </div>
                             </div>
@@ -158,49 +158,63 @@ export default function  Api() {
                                 </div>
                             </div>
                         </div>
-                        <div className="relative bg-darkslategray-600 box-border h-[191px] text-left text-sm-9 text-lightgray border-t-[1px] border-solid border-darkslategray-300">
+                        <div className="relative bg-darkslategray-600  py-4 box-border text-left text-sm-9 text-lightgray border-t-[1px] border-solid border-darkslategray-300">
                             <div
-                                className="absolute top-[24.5px] left-[20px] leading-[20px] flex items-center w-[318.8px] h-5">
+                                className="leading-[20px]pt-5 p-4 flex items-center max-w-[318.8px] h-5">
                                 Programmatically create ACH debits and credits.
                             </div>
-                            <img
-                                className="absolute top-[calc(50%_-_44.5px)] left-[20px] w-4 h-4 overflow-hidden object-cover"
-                                alt=""
-                                src="/assets/images/svg1@2x.png"
-                            />
-                            <div
-                                className="absolute top-[49px] left-[44px] text-sm-7 leading-[20px] flex items-center w-[331.9px] h-5">
-                                We default to same-day ACH and hit every window.
+                            <div className="w-full p-4 ">
+                                <div className="flex gap-4 items-center">
+                                    <img
+                                        className=" w-4 h-4 overflow-hidden object-cover"
+                                        alt=""
+                                        src="/assets/images/svg1@2x.png"
+                                    />
+                                    <div
+                                        className="text-sm-[9px] md: leading-[20px] flex items-center w-[331.9px]">
+                                        We default to same-day ACH and hit every window.
+                                    </div>
+
+                                </div>
+                                <div className="flex gap-4 items-center">
+                                    <img
+                                        className=" w-4 h-4 overflow-hidden object-cover"
+                                        alt=""
+                                        src="/assets/images/svg1@2x.png"
+                                    />
+                                    <div
+                                        className="leading-[20px] flex items-center w-[241.5px]">
+                                        Returns are correlated automatically.
+                                    </div>
+                                </div>
+                                <div className="flex gap-4 items-center">
+                                    <img
+                                        className=" w-4 h-4 overflow-hidden object-cover"
+                                        alt=""
+                                        src="/assets/images/svg1@2x.png"
+                                    />
+                                    <div
+                                        className="text-sm-7 leading-[20px] flex items-center w-[386.1px]">
+                                        Webhooks keep you up-to-date on each transfer's
+                                        lifecycle.
+                                    </div>
+                                </div>
                             </div>
-                            <img
-                                className="absolute top-[calc(50%_-_20.5px)] left-[20px] w-4 h-4 overflow-hidden object-cover"
-                                alt=""
-                                src="/assets/images/svg1@2x.png"
-                            />
+
+
                             <div
-                                className="absolute top-[73px] left-[44px] leading-[20px] flex items-center w-[241.5px] h-5">
-                                Returns are correlated automatically.
-                            </div>
-                            <img
-                                className="absolute top-[calc(50%_+_3.5px)] left-[20px] w-4 h-4 overflow-hidden object-cover"
-                                alt=""
-                                src="/assets/images/svg1@2x.png"
-                            />
-                            <div
-                                className="absolute top-[97px] left-[44px] text-sm-7 leading-[20px] flex items-center w-[386.1px] h-5">
-                                Webhooks keep you up-to-date on each transfer's
-                                lifecycle.
-                            </div>
-                            <div
-                                className="absolute h-[calc(100%_-_161px)] top-[141px] bottom-[20px] left-[20px] rounded-lg bg-mediumseagreen w-[206.3px] text-sm text-darkslategray-500">
-                                <Link to={'/'} className="text-white no-underline  absolute top-[calc(50%_-_10px)] left-[10px] leading-[20px] font-medium">
+                                className=" rounded-lg ml-4 flex justify-between items-center p-1 bg-mediumseagreen w-[206.3px] text-sm text-darkslategray-500">
+
+
+                                <Link to={'/'}
+                                      className="text-black no-underline ml-2 leading-[20px] font-medium">
                                     Read our documentation
                                 </Link>
                                 <img
-                                    className="absolute top-[calc(50%_-_8px)] left-[calc(50%_+_82.15px)] w-4 h-4 overflow-hidden"
-                                    alt=""
-                                    src="/assets/images/svg/svg2.svg"
-                                />
+                                className=" w-4 h-4 overflow-hidden"
+                                alt=""
+                                src="/assets/images/svg/svg2.svg"
+                            />
                             </div>
                         </div>
                     </div>

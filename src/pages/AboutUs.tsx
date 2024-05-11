@@ -112,11 +112,11 @@ const AboutUs: FunctionComponent = () => {
                         <div className="relative text-mediumseagreen uppercase font-medium">
                             Built for growth
                         </div>
-                        <b className=" relative text-23xl text-gray-600">
+                        <b className=" relative text-[26px] md:text-23xl text-gray-600">
                             Come work with us
                         </b>
                     </div>
-                    <p className="text-lg leading-[25px] font-medium text-dimgray-100 ">Come do meaningful work with
+                    <p className="md:text-lg text-sm leading-[20px] md:leading-[25px] font-medium text-dimgray-100 ">Come do meaningful work with
                         kind, smart
                         colleagues who're invested
                         in your growth, If you’re ready to join us in powering the dreams of

@@ -44,7 +44,7 @@ export default function Faq() {
             <div className="h-[232px] flex flex-col items-start justify-start gap-[16px]">
                 <div className="flex w-full flex-col items-start justify-start gap-[16px]">
 
-                    <b className="lg:w-[406px] w-full relative text-23xl flex text-gray-400 items-center">
+                    <b className="lg:w-[406px] w-full relative text-16xl md:text-23xl flex text-gray-400 items-center">
                                       <span className="w-full">
                                         <p className="m-0 block text-center lg:hidden">Let's put your mind at ease.</p>
                                         <p className="m-0  hidden lg:block">Let's put your</p>
@@ -55,7 +55,7 @@ export default function Faq() {
                 <div className="lg:w-[361px] relative text-lg leading-[25px] font-medium flex items-center text-dimgray-100">
                                     <span className="w-full my-[20px]">
                                       <span>{`Can’t find the answer you’re looking for? Reach out to our `}</span>
-                                      <span className="text-mediumseagreen">
+                                      <span className="cursor-pointer text-mediumseagreen">
                                         customer support
                                       </span>
                                       <span> team.</span>

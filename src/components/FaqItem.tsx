@@ -22,41 +22,54 @@ const FaqItem: FunctionComponent<FaqItemType> = ({
   propWidth1,
   propColor,
 }) => {
-  const frameDiv1Style: CSSProperties = useMemo(() => {
+  const frameStyle: CSSProperties = useMemo(() => {
     return {
       width: propWidth,
     };
   }, [propWidth]);
 
-  const doINeedStyle: CSSProperties = useMemo(() => {
+  const titleStyle: CSSProperties = useMemo(() => {
     return {
       width: propWidth1,
     };
   }, [propWidth1]);
 
-  const thereAreAContainerStyle: CSSProperties = useMemo(() => {
+  const AnswerStyle: CSSProperties = useMemo(() => {
     return {
       color: propColor,
     };
   }, [propColor]);
 
   return (
-    <div className="self-stretch  min-w-[400px] rounded-3xl bg-whitesmoke-100 flex flex-row items-start justify-between p-8 relative gap-[10px] text-left text-xl text-gray-500 font-aeonik">
+    <div className="self-stretch overflow-hidden w-auto md:min-w-[400px] rounded-3xl bg-whitesmoke-100 items-start justify-between p-8 relative gap-[10px] text-left text-sm md:text-xl text-gray-500 font-aeonik">
       <div
-          className="flex flex-col items-start  lg:justify-start gap-[16px] z-[0]"
-          style={frameDiv1Style}
+          className=" items-start lg:justify-start gap-[16px] z-[0]"
+          style={frameStyle}
       >
-        <b
-            className="w-[421px] relative leading-[29px] flex items-center"
-            style={doINeedStyle}
-        >
-          {title}
-        </b>
+        <div className=" flex w-full justify-between">
+          <b
+              className="max-w-[421px] relative leading-[29px] flex items-center"
+              style={titleStyle}
+          >
+            {title}
+          </b>
+          <img
+              onClick={() => {
+                handleFold(index)
+                console.log(show)
+              }}
+              className="w-10 h-10 cursor-pointer overflow-hidden shrink-0 z-[1]"
+              alt=""
+
+              src={show ? '/assets/images/svg/pluscircle.svg' : '/assets/images/svg/pluscircle1.svg'}
+          />
+        </div>
+
         <div
-            className="w-[503px] relative text-lg leading-[25px] font-medium text-dimgray-100 flex items-center"
-            style={thereAreAContainerStyle}
+            className="md:w-[503px] w-full relative text-sm md:text-lg leading-[25px] font-medium text-dimgray-100 flex items-center"
+            style={AnswerStyle}
         >
-            <span className="w-full">
+            <span className="">
              {show &&
              <p className="m-0">
                 {answer}
@@ -65,16 +78,7 @@ const FaqItem: FunctionComponent<FaqItemType> = ({
             </span>
         </div>
       </div>
-      <img
-          onClick={() => {
-            handleFold(index)
-            console.log(show)
-          }}
-          className="w-10 h-10 cursor-pointer overflow-hidden shrink-0 z-[1]"
-          alt=""
 
-          src={show? '/assets/images/svg/pluscircle.svg': '/assets/images/svg/pluscircle1.svg'}
-      />
     </div>
   );
 };
