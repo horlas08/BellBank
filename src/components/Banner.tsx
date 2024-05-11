@@ -8,7 +8,7 @@ const Banner: FunctionComponent = () => {
           <div className="w-[80%]  md:w-[80%] mx-auto block  md:flex justify-between">
               <div
                   className="flex flex-col items-start justify-start gap-[20px] lg:text-41xl md:text-38xl text-23xl text-white">
-                  <b className="max-w-[634px]  relative leading-[68px] inline-block">
+                  <b className="max-w-[634px]  relative leading-[48px] md:leading-[68px] inline-block">
                       {`Bank faster, better & smarter with BellBank.`}
                   </b>
                   <div
