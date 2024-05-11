@@ -24,7 +24,7 @@ const Banner: FunctionComponent = () => {
                       <div
                           className="box-border hidden md:block w-px  border-r-[1px] border-solid border-whitesmoke-200"/>
                       <div className=" flex flex-col items-start justify-start gap-[7px]">
-                          <img className="w-20 relative " alt="" src="/assets/images/svg/star.svg"/>
+                          <img className="w-20 relative " alt="d" src="/assets/images/svg/star.svg"/>
                           <div className="relative font-medium">
                               Rated 4.5 by 100K+ Customers
                           </div>

@@ -102,7 +102,7 @@ const Footer: FunctionComponent<FrameComponentType> = ({propTop}) => {
                     All deposits are insured by Nigeria Deposit Insurance Corporation(NDIC). Additional disclosures can
                     be found in the resources section of our website.
                 </p>
-                <div className="relative text-gray-100 text-center">
+                <div className="relative mt-[70px] text-gray-100 text-center">
                     © 2024 BellBank MFB Limited. All rights reserved.
                 </div>
             </div>

@@ -26,14 +26,14 @@ const Personal: FunctionComponent = () => {
                     </p>
                     <div className="img_wrapper flex gap-[24px] my-[35px] justify-center">
                         <div className="cursor-pointer">
-                            <img src="/public/assets/images/playstore_dark.png" alt={''}/>
+                            <img src="/assets/images/playstore_dark.png" alt={''}/>
                         </div>
                         <div className="cursor-pointer">
-                            <img src="/public/assets/images/apple_black.png" alt={''}/>
+                            <img src="/assets/images/apple_black.png" alt={''}/>
                         </div>
                     </div>
                     <div className="flex justify-center  mx-auto">
-                        <img className={'!max-w-[70%]'} src="/public/assets/images/phone.png" alt={''}/>
+                        <img className={'!max-w-[70%]'} src="/assets/images/phone.png" alt={''}/>
                     </div>
                 </div>
             </div>
@@ -55,7 +55,7 @@ const Personal: FunctionComponent = () => {
                 <div className="flex justify-between flex-col md:flex-row-reverse gap-[25px] my-[30px] w-[80%] mx-auto">
                     <div className="bg-dimgray-light p-16 w-auto md:w-[65%]  flex flex-col items-center">
                         <div className="img ">
-                            <img className={'max-w-[96%] mx-auto'} src="/public/assets/images/Roolout.png" alt={''}/>
+                            <img className={'max-w-[96%] mx-auto'} src="/assets/images/Roolout.png" alt={''}/>
                         </div>
                         <div className="">
                             <div className="title">
@@ -72,7 +72,7 @@ const Personal: FunctionComponent = () => {
                     </div>
                     <div className="bg-dimgray-light p-16 flex flex-col items-center">
                         <div className="img ">
-                            <img className={'max-w-[96%] mx-auto'} src="/public/assets/images/Transact.png" alt={''}/>
+                            <img className={'max-w-[96%] mx-auto'} src="/assets/images/Transact.png" alt={''}/>
                         </div>
                         <div className="mt-5">
                             <div className="title">
@@ -94,7 +94,7 @@ const Personal: FunctionComponent = () => {
                 <div className="flex justify-between  flex-col md:flex-row-reverse gap-[25px] my-[30px] w-[80%] mx-auto">
                     <div className="bg-dimgray-light p-16 flex flex-col items-center">
                         <div className="img ">
-                            <img className={'max-w-[96%] mx-auto'} src="/public/assets/images/network_provider.png" alt={''}/>
+                            <img className={'max-w-[96%] mx-auto'} src="/assets/images/network_provider.png" alt={''}/>
                         </div>
                         <div className="mt-5">
                             <div className="title">
@@ -112,7 +112,7 @@ const Personal: FunctionComponent = () => {
                     </div>
                     <div className="bg-dimgray-light p-16 w-auto md:w-[65%] flex flex-col items-center">
                         <div className="img ">
-                            <img className={'max-w-[96%] mx-auto'}  src="/public/assets/images/rotate_card.png" alt={''}/>
+                            <img className={'max-w-[96%] mx-auto'}  src="/assets/images/rotate_card.png" alt={''}/>
                         </div>
                         <div className="">
                             <div className="title">
@@ -146,7 +146,7 @@ const Personal: FunctionComponent = () => {
                     <div className="bottom my-[30px]">
                         <div className="flex flex-col md:flex-row justify-center mt-[100px] gap-[35px] md:gap-5 flex-card">
                             <div className="body md:border-l-[1px] border-opacity-[50%] pl-2 border-solid border-l-mediumseagreen">
-                                <img src='/public/assets/images/p1.png' alt={''}/>
+                                <img src='/assets/images/p1.png' alt={''}/>
                                 <h5 className={'text-white text-xl my-1'}>Protection and peace of mind</h5>
                                 <p className={'mt-1 text-gray-1100 font-inter w-[79%]'}>
                                     Elevate your brand with expertly designed themes, fonts, colors, and high-quality
@@ -154,14 +154,14 @@ const Personal: FunctionComponent = () => {
                                 </p>
                             </div>
                             <div className="body md:border-l-[1px] border-opacity-[50%] pl-2 border-solid border-l-mediumseagreen">
-                                <img src='/public/assets/images/p2.png' alt={''}/>
+                                <img src='/assets/images/p2.png' alt={''}/>
                                 <h5 className={'text-white text-xl my-1'}>Protection and peace of mind</h5>
                                 <p className={'mt-1 text-gray-1100 font-inter w-[79%]'}>
                                     Glide apps adapt to look great on mobile, desktop, and tablet for a consistent, unified user experience across your app.
                                 </p>
                             </div>
                             <div className="body md:border-l-[1px] border-opacity-[50%] pl-2 border-solid border-l-mediumseagreen">
-                                <img src='/public/assets/images/p3.png' alt={''}/>
+                                <img src='/assets/images/p3.png' alt={''}/>
                                 <h5 className={'text-white text-xl my-1'}>Protection and peace of mind</h5>
                                 <p className={'mt-1 text-gray-1100 font-inter w-[85%]'}>
                                     Glide apps update their design automatically with current trends so your apps will always remain modern and fresh.
@@ -194,7 +194,7 @@ const Personal: FunctionComponent = () => {
                         </div>
                         <div className="right">
                             <div className="md:bg-dimgray-light grid place-content-center p-[40px]">
-                                <img src="/public/assets/images/group_phone.png" alt={'d'}/>
+                                <img src="/assets/images/group_phone.png" alt={'d'}/>
                             </div>
                         </div>
 

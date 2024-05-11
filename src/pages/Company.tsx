@@ -26,16 +26,16 @@ const Company: FunctionComponent = () => {
                     </p>
                     <div className="img_wrapper flex gap-[24px] my-[35px] justify-center">
                         <div className="cursor-pointer">
-                            <img src="/public/assets/images/playstore_dark.png" alt={''}/>
+                            <img src="/assets/images/playstore_dark.png" alt={''}/>
                         </div>
                         <div className="cursor-pointer">
-                            <img src="/public/assets/images/apple_black.png" alt={''}/>
+                            <img src="/assets/images/apple_black.png" alt={''}/>
                         </div>
                     </div>
 
                 </div>
                 <div className="flex justify-center mx-auto">
-                    <img className={'max-w-[70%] lg:max-w-full'} src="/public/assets/images/dash.png" alt={''}/>
+                    <img className={'max-w-[70%] lg:max-w-full'} src="/assets/images/dash.png" alt={''}/>
                 </div>
             </div>
             <ApproveBy/>
@@ -67,7 +67,7 @@ const Company: FunctionComponent = () => {
                         </div>
                         <div className="right">
                             <div className="grid place-content-center p-[40px]">
-                                <img src="/public/assets/images/w_ads.png" alt={'d'}/>
+                                <img src="/assets/images/w_ads.png" alt={'d'}/>
                             </div>
                         </div>
 

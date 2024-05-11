@@ -20,21 +20,21 @@ const SwiperItem: FunctionComponent<SwiperItemType> = () => {
                     <img
                         className="max-w-[90%] w-[1500px] mx-auto rounded-xl mt-5"
                         alt=""
-                        src="/public/assets/images/sw.png"
+                        src="/assets/images/sw.png"
                     />
                 </SwiperSlide>
                 <SwiperSlide >
                     <img
                         className=" mx-auto rounded-xl mt-5"
                         alt=""
-                        src="/public/assets/images/sw1.png"
+                        src="/assets/images/sw1.png"
                     />
                 </SwiperSlide>
                 <SwiperSlide>
                     <img
                         className="w-[90%] mx-auto rounded-xl mt-5"
                         alt=""
-                        src="/public/assets/images/sw2.png"
+                        src="/assets/images/sw2.png"
                     />
                 </SwiperSlide>
 
