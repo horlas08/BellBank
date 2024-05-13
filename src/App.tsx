@@ -1,5 +1,6 @@
 import {lazy, useEffect} from "react";
 import {
+  BrowserRouter as Router,
   Routes,
   Route,
   useNavigationType,
@@ -59,6 +60,7 @@ function App() {
   }, [pathname]);
 
   return (
+
     <Routes>
       <Route path="/" element={<Homepage />} />
       <Route path="/about-us" element={<AboutUs />} />
