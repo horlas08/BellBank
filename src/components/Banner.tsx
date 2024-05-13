@@ -40,8 +40,7 @@ const Banner: FunctionComponent = () => {
 
           </div>
           <div className={'mb-8'}></div>
-          <SwiperItem
-          />
+          <SwiperItem />
           <div className={'mb-8'}></div>
       </div>
   );

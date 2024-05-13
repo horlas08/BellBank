@@ -14,6 +14,8 @@ import Homepage from "./pages/Homepage";
 import AboutUs from "./pages/AboutUs";
 import Portfolio from "./pages/Personal";
 import Company from "./pages/Company";
+import Policy from "./pages/Policy";
+import Terms from "./pages/Terms";
 
 
 function App() {
@@ -62,6 +64,8 @@ function App() {
       <Route path="/about-us" element={<AboutUs />} />
       <Route path="/personal" element={<Portfolio />} />
       <Route path="/company" element={<Company />} />
+      <Route path="/terms" element={<Terms />} />
+      <Route path="/policy" element={<Policy />} />
       <Route path="*" element={<Homepage />} />
     </Routes>
   );
