@@ -64,7 +64,7 @@ const Company: FunctionComponent = () => {
                                 <p className="text-gray-100">
                                     Open a free bank account in your business name, in minutes. Access round the clock support, with no hidden fees and complete control over your account.
                                 </p>
-                                <AppBtn text={'Get Started'} className={'w-max mt-[3rem] md:mt-0'}/>
+                                <AppBtn text={'Get Started'} onclick={()=> window.location.href = 'https://app.bellmfb.com/account/register/'} className={'w-max mt-[3rem] md:mt-0'}/>
                             </div>
                         </div>
                         <div className="right">

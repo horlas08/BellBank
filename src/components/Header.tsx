@@ -152,17 +152,17 @@ const Header: FunctionComponent<HeaderProps> = ({
                 <div className="hidden lg:flex gap-x-[20px] lg:flex-1 lg:justify-end">
 
                     <div className="w-[42px] relative h-12">
-                    <Link to={'/'} style={productsStyle} className={'text-white hover:text-white'}>
+                    <a href={'https://app.bellmfb.com/account/login'} target={'_blank'} style={productsStyle} className={'text-white hover:text-white'}>
                             <div
                                 className="absolute top-[13px] left-[0px] font-medium flex items-center w-[42px] h-[22px]"
                                 style={productsStyle}
                             >
                                 Login
                             </div>
-                        </Link>
+                        </a>
 
                     </div>
-                    <AppBtn text={'Create account'} bg={`${buttonBgColor}`}/>
+                    <AppBtn text={'Create account'} onclick={()=> window.location.href = 'https://app.bellmfb.com/account/register'} bg={`${buttonBgColor}`}/>
                 </div>
             </nav>
             <Dialog className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
@@ -237,9 +237,9 @@ const Header: FunctionComponent<HeaderProps> = ({
                                 <div className="w-[42px] relative h-12">
 
                                 </div>
-                                <AppBtn text={'Login'} />
+                                <AppBtn text={'Login'} onclick={()=> window.location.href = 'https://app.bellmfb.com/account/login'}/>
                                 <div className="my-2"></div>
-                                <AppBtn text={'Create accounts'}/>
+                                <AppBtn text={'Create accounts'} onclick={()=> window.location.href = 'https://app.bellmfb.com/account/register'}/>
                             </div>
                         </div>
                     </div>

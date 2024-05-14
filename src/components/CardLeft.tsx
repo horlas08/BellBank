@@ -68,9 +68,9 @@ const CardLeft: FunctionComponent<CardLeftType> = ({
             </div>
           </div>
           <div className="w-full">
-            <Link to={'/'} className=" cursor-pointer my-5 lg:my-auto hover:text-white no-underline w-[150px] rounded-lg bg-mediumseagreen h-[45px] flex flex-row items-center justify-center py-[11px] px-5 box-border text-center text-base text-floralwhite">
+            <a href={'https://app.bellmfb.com/account/register/'} target={'_blank'} className=" cursor-pointer my-5 lg:my-auto hover:text-white no-underline w-[150px] rounded-lg bg-mediumseagreen h-[45px] flex flex-row items-center justify-center py-[11px] px-5 box-border text-center text-base text-floralwhite">
               <div className="relative font-medium">Get started</div>
-            </Link>
+            </a>
           </div>
 
         </div>

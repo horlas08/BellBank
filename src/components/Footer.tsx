@@ -17,23 +17,23 @@ const Footer: FunctionComponent<FrameComponentType> = ({propTop}) => {
     return (
 
         <footer className="w-full mt-[200px]">
-            <div className="w-[70%] flex flex-col justify-center py-5 md:py-0 px-9  !md:pl-[50px] bg-[url('/assets/images/image-761@2x.png')] bg-no-repeat bg-cover mx-auto relative rounded-3xl bg-cadetblue h-[240px] md:h-[440px] overflow-hidden text-38xl">
+            <div className="w-[70%] mx-auto flex flex-col justify-center py-5 md:py-0 px-9  !md:pl-[50px] bg-[url('/assets/images/image-761@2x.png')] bg-no-repeat bg-cover mx-auto relative rounded-3xl bg-cadetblue h-[240px] md:h-[440px] overflow-hidden text-38xl">
 
                 <div className=" flex flex-col items-start justify-start gap-[30px]">
                     <div className="flex flex-col items-start justify-start gap-[15px]">
-                        <b className="max-w-[420px] text-white relative text-xl sm:text-16xl md:text-23xl leading-9 md:leading-[60px] ">
+                        <b className="max-w-[420px] text-white relative text-xl sm:text-16xl md:text-23xl leading-7 md:leading-[60px] ">
                             Get an account that suits you.
                         </b>
                         <div
-                            className="max-w-[420px] relative text-sm lg:text-lg leading-[24px] font-medium text-gray-1100 inline-block md:h-[72px] shrink-0">
+                            className="max-w-[420px] relative text-sm lg:text-lg leading-[20px] md:leading-[24px] font-medium text-gray-1100 inline-block md:h-[72px] ">
                             Lorem ipsum dolor sit amet consectetur. Sit sagittis
                             pellentesque mauris venenatis diam. Nibh diam ipsum massa sed
                             arcu. Sit sed egestas sempe.
                         </div>
                     </div>
                     <div
-                        className="w-[166px] rounded-lg cursor-pointer  bg-mediumseagreen md:h-[45px] flex flex-row items-center justify-center py-[11px] px-5 box-border text-center text-mini text-floralwhite">
-                        <div className="relative font-medium">Get started today</div>
+                        className="w-[166px] rounded-lg cursor-pointer  bg-mediumseagreen md:h-[45px] flex flex-row items-center justify-center py-[8px] md:py-[11px] px-5 box-border text-center text-mini text-floralwhite">
+                        <div className="relative cursor-pointer font-medium" onClick={()=> window.location.href = 'https://app.bellmfb.com/account/register/'}>Get started today</div>
                     </div>
                 </div>
             </div>
@@ -52,24 +52,24 @@ const Footer: FunctionComponent<FrameComponentType> = ({propTop}) => {
                 <div className="flex flex-1 flex-col sm:flex-row  w-full md:auto justify-around items-start">
                     <nav className="flex flex-col my-[25px] sm:my-0">
                         <h6 className="footer-title mt-0 text-xl sm:text-inherit">Company</h6>
-                        <a className="link link-hover">About Us</a>
+                        <Link to={'/about-us'} className="text-black cursor-pointer link link-hover">About Us</Link>
                         <a className="link link-hover">Security</a>
                         <a className="link link-hover">Help center</a>
                         <a className="link link-hover">API documentation</a>
                     </nav>
                     <nav className="flex flex-col my-[25px] sm:my-0">
                         <h6 className="mt-0 footer-title text-xl sm:text-inherit">Resources</h6>
-                        <a className="link link-hover">Blog</a>
-                        <a className="link link-hover">FAQs</a>
+                        <a href={'https://medium.com/@GetBellBank'} target={'_blank'} className="link text-black link-hover">Blog</a>
+                        <Link to={'/#faq'} className="link text-black link-hover">FAQs</Link>
                         <Link to={'/terms'} className="link text-black  link-hover">Terms and condition</Link>
                         <Link to={'/policy'} className="link link-hover text-black ">Privacy Policy</Link>
                     </nav>
                     <nav className="flex flex-col my-[25px] sm:my-0">
                         <h6 className="mt-0 footer-title text-xl sm:text-inherit">Get in touch</h6>
-                        <a className="link link-hover">LinkedIn</a>
-                        <a className="link link-hover">Instagram</a>
-                        <a className="link link-hover">Twitter</a>
-                        <a className="link link-hover">Facebook</a>
+                        <a href={'https://instagram.com/GetBellBank'} target={'_blank'} className="link text-black link-hover">Instagram</a>
+                        <a href={'https://tiktok.com/GetBellBank'} target={'_blank'} className="link text-black link-hover">Tiktok</a>
+                        <a href={'https://twitter.com/GetBellBank'} target={'_blank'} className="link text-black link-hover">Twitter</a>
+                        <a href={'https://www.facebook.com/GetBellBank'} target={'_blank'} className="link text-black link-hover">Facebook</a>
                     </nav>
                     <nav className="flex flex-col my-[25px] sm:my-0">
                         <h6 className="mt-0 footer-title text-xl sm:text-inherit">
