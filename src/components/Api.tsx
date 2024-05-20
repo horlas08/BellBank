@@ -6,8 +6,8 @@ import React from "react";
 export default function  Api() {
     return (
         <div className={'relative w-full'}>
-            <div className=" bg-darkslategray-500 w-full">
-                <div className="flex justify-between p-[2rem] md:p-[4rem] md:py-[10rem] flex-col lg:flex-row overflow-hidden mx-auto gap-10">
+            <div className="bg-darkslategray-500 w-full">
+                <div className="flex justify-between lg:w-[80%] p-[2rem] md:p-[4rem] md:py-[10rem] flex-col lg:flex-row overflow-hidden mx-auto gap-10">
                     <div className="relative w-full lg:w-[50%] flex flex-col items-stretch justify-start gap-[35px] text-left text-xs text-mediumseagreen font-inter">
                         <div className="max-w-[550px] flex flex-col items-start justify-start gap-[25px]">
                             <div className="flex flex-col items-start justify-start gap-[12px]">
