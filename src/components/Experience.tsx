@@ -51,8 +51,8 @@ export default function Experience() {
 
                 <ExperienceItem subtitle={'A fully integrated suite of financial and payments products'}>
 
-                    <div className="rounded-11xl bg-whitesmoke-100 box-border w-[90%] lg:w-[55%] flex-1 h-[437px] overflow-hidden mix-blend-normal border-[8px] border-solid border-whitesmoke-100">
-                        <div className="flex justify-center items-center w-full  gap-4 h-full">
+                    <div className="rounded-11xl bg-whitesmoke-100 box-border w-[90%] lg:w-[55%] h-[437px] overflow-hidden mix-blend-normal border-[8px] border-solid border-whitesmoke-100">
+                        <div className="flex justify-center items-center w-full gap-4 h-full">
 
                             <div className=" relative w-full flex justify-center  h-[274px]">
 
