@@ -17,7 +17,7 @@ const Footer: FunctionComponent<FrameComponentType> = ({propTop}) => {
     return (
 
         <footer className="w-full mt-[200px]">
-            <div className="w-[70%] flex flex-col justify-center py-5 md:py-0 px-9  !md:pl-[50px] bg-[url('/assets/images/image-761@2x.png')] bg-no-repeat bg-cover mx-auto relative rounded-3xl bg-cadetblue h-[240px] md:h-[440px] overflow-hidden text-38xl">
+            <div className="w-[70%] flex flex-col justify-center py-5 md:py-0 px-9  !md:pl-[50px] bg-[url('/assets/images/image-761.png')] bg-no-repeat bg-cover mx-auto relative rounded-3xl bg-cadetblue h-[240px] md:h-[440px] overflow-hidden text-38xl">
 
                 <div className=" flex flex-col items-start justify-start gap-[30px]">
                     <div className="flex flex-col items-start justify-start gap-[15px]">
@@ -52,10 +52,10 @@ const Footer: FunctionComponent<FrameComponentType> = ({propTop}) => {
                 <div className="flex flex-1 flex-col sm:flex-row  w-full md:auto justify-around items-start">
                     <nav className="flex flex-col my-[25px] sm:my-0">
                         <h6 className="footer-title mt-0 text-xl sm:text-inherit">Company</h6>
-                        <Link to={'/about-us'} className="text-black cursor-pointer link link-hover">About Us</Link>
-                        <a href={'https://bellmfb.com/security.html'} target={'_blank'} className="link link-hover">Security</a>
-                        <a href={''} target={'_blank'} className="link link-hover">Help center</a>
-                        <a href={''} target={'_blank'} className="link link-hover">API documentation</a>
+                        <Link to={'/about-us'} className="text-black cursor-pointer  link link-hover">About Us</Link>
+                        <a href={'https://bellmfb.com/security.html'} target={'_blank'} className="link text-black link-hover">Security</a>
+                        <a href={''} target={'_blank'} className="link  text-black link-hover">Help center</a>
+                        <a href={''} target={'_blank'} className="link  text-black link-hover">API documentation</a>
                     </nav>
                     <nav className="flex flex-col my-[25px] sm:my-0">
                         <h6 className="mt-0 footer-title text-xl sm:text-inherit">Resources</h6>
@@ -71,24 +71,24 @@ const Footer: FunctionComponent<FrameComponentType> = ({propTop}) => {
                         <a href={'https://twitter.com/GetBellBank'} target={'_blank'} className="link text-black link-hover">Twitter</a>
                         <a href={'https://www.facebook.com/GetBellBank'} target={'_blank'} className="link text-black link-hover">Facebook</a>
                     </nav>
-                    <nav className="flex flex-col my-[25px] sm:my-0">
-                        <h6 className="mt-0 footer-title text-xl sm:text-inherit">
-                            Join over 2k+ using BellBank
-                        </h6>
+                    {/*<nav className="flex flex-col my-[25px] sm:my-0">*/}
+                    {/*    <h6 className="mt-0 footer-title text-xl sm:text-inherit">*/}
+                    {/*        Join over 2k+ using BellBank*/}
+                    {/*    </h6>*/}
 
-                        <div className="relative mt-2 overflow-hidden rounded-md shadow-sm">
-                            <input type="text"
-                                   className="w-fit focus:border-gray-100 border-gray-100 rounded-md focus:border-[2px]
-                                   border-[2px] py-3 my-4 px-5
-                                   text-black
-                                   placeholder:text-gray-100
-                                   sm:text-sm sm:leading-6"
-                                   placeholder="Your email"/>
-                        </div>
+                    {/*    <div className="relative mt-2 overflow-hidden rounded-md shadow-sm">*/}
+                    {/*        <input type="text"*/}
+                    {/*               className="w-fit focus:border-gray-100 border-gray-100 rounded-md focus:border-[2px]*/}
+                    {/*               border-[2px] py-3 my-4 px-5*/}
+                    {/*               text-black*/}
+                    {/*               placeholder:text-gray-100*/}
+                    {/*               sm:text-sm sm:leading-6"*/}
+                    {/*               placeholder="Your email"/>*/}
+                    {/*    </div>*/}
 
 
-                        <AppBtn text={'Subscribe Now'} className={'w-fit md:w-full '}/>
-                    </nav>
+                    {/*    <AppBtn text={'Subscribe Now'} className={'w-fit md:w-full '}/>*/}
+                    {/*</nav>*/}
                 </div>
             </div>
             <div className="w-[80%] mx-auto text-left leading-[22px] text-gray-100">

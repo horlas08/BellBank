@@ -53,7 +53,7 @@ const AboutUs: FunctionComponent = () => {
 
             </div>
 
-            <div className="relative w-[85%] flex-col lg:flex-row items-start mx-auto flex justify-between">
+            <div className="relative w-[80%] flex-col lg:flex-row items-start mx-auto flex justify-evenly">
                 <div
                     className="relative lg:max-w-[425px] overflow-hidden flex flex-col items-start justify-end pt-0 px-0 pb-[50px] md:pb-[100px] box-border gap-[10px]">
                     <div className="relative uppercase font-medium">Built for growth</div>
