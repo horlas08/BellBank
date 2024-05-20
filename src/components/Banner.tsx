@@ -3,7 +3,7 @@ import SwiperItem from "./SwiperItem";
 
 const Banner: FunctionComponent = () => {
   return (
-      <div className="bg-darkslategray-500 pt-[100px] pb-[50px] text-left text-sm text-gray-1100 font-aeonik">
+      <div className="banner bg-darkslategray-500 pt-[100px] pb-[50px] text-left text-sm text-gray-1100 font-aeonik">
 
           <div className="w-[80%]  md:w-[80%] mx-auto block  md:flex justify-between">
               <div

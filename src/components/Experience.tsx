@@ -26,36 +26,16 @@ export default function Experience() {
                     <div className="rounded-11xl bg-seagreen box-border w-[100%] py-7 md:py-0 lg:w-[55%] md:h-[437px] overflow-hidden mix-blend-normal border-[8px] border-solid border-whitesmoke-100">
                         <div className="flex justify-center items-center w-full gap-4 h-full">
                             <img
-                                className="w-[90%] mx-auto object-contain"
+                                className="w-[90%] md:w-[403px] h-[259px] md:h-[559px] mx-auto object-contain"
                                 alt=""
                                 src="/assets/images/cardGroup.png"
                             />
-                            {/*<div className="relative max-w-[198px] max-h-[274.2px] ">*/}
 
-
-                            {/*    <img className="w-[193.8px] h-[170.3px] md:h-[270.3px] object-contain"*/}
-                            {/*        alt=""*/}
-                            {/*        src="/assets/images/card-5-1@2x.png"*/}
-                            {/*    />*/}
-                            {/*    <div className="relative bottom-0 rounded-[50%] [background:radial-gradient(50%_50%_at_50%_50%,_rgba(0,_0,_0,_0.6),_rgba(0,_0,_0,_0))] w-[169.4px] h-[5.7px]"/>*/}
-
-                            {/*</div>*/}
-                            {/*<div className=" relative max-w-[201.1px]  max-h-[274px]">*/}
-                            {/*    <img*/}
-                            {/*        className=" md:w-[195.8px] h-[167.7px] md: object-contain"*/}
-                            {/*        alt=""*/}
-                            {/*        src="/assets/images/card-8-2@2x.png"*/}
-                            {/*    />*/}
-                            {/*    <div*/}
-                            {/*        className="relative bottom-0 rounded-[50%] [background:radial-gradient(50%_50%_at_50%_50%,_rgba(0,_0,_0,_0.6),_rgba(0,_0,_0,_0))] w-[178.1px] h-1.5"/>*/}
-
-                            {/*</div>*/}
                         </div>
                     </div>
                 </ExperienceItem>
                 <ExperienceItem title={'PERSONAL ACCOUNT'} subtitle={'One app for all your banking needs'}>
-                    <div
-                        className="rounded-11xl bg-darkslategray-500 box-border mx-auto w-[90%] lg:w-[55%] h-[230px] md:h-[437px] shrink-0 overflow-hidden mix-blend-normal border-[8px] border-solid border-whitesmoke-100">
+                    <div className="rounded-11xl bg-darkslategray-500 box-border w-[90%] lg:w-[55%] h-[230px] md:h-[437px] shrink-0 overflow-hidden mix-blend-normal border-[8px] border-solid border-whitesmoke-100">
                         <div className="flex relative justify-center items-center w-full  gap-4 h-full">
 
 
@@ -71,8 +51,7 @@ export default function Experience() {
 
                 <ExperienceItem subtitle={'A fully integrated suite of financial and payments products'}>
 
-                    <div
-                        className="rounded-11xl bg-whitesmoke-100 box-border w-[100%] lg:w-[55%] flex-1 h-[437px] overflow-hidden mix-blend-normal border-[8px] border-solid border-whitesmoke-100">
+                    <div className="rounded-11xl bg-whitesmoke-100 box-border w-[90%] lg:w-[55%] flex-1 h-[437px] overflow-hidden mix-blend-normal border-[8px] border-solid border-whitesmoke-100">
                         <div className="flex justify-center items-center w-full  gap-4 h-full">
 
                             <div className=" relative w-full flex justify-center  h-[274px]">

@@ -17,7 +17,7 @@ const Footer: FunctionComponent<FrameComponentType> = ({propTop}) => {
     return (
 
         <footer className="w-full mt-[200px]">
-            <div className="w-[70%] mx-auto flex flex-col justify-center py-5 md:py-0 px-9  !md:pl-[50px] bg-[url('/assets/images/image-761@2x.png')] bg-no-repeat bg-cover mx-auto relative rounded-3xl bg-cadetblue h-[240px] md:h-[440px] overflow-hidden text-38xl">
+            <div className="w-[70%] flex flex-col justify-center py-5 md:py-0 px-9  !md:pl-[50px] bg-[url('/assets/images/image-761@2x.png')] bg-no-repeat bg-cover mx-auto relative rounded-3xl bg-cadetblue h-[240px] md:h-[440px] overflow-hidden text-38xl">
 
                 <div className=" flex flex-col items-start justify-start gap-[30px]">
                     <div className="flex flex-col items-start justify-start gap-[15px]">
@@ -53,9 +53,9 @@ const Footer: FunctionComponent<FrameComponentType> = ({propTop}) => {
                     <nav className="flex flex-col my-[25px] sm:my-0">
                         <h6 className="footer-title mt-0 text-xl sm:text-inherit">Company</h6>
                         <Link to={'/about-us'} className="text-black cursor-pointer link link-hover">About Us</Link>
-                        <a className="link link-hover">Security</a>
-                        <a className="link link-hover">Help center</a>
-                        <a className="link link-hover">API documentation</a>
+                        <a href={'https://bellmfb.com/security.html'} target={'_blank'} className="link link-hover">Security</a>
+                        <a href={''} target={'_blank'} className="link link-hover">Help center</a>
+                        <a href={''} target={'_blank'} className="link link-hover">API documentation</a>
                     </nav>
                     <nav className="flex flex-col my-[25px] sm:my-0">
                         <h6 className="mt-0 footer-title text-xl sm:text-inherit">Resources</h6>

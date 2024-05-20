@@ -38,13 +38,16 @@ body {
   object-fit: cover;
 }
 .swiper-slide{
-
   display: grid;
   place-content: center;
 }
-.swiper-slide >*{
+.banner .swiper-slide >*{
   width: 90% !important;
   margin-inline: auto;
+}
+.personal .swiper {
+  width: 600px;
+  height: 300px;
 }
 body{
   font-family: Aeonik, serif;
@@ -62,3 +65,4 @@ nav a{
 input,input:focus{
   border: 1px solid;
 }
+

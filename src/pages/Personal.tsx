@@ -1,14 +1,19 @@
-import {FunctionComponent} from "react";
+import {FunctionComponent, useState} from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import Testimonial from "../components/Testimonial";
-import AppBtn from "../components/AppBtn";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination,EffectFade,Navigation} from 'swiper/modules';
 import ApproveBy from "../components/ApproveBy";
 import Notification from "../components/Notification";
+import {FaArrowRight} from "react-icons/fa6";
+import ReactSwipe from 'react-swipe';
 
 const Personal: FunctionComponent = () => {
+    const [reactSwipeEl,setReactSwipeEl] = useState<ReactSwipe>()
+    const [swipeTrack,setSwipeTrack] = useState<number>(0)
+
     return (
-        <div className="w-full relative bg-white overflow-hidden text-left text-sm text-mediumseagreen font-aeonik">
+        <div className="w-full personal relative bg-white overflow-hidden text-left text-sm text-mediumseagreen font-aeonik">
             <Notification/>
             <Header
                 vector="/assets/images/svg/vector2.svg"
@@ -189,14 +194,63 @@ const Personal: FunctionComponent = () => {
                                     bibendum tristique dolor tortor.
                                 </p>
                             </div>
-                            <div className="bottom">
-                                <h4 className="text-black text-[25px]">1. Download the app</h4>
-                                <p className="text-gray-100 w-[60%]">Download the BellBank app on Google Play store or Apple store to get started</p>
+                            <Swiper draggable={false} noSwiping={true} slidesPerView={'auto'} navigation={{
+                                nextEl: '.swiper-button-next',
+                                prevEl: '.swiper-button-prev',
+
+
+                            }} modules={[Navigation, EffectFade]}  className="mySwiper lg:max-w-[400px]">
+                                <SwiperSlide  className={''}>
+                                    <div className=" overflow-hidden bottom border-l-2 border-l-mediumseagreen border-solid pl-2 !w-full">
+                                        <h4 className="text-black text-[25px]">1. Download the app</h4>
+                                        <p className="text-gray-100 ">Download the BellBank app on Google Play store
+                                            or Apple store to get started</p>
+                                    </div>
+
+                                </SwiperSlide>
+                                <SwiperSlide className={''}>
+                                    <div className="!flex-nowrap overflow-hidden bottom border-l-2 border-l-mediumseagreen border-solid pl-2">
+                                        <h4 className="text-black text-[25px]">2. Download the app</h4>
+                                        <p className="text-gray-100 ">Download the BellBank app on Google Play store
+                                            or Apple store to get started</p>
+                                    </div>
+
+                                </SwiperSlide>
+                                <SwiperSlide className={''}>
+                                    <div
+                                        className="!flex-nowrap overflow-hidden bottom border-l-2 border-l-mediumseagreen border-solid pl-2">
+                                        <h4 className="text-black text-[25px]">3. Download the app</h4>
+                                        <p className="text-gray-100 ">Download the BellBank app on Google Play store
+                                            or Apple store to get started</p>
+                                    </div>
+
+                                </SwiperSlide>
+                                <SwiperSlide className={''}>
+                                    <div
+                                        className="!flex-nowrap overflow-hidden bottom border-l-2 border-l-mediumseagreen border-solid pl-2">
+                                        <h4 className="text-black text-[25px]">3. Download the app</h4>
+                                        <p className="text-gray-100 ">Download the BellBank app on Google Play store
+                                            or Apple store to get started</p>
+                                    </div>
+
+                                </SwiperSlide>
+                            </Swiper>
+
+
+                            <div className="swiper-btn relative flex gap-[20px]">
+                                <div
+                                     className={`rounded-badge after:contents swiper-button-prev relative flex justify-center border-2 border-mediumseagreen border-solid cursor-pointer w-[100px] items-center h-[50px]`} >
+                                    <FaArrowRight size={25} color={'black'}/>
+                                </div>
+
+                                <div className="rounded-badge  after:contents  swiper-button-next relative flex justify-center border-2 border-mediumseagreen border-solid cursor-pointer w-[100px] items-center h-[50px]">
+                                    <FaArrowRight size={25} color={'black'} />
+                                </div>
                             </div>
                         </div>
-                        <div className="right">
-                            <div className="md:bg-dimgray-light grid place-content-center p-[40px]">
-                                <img src="/assets/images/group_phone.png" alt={'d'}/>
+                        <div className="right flex-1" draggable={false}>
+                            <div draggable={false} className="md:bg-dimgray-light select-none grid place-content-center p-[40px]">
+                                <img draggable={false} src="/assets/images/group_phone.png" alt={'d'}/>
                             </div>
                         </div>
 
