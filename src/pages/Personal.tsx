@@ -70,7 +70,8 @@ const Personal: FunctionComponent = () => {
             <div className="text-black flex flex-col items-center bg-lightgreen">
                 <div className="max-w-[550px] mx-auto mt-[20px]">
                     <h3 className="w-full text-16xl md:text-23xl text-center mb-0">Send Money Faster, Better & Instantly
-                        with BellBank</h3>
+                        with BellBank
+                    </h3>
                     <p className={'text-center  mx-auto max-w-[350px] font-aeonik text-gray-100'}>
                         BellBank offers a hassle-free, protected and efficient way to instantly send, receive, pay bills
                         and more.

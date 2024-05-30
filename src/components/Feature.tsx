@@ -17,14 +17,13 @@ const Feature: FunctionComponent = () => {
           </div>
           <div
               className="max-w-[533px] w-[95%] md:w-[90%] mx-auto relative text-lg leading-[24px] font-medium text-dimgray-100 text-center mb-[44px] inline-block">
-            Providing financial solutions that empowering both business and
-            individuals to thrive and achieve remarkable growth milestones.
+              Providing financial solutions that empower both businesses and individuals to thrive and achieve remarkable growth milestones.
           </div>
         </div>
           <div className={' my-2 md:my-0 flex md:flex-row flex-wrap md:flex-nowrap flex-col w-[80%] justify-between gap-5 mx-auto mt-[50px]'}>
 
               <FeatureCard title={'Personal Account'}
-                           subtitle={'Lorem ipsum dolor sit amet consectetur. Tortor nisl ullamcorperleo eget.'}>
+                           subtitle={'Open a personal account with BellBank to manage your daily finances with ease. Our accounts offer convenient features like online banking, mobile banking, and debit cards, making it easy to track your spending, pay bills, and save for the future.'}>
                   <div className=" relative h-[188px] text-mini text-dimgray-100">
                       <img className={' w-full mx-auto'} src={'/assets/gif/PersonalAccount.gif'} height={188} alt={''}/>
 
@@ -33,14 +32,14 @@ const Feature: FunctionComponent = () => {
 
 
               <FeatureCard title={'Business account'}
-                           subtitle={'Lorem ipsum dolor sit amet consectetur. Tortor nisl ullamcorperleo eget.'}>
+                           subtitle={'Take your business to the next level with a business account from BellBank. Our business accounts provide flexible and efficient financial solutions, including multiple-user access, invoicing and cash flow management. Whether you\'re a small startup or an established company, our business accounts are designed to meet your unique needs.'}>
 
                   <div className=" relative h-[188px] text-mini text-dimgray-100">
                       <img className={' w-full mx-auto'} src={'/assets/gif/Loans.gif'} height={188} alt={''}/>
 
                   </div>
               </FeatureCard>
-              <FeatureCard title={'Loans'} subtitle={'Lorem ipsum dolor sit amet consectetur. Tortor nisl ullamcorperleo eget.'}>
+              <FeatureCard title={'Loans'} subtitle={'BellBank offers a range of loan options to help you achieve your goals. Whether you need a personal loan or a business loan to expand your operations, our loan solutions offer competitive rates, flexible repayment terms, and personalized service. Let us help you borrow with confidence!'}>
                   <div className="mt-5 rounded-mini bg-white w-full h-[168px] mb-6 text-xl text-black">
                       <img className={' w-full mx-auto'} src={'/assets/gif/BusinessAccount.gif'} height={188} alt={''}/>
 

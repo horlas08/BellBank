@@ -28,9 +28,7 @@ const AboutUs: FunctionComponent = () => {
                 </div>
                 <div
                     className="max-w-[533px] mx-8 relative text-lg leading-[24px] font-medium text-dimgray-100 text-center inline-block">
-                    Paystack is a technology company solving payments problems for
-                    ambitious businesses. Our mission is to help businesses in Africa
-                    become profitable, envied, and loved.
+                    BellBank is a financial partner empowering businesses to thrive. Our mission is to help Individuals, Business owners and organizations in Africa achieve remarkable growth, admiration, and customer loyalty by providing innovative payment solutions, expert support, and tailored financial services.
                 </div>
             </div>
 
@@ -58,7 +56,7 @@ const AboutUs: FunctionComponent = () => {
                     className="relative lg:max-w-[425px] overflow-hidden flex flex-col items-start justify-end pt-0 px-0 pb-[50px] md:pb-[100px] box-border gap-[10px]">
                     <div className="relative uppercase font-medium">Built for growth</div>
                     <b className="w-auto relative text-[20px] md:text-23xl leading-[30px] md:leading-[50px] inline-block text-gray-500 ">
-                        {`Constantly coming up with new creative ideas & working on improving the existing methods in consulting.`}</b>
+                        {`Constantly coming up with new creative ideas & working on improving the existing methods in digital banking.`}</b>
                 </div>
 
                 <div className="relative lg:max-w-[425px] text-lg text-dimgray-100">

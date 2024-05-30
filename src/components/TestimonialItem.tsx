@@ -15,8 +15,8 @@ const TestimonialItem: FunctionComponent<TestimonialItemType> = ({image,username
 
                 <div className="flex flex-col items-start justify-center gap-[20px]">
                     <div className="w-auto h-auto overflow-hidden flex flex-col items-center justify-center">
-                        <img className="max-w-[110px] relative max-h-[100px] " alt=""
-                             src={imageTop}/>
+                        {/*<img className="max-w-[110px] relative max-h-[100px] " alt=""*/}
+                        {/*     src={imageTop}/>*/}
                     </div>
                     <div className="md:max-w-[325px] md:my-auto my-3 relative leading-[26px] font-medium flex items-center">
                         {children}
@@ -24,7 +24,7 @@ const TestimonialItem: FunctionComponent<TestimonialItemType> = ({image,username
 
                 </div>
 
-                <div className="below flex flex-row items-center justify-start text-base text-gray-400">
+                <div className="below mt-[15px] flex flex-row items-center justify-start text-base text-gray-400">
                     <div className="flex flex-row items-center justify-start gap-[12px]">
 
                         <div

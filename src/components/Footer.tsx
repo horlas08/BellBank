@@ -25,10 +25,8 @@ const Footer: FunctionComponent<FrameComponentType> = ({propTop}) => {
                             Get an account that suits you.
                         </b>
                         <div
-                            className="max-w-[420px] relative text-sm lg:text-lg leading-[20px] md:leading-[24px] font-medium text-gray-1100 inline-block md:h-[72px] ">
-                            Lorem ipsum dolor sit amet consectetur. Sit sagittis
-                            pellentesque mauris venenatis diam. Nibh diam ipsum massa sed
-                            arcu. Sit sed egestas sempe.
+                            className="max-w-[420px] relative text-sm lg:text-lg leading-[20px] md:leading-[24px] font-medium text-gray-1100 inline-block md:min-h-[152px] ">
+                            At BellBank, we understand that every individual and business is unique. That's why we offer a range of accounts tailored to suit your specific needs. Whether you're looking for a personal account, a business account, or something in between, we've got you covered.
                         </div>
                     </div>
                     <div
@@ -71,24 +69,7 @@ const Footer: FunctionComponent<FrameComponentType> = ({propTop}) => {
                         <a href={'https://twitter.com/GetBellBank'} target={'_blank'} className="link text-black link-hover">Twitter</a>
                         <a href={'https://www.facebook.com/GetBellBank'} target={'_blank'} className="link text-black link-hover">Facebook</a>
                     </nav>
-                    {/*<nav className="flex flex-col my-[25px] sm:my-0">*/}
-                    {/*    <h6 className="mt-0 footer-title text-xl sm:text-inherit">*/}
-                    {/*        Join over 2k+ using BellBank*/}
-                    {/*    </h6>*/}
 
-                    {/*    <div className="relative mt-2 overflow-hidden rounded-md shadow-sm">*/}
-                    {/*        <input type="text"*/}
-                    {/*               className="w-fit focus:border-gray-100 border-gray-100 rounded-md focus:border-[2px]*/}
-                    {/*               border-[2px] py-3 my-4 px-5*/}
-                    {/*               text-black*/}
-                    {/*               placeholder:text-gray-100*/}
-                    {/*               sm:text-sm sm:leading-6"*/}
-                    {/*               placeholder="Your email"/>*/}
-                    {/*    </div>*/}
-
-
-                    {/*    <AppBtn text={'Subscribe Now'} className={'w-fit md:w-full '}/>*/}
-                    {/*</nav>*/}
                 </div>
             </div>
             <div className="w-[80%] mx-auto text-left leading-[22px] text-gray-100">

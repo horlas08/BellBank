@@ -28,64 +28,53 @@ const Testimonial: FunctionComponent<TestimonialType> = ({
                 </h1>
                 <div
                     className="md:w-[544px] md:text-3xl text-sm px-4 md:px-0  mx-auto">
-                    Providing financial solutions that empowering both
-                    business and individuals to thrive and achieve
-                    remarkable growth milestones.
+                    We provide innovative financial solutions that empower both businesses and individuals to flourish and reach remarkable growth milestones. With our expert support and tailored services, we help unlock our full potential and drive success.
                 </div>
 
             </div>
             <div
                 className="flex flex-col md:flex-row gap-y-[5rem] md:gap-[30px] max-w-[80%] md:justify-between justify-center mx-auto my-[60px]">
-                <TestimonialItem title={'Founder, Fresh Sends'} username={'Jesse Hiss'}
+                <TestimonialItem title={'Customer'} username={'Idris Abdulsalam'}
                                  image={'/assets/images/testimonial/testimonial.png'} imageTop={'/assets/images/testimonial/1.png'}>
                     <span className="text-black">
                           <p className="m-0">
-                              Lorem ipsum dolor sit amet consectetur. Lorem
-                              nulla nisl urna a dui habitant. Odio fringilla
-                              habitasse donec consequat. Enim diam urna in
-                              id placerat tempor quam. Aliquam nec eget
-                              ipsum vitae ipsum.
+                              I've been using BellBank's account for a few months now,
+                              and I'm blown away by the swiftness of their transfers and bill payments!
+                              I can pay my bills and send money to friends and family in just a few clicks,
+                              and the transactions are always processed instantly.
                           </p>
                           <p className="m-0">
-                              Pellentesque aliquam faucibus ac faucibus.
-                              Eget neque eget ullamcorper duis. Mauris eu
-                              ultrices ultricies ut.
+                              The mobile app is user-friendly and secure, and I love the real-time updates on my account activity.
+                              BellBank has made managing my finances so much easier and faster!
                           </p>
                       </span>
                 </TestimonialItem>
-                <TestimonialItem title={'Founder, Fresh Sends'} username={'Jesse Hiss'}
+                <TestimonialItem title={'Customer'} username={'Mrs Aderonke Joseph'}
                                  imageTop={'/assets/images/testimonial/2.png'}
                                  image={'/assets/images/testimonial/testimonial2.png'}>
                         <span className="text-black">
                           <p className="m-0">
-                              Lorem ipsum dolor sit amet consectetur. Lorem
-                              nulla nisl urna a dui habitant. Odio fringilla
-                              habitasse donec consequat. Enim diam urna in
-                              id placerat tempor quam. Aliquam nec eget
-                              ipsum vitae ipsum.
+                              As a small business owner, I was struggling to find a reliable payment processing solution until I discovered BellBank.
+                              Their services have been a game-changer for my business! I can now accept and process payments quickly and securely, and their customer service team is always available to help with any issues.
+
                           </p>
                           <p className="m-0">
-                              Pellentesque aliquam faucibus ac faucibus.
-                              Eget neque eget ullamcorper duis. Mauris eu
-                              ultrices ultricies ut.
+                              The fees are competitive, and the analytics tools help me track my sales and make data-driven decisions.
+                              BellBank has helped me grow my business and improve my bottom line.
                           </p>
                       </span>
                 </TestimonialItem>
-                <TestimonialItem title={'Founder, Fresh Sends'} username={'Jesse Hiss'}
+                <TestimonialItem title={'Customer'} username={'Rachel Tega'}
                                  imageTop={'/assets/images/testimonial/3.png'}
                                  image={'/assets/images/testimonial/testimonial.png'}>
                     <span className="text-black">
                           <p className="m-0">
-                              Lorem ipsum dolor sit amet consectetur. Lorem
-                              nulla nisl urna a dui habitant. Odio fringilla
-                              habitasse donec consequat. Enim diam urna in
-                              id placerat tempor quam. Aliquam nec eget
-                              ipsum vitae ipsum.
+                              I was impressed by BellBank's quick support and expertise in helping me set up their payment processing services for my e-commerce business.
+                              The integration was seamless, and their team was always available to answer my questions and provide guidance.
                           </p>
                           <p className="m-0">
-                              Pellentesque aliquam faucibus ac faucibus.
-                              Eget neque eget ullamcorper duis. Mauris eu
-                              ultrices ultricies ut.
+                              The security features are top-notch, and I appreciate the real-time fraud monitoring and detection.
+                              With BellBank, I can focus on growing my business without worrying about payment processing issues. Highly recommended!
                           </p>
                       </span>
                 </TestimonialItem>
