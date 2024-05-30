@@ -62,45 +62,35 @@ const AboutUs: FunctionComponent = () => {
                 <div className="relative lg:max-w-[425px] text-lg text-dimgray-100">
                     <div className="leading-[26px] font-medium   ">
                         <p className="m-0">
-                            Loyz Marine Services is an indigenous oil and gas servicing
-                            company birthed out of the need to provide marine support to
-                            commercial shipping, maritime assetsand other related activities
-                            taking place within the Nigerian maritime domain. We support every
-                            stage of offshore explorationand production, provide anchored or
-                            dynamic supply vessels, crew boats including conveyance of
-                            product, equipment and personnel from shore to offshore locations
-                            like drilling rigs, platforms.
+                            At BellBank, we're passionate about pushing the boundaries of digital banking. Our team of
+                            innovators and experts is constantly brainstorming new creative ideas to enhance your
+                            banking experience. We're dedicated to improving existing methods and developing
+                            cutting-edge solutions to make your financial life easier, faster, and more secure.
                         </p>
                         <p className="m-0">&nbsp;</p>
-                        <p className="m-0">
-                            We have at our disposal, the technology to deliver prompt and
-                            efficient services within our region of operations.
-                        </p>
+                        <b className="mb-7">Our approach:</b>
                     </div>
+
                     <div className=" leading-[26px] font-medium ">
-                        <p className="m-0">
-                            Our priority is to establish ourselves as a reliable partner to
-                            clients as we offer innovative and unparalleled solutions to
-                            mitigating the risks associated with carrying out business
-                            operations in Nigeria. We take delivery of services to our clients
-                            in the highest regard as our client’s success is a measure of our
-                            own success.
+                        <p className="my-2 ml-2">
+                           - Creative problem-solving: We identify areas for improvement and develop innovative solutions to address them.
+
                         </p>
-                        <p className="m-0">&nbsp;</p>
-                        <p className="m-0">{`As a result, we place utmost importance in providing reliable support that adds value to our clients by integrating innovative technologies, ensuring we deliver our services continuously in strict adherence to global standards on safety and compliance utilizing a team of highly skilled professionals that possess in depth knowledge of the maritime, security and oil & gas industry.`}</p>
-                    </div>
-                    <div className=" leading-[26px] font-medium inline-block h-[389px]">
-                        <p className="m-0">
-                            Our priority is to establish ourselves as a reliable partner to
-                            clients as we offer innovative and unparalleled solutions to
-                            mitigating the risks associated with carrying out business
-                            operations in Nigeria. We take delivery of services to our clients
-                            in the highest regard as our client’s success is a measure of our
-                            own success.
+                        <p className="my-2 ml-2">
+                           - Collaborative mindset: Our team works together to share ideas and expertise, ensuring a holistic approach to innovation.
                         </p>
-                        <p className="m-0">&nbsp;</p>
-                        <p className="m-0">{`As a result, we place utmost importance in providing reliable support that adds value to our clients by integrating innovative technologies, ensuring we deliver our services continuously in strict adherence to global standards on safety and compliance utilizing a team of highly skilled professionals that possess in depth knowledge of the maritime, security and oil & gas industry.`}</p>
+                        <p className="my-2 ml-2">
+                           - Customer-centric: We design solutions with your needs in mind, to make banking more intuitive and user-friendly
+                        </p>
+                        <p className="my-2 ml-2">
+                           - Continuous improvement: We refine and optimize our services to ensure they meet the highest standards.
+                        </p>
+                        <b className="mt-4">
+                           Our goal is to provide you with a seamless, personalized, and secure digital banking experience. Join us on this exciting journey and discover the future of banking today!
+                        </b>
+
                     </div>
+
                 </div>
 
             </div>
