@@ -74,7 +74,6 @@ const AboutUs: FunctionComponent = () => {
                     <div className=" leading-[26px] font-medium ">
                         <p className="my-2 ml-2">
                            - Creative problem-solving: We identify areas for improvement and develop innovative solutions to address them.
-
                         </p>
                         <p className="my-2 ml-2">
                            - Collaborative mindset: Our team works together to share ideas and expertise, ensuring a holistic approach to innovation.

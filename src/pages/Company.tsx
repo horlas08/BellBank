@@ -51,9 +51,11 @@ const Company: FunctionComponent = () => {
                         <h3 className="text-[25px] md:text-23xl text-black mt-0 mx-auto text-center md:w-[50%] text-center mb-0">
                             All the tools you need to run your business with ease</h3>
                         <p className={'text-center max-w-[550px] mx-auto font-aeonik text-gray-100'}>
-                            Lorem ipsum dolor sit amet consectetur. Varius mattis quam risus eget proin posuere
-                            eu
-                            bibendum tristique dolor tortor.
+                            BellBank's got all the tools you need to succeed. With
+                            Easy account management, Seamless payments and transfers, Invoicing and expense tracking, Insights and analytics
+
+                            Streamline your operations, save time, and focus on growth. BellBank's got your back!
+
                         </p>
                     </div>
                     <div className="flex md:flex-row flex-col justify-evenly gap-[70px]">

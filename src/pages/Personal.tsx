@@ -95,10 +95,10 @@ const Personal: FunctionComponent = () => {
                 <div className="content w-[80%] mx-auto">
                     <div className="relative text-mediumseagreen uppercase font-medium">Built for growth</div>
                     <h3 className="text-16xl md:text-23xl text-black mt-0 max-w-[500px] text-left mb-0">
-                        Grow globally with annual savings of $40k+</h3>
+                        Grow your wealth with annual savings</h3>
                     <p className={'text-left max-w-[550px] font-aeonik text-gray-100'}>
-                        Paystack is a technology company solving payments problems for ambitious businesses. Our mission
-                        is to help businesses.
+                        With BellBank's savings accounts, you can watch your money flourish worldwide. Earn competitive interest rates, enjoy easy access to your funds, and reach your financial goals faster.
+                        Start saving today and let your money grow globally, annually!
                     </p>
                 </div>
             </div>
@@ -116,9 +116,9 @@ const Personal: FunctionComponent = () => {
                             </div>
                             <div className="sub-title">
                                 <p className={'text-center font-bold max-w-[350px]  font-aeonik text-gray-100'}>
-                                    Our platform simplifies config files and their mounting. Don’t spend time changing
-                                    low-level K8s resources.
+                                    Get instant access to your money with BellBank's Instant Debit Cards!
                                 </p>
+                                <p className={'text-center font-bold max-w-[350px]  font-aeonik text-gray-100'}>No more waiting, no more hassle. Get your Instant Debit Card today and enjoy the convenience of having your money at your fingertips!</p>
                             </div>
                         </div>
                     </div>
@@ -243,9 +243,7 @@ const Personal: FunctionComponent = () => {
                                     Opening an account is simple as ABC...
                                 </h3>
                                 <p className={'text-left max-w-[550px] font-aeonik text-gray-100'}>
-                                    Lorem ipsum dolor sit amet consectetur. Varius mattis quam risus eget proin posuere
-                                    eu
-                                    bibendum tristique dolor tortor.
+                                    Join the BellBank family today and enjoy easy access to your money, anywhere, anytime!
                                 </p>
                             </div>
                             <Swiper allowTouchMove={false} noSwiping={false} slidesPerView={1}
