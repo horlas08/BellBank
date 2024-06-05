@@ -25,7 +25,7 @@ const Footer: FunctionComponent<FrameComponentType> = ({propTop}) => {
                             Get an account that suits you.
                         </b>
                         <div
-                            className="max-w-[420px] relative text-sm lg:text-lg leading-[20px] md:leading-[24px] font-medium text-gray-1100 inline-block md:min-h-[152px] ">
+                            className="max-w-[420px] relative text-sm lg:text-[15px] leading-[20px] md:leading-[24px] font-medium text-gray-1100 inline-block md:min-h-[152px] ">
                             At BellBank, we understand that every individual and business is unique. That's why we offer a range of accounts tailored to suit your specific needs. Whether you're looking for a personal account, a business account, or something in between, we've got you covered.
                         </div>
                     </div>

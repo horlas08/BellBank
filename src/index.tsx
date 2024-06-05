@@ -5,7 +5,7 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import "./global.css";
 import { register } from 'swiper/element/bundle';
-
+import '@splidejs/react-splide/css';
 const container = document.getElementById("root");
 const root = createRoot(container!);
 

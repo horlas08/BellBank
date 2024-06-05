@@ -15,12 +15,10 @@ import {
 } from '@heroicons/react/24/outline'
 import {ChevronDownIcon, PhoneIcon, PlayCircleIcon} from '@heroicons/react/20/solid'
 
-const products = [
-    {name: 'Analytics',  href: '#', icon: ChartPieIcon},
-    {name: 'Engagement', href: '#', icon: CursorArrowRaysIcon},
-    {name: 'Security',  href: '#', icon: FingerPrintIcon},
-    {name: 'Integrations', href: '#', icon: SquaresPlusIcon},
-    {name: 'Automations',  href: '#', icon: ArrowPathIcon},
+const mores = [
+    {name: 'Faq',  href: '#', icon: ChartPieIcon},
+    {name: 'Blog', href: '#', icon: CursorArrowRaysIcon},
+    {name: 'Contact Us',  href: '#', icon: FingerPrintIcon},
 ]
 
 function classNames(...classes: any[]) {
@@ -112,22 +110,18 @@ const Header: FunctionComponent<HeaderProps> = ({
                             leaveTo="opacity-0 translate-y-1"
                         >
                             <Popover.Panel
-                                className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-[15rem] overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
-                                <div className="p-4">
-                                    {products.map((item) => (
+                                className="absolute -left-1 top-full z-10 mt-3 min-w-[10rem]  overflow-hidden rounded-md bg-white shadow-lg ring-1 ring-gray-900/5">
+                                <div className="px-[1.5rem] py-[2rem]">
+                                    {mores.map((item) => (
                                         <div
                                             key={item.name}
-                                            className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+                                            className="group relative flex items-center gap-x-3 rounded-lg text-sm leading-6 hover:bg-gray-50"
                                         >
-                                            <div
-                                                className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                                                <item.icon className="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
-                                                           aria-hidden="true"/>
-                                            </div>
+
                                             <div className="flex-auto">
-                                                <Link to={item.href} className="block text-black no-underline font-semibold .text-gray-1100">
+                                                <Link to={item.href} className="block text-black no-underline font-normal  .text-gray-1100">
                                                     {item.name}
-                                                    <span className="absolute inset-0"/>
+
                                                 </Link>
                                             </div>
                                         </div>
@@ -200,7 +194,7 @@ const Header: FunctionComponent<HeaderProps> = ({
                                                 />
                                             </Disclosure.Button>
                                             <Disclosure.Panel className="mt-2 space-y-2">
-                                                {[...products].map((item) => (
+                                                {[...mores].map((item) => (
                                                     <Disclosure.Button
                                                         key={item.name}
                                                         as="a"

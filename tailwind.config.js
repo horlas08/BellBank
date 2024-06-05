@@ -35,6 +35,7 @@ module.exports = {
           "300": "#505553",
         },
         mediumseagreen: "#00bc74",
+        mediumseagreenlight: "#e6fff5",
         cadetblue: "#74c3c7",
         floralwhite: "#fbfaf2",
         darkslategray: {

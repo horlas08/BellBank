@@ -47,8 +47,10 @@ const FaqItem: FunctionComponent<FaqItemType> = ({
           style={frameStyle}
       >
         <div className=" flex w-full justify-between">
-          <b
-              className="max-w-[421px] relative leading-[29px] flex items-center"
+          <b onClick={() => {
+            handleFold(index)
+          }}
+              className={`max-w-[421px] hover:text-mediumseagreen ${show? 'text-mediumseagreen': ''} cursor-pointer mb-3 relative leading-[29px] flex items-center`}
               style={titleStyle}
           >
             {title}
@@ -56,7 +58,6 @@ const FaqItem: FunctionComponent<FaqItemType> = ({
           <img
               onClick={() => {
                 handleFold(index)
-                console.log(show)
               }}
               className="w-10 h-10 cursor-pointer overflow-hidden shrink-0 z-[1]"
               alt=""

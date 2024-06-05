@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap");
 @font-face {
   font-family: "Aeonik";
@@ -30,6 +31,7 @@ body {
 ::before,
 ::after {
   border-width: 0;
+  letter-spacing: 1px;
 }
 .banner .swiper-slide img {
   display: block;
@@ -37,8 +39,17 @@ body {
   height: 100%;
   object-fit: cover;
 }
+.testimonial{
+  padding: 3rem 0.75rem;
+}
 .swiper-slide img{
   object-fit: cover;
+}
+.testimonial-wrapper {
+
+  border-radius: 1rem;
+  min-height: 10rem;
+  padding: 2rem;
 }
 .swiper-slide{
   display: grid;
