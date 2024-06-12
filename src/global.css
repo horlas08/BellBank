@@ -21,6 +21,45 @@
   font-weight: 400;
 }
 
+@font-face {
+  font-family: "Outfit";
+  src: url("/public/assets/fonts/outfit/Outfit-Black.ttf");
+  font-weight: 900;
+}@font-face {
+  font-family: "Outfit";
+  src: url("/public/assets/fonts/outfit/Outfit-Bold.ttf");
+  font-weight: 800;
+}@font-face {
+  font-family: "Outfit";
+  src: url("/public/assets/fonts/outfit/Outfit-ExtraBold.ttf");
+  font-weight: 700;
+}@font-face {
+  font-family: "Outfit";
+  src: url("/public/assets/fonts/outfit/Outfit-ExtraLight.ttf");
+  font-weight: 600;
+}@font-face {
+  font-family: "Outfit";
+  src: url("/public/assets/fonts/outfit/Outfit-Light.ttf");
+  font-weight: 500;
+}@font-face {
+  font-family: "Outfit";
+  src: url("/public/assets/fonts/outfit/Outfit-Medium.ttf");
+  font-weight: 400;
+}@font-face {
+  font-family: "Outfit";
+  src: url("/public/assets/fonts/outfit/Outfit-Regular.ttf");
+  font-weight: 300;
+}@font-face {
+  font-family: "Outfit";
+  src: url("/public/assets/fonts/outfit/Outfit-SemiBold.ttf");
+  font-weight: 200;
+}@font-face {
+  font-family: "Outfit";
+  src: url("/public/assets/fonts/outfit/Outfit-Thin.ttf");
+  font-weight: 100;
+}
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -85,3 +124,75 @@ input,input:focus{
   border: 1px solid;
 }
 
+p,a{
+  font-family: outfit ;
+}
+
+.sponsors-section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.sponsors-section-title {
+  border-bottom: 1px var(--dark-color) solid;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25.2px;
+  padding: 0 0.5rem 2rem 0.5rem;
+  text-align: center;
+}
+
+.sponsors {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin-top: 2rem;
+  gap: 1.5rem;
+}
+
+.sponsors .sponsor {
+  max-height: 35px;
+  max-width: 132px;
+}
+@media (min-width: 1024px) {
+  .sponsors-section {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .sponsors-section-title {
+    align-items: center;
+    border-right: 1px var(--dark-color) solid;
+    border-bottom: none;
+    display: flex;
+    height: 3rem;
+    padding: 0 0.75rem;
+    width: 15%;
+  }
+  .sponsors-section-title {
+    align-items: center;
+    border-right: 1px black solid;
+    border-bottom: none;
+    display: flex;
+    height: 3rem;
+    padding: 0 0.75rem;
+    width: 15%;
+  }
+  .sponsors {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding-left: 2rem;
+    width: 85%;
+  }
+}
+
+
+.section-title {
+  font-size: 45px;
+  line-height: 56.7px;
+}

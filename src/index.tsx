@@ -4,6 +4,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import "./global.css";
+// import "./style.css";
 import { register } from 'swiper/element/bundle';
 import '@splidejs/react-splide/css';
 const container = document.getElementById("root");

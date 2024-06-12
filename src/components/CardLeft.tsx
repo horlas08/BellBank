@@ -58,7 +58,7 @@ const CardLeft: FunctionComponent<CardLeftType> = ({
             )}
             <div className="flex flex-col items-start justify-start gap-[20px] text-16xl text-gray-500">
             <div className="lg:w-[352px] w-full flex flex-col items-center lg:items-start lg:justify-start pt-[0.3px] px-0 pb-0 box-border mix-blend-normal">
-                <b className=" text-3xl lg:text-16xl relative flex items-center">
+                <b className=" text-3xl font-outfit lg:text-16xl relative flex items-center">
                   {instantDebitCardsThatAlwa}
                 </b>
               </div>

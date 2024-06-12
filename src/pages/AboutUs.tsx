@@ -22,7 +22,7 @@ const AboutUs: FunctionComponent = () => {
             <div className="relative mt-[80px] mb-[50px] flex flex-col items-center justify-start gap-[20px]">
                 <div className="flex flex-col items-center justify-start gap-[10px]">
                     <div className="relative uppercase font-medium">Built for growth</div>
-                    <b className="max-w-[629px] mx-6 relative text-23xl leading-[50px] inline-block text-gray-500 text-center  ">
+                    <b className="max-w-[629px] font-outfit mx-6 relative text-23xl leading-[50px] inline-block text-gray-500 text-center  ">
                         Powering a new generation of businesses in Africa
                     </b>
                 </div>

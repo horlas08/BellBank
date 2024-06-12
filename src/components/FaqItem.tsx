@@ -50,7 +50,7 @@ const FaqItem: FunctionComponent<FaqItemType> = ({
           <b onClick={() => {
             handleFold(index)
           }}
-              className={`max-w-[421px] hover:text-mediumseagreen ${show? 'text-mediumseagreen': ''} cursor-pointer mb-3 relative leading-[29px] flex items-center`}
+              className={`max-w-[421px] font-outfit hover:text-mediumseagreen ${show? 'text-mediumseagreen': ''} cursor-pointer mb-3 relative leading-[29px] flex items-center`}
               style={titleStyle}
           >
             {title}

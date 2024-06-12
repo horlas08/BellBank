@@ -95,7 +95,7 @@ const Header: FunctionComponent<HeaderProps> = ({
 
                         }}
                             className={`flex cursor-pointer dropDown bg-transparent  border-0 focus-visible:border-none items-center gap-x-1 text-sm leading-6 .text-gray-1100 ${propColor}`}>
-                            Product
+                            Learn More
                             <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" fill={chevronColor}
                                              aria-hidden="true"/>
                         </Popover.Button>

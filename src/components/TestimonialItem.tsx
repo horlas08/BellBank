@@ -19,47 +19,6 @@ const TestimonialItem: FunctionComponent<TestimonialItemType> = ({image, usernam
 
 
     return (
-        // <div className="flex flex-col items-start justify-start gap-[24px]">
-        //     <div className="mx-au">
-        //
-        //         <div className="flex flex-col items-start justify-center gap-[20px]">
-        //             <div className="w-auto h-auto overflow-hidden flex flex-col items-center justify-center">
-        //                 {/*<img className="max-w-[110px] relative max-h-[100px] " alt=""*/}
-        //                 {/*     src={imageTop}/>*/}
-        //             </div>
-        //             <div className="md:max-w-[325px] md:my-auto my-3 relative leading-[26px] font-medium flex items-center">
-        //                 {children}
-        //             </div>
-        //
-        //         </div>
-        //
-        //         <div className="below mt-[15px] flex flex-row items-center justify-start text-base text-gray-400">
-        //             <div className="flex flex-row items-center justify-start gap-[12px]">
-        //
-        //                 <div
-        //                     className="w-16 rounded-[4.07px] h-16 overflow-hidden shrink-0 flex flex-col items-start justify-center">
-        //
-        //                     <img
-        //                         className="w-full flex-1 relative rounded-81xl max-w-[64px] overflow-hidden max-h-full object-cover"
-        //                         alt="" src={image}/>
-        //
-        //                 </div>
-        //                 <div className="h-[51px] flex flex-col items-start justify-start">
-        //                     <b className="relative leading-[22px]">
-        //                         {username}
-        //                     </b>
-        //                     <div
-        //                         className="self-stretch flex flex-col items-start justify-start pt-[5px] px-0 pb-0 opacity-[0.7] text-sm">
-        //                         <div className="relative leading-[17px]">
-        //                             {title}
-        //                         </div>
-        //                     </div>
-        //                 </div>
-        //             </div>
-        //         </div>
-        //
-        //     </div>
-        // </div>
 
         <li className={'testimonial'}>
 

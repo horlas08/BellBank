@@ -12,6 +12,7 @@ import Api from "../components/Api";
 import Faq from "../components/Faq";
 import ApproveBy from "../components/ApproveBy";
 import Notification from "../components/Notification";
+import Sponsor from "../components/Sponsor";
 
 const Homepage: FunctionComponent = () => {
     return (
@@ -34,6 +35,7 @@ const Homepage: FunctionComponent = () => {
 
                 <Api/>
                 <Faq/>
+                <Sponsor/>
                 <Testimonial
                     image="/assets/images/testimonial.png"/>
                 <Footer/>

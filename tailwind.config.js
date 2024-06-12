@@ -62,6 +62,7 @@ module.exports = {
         aeonik: "Aeonik",
         inter: "Inter",
         "segoe-ui": "'Segoe UI'",
+        outfit: 'Outfit'
       },
       borderRadius: {
         "8xs-1": "4.1px",
