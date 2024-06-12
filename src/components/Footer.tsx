@@ -51,7 +51,7 @@ const Footer: FunctionComponent<FrameComponentType> = ({propTop}) => {
                     <nav className="flex flex-col my-[25px] sm:my-0">
                         <h6 className="footer-title mt-0 text-xl sm:text-inherit">Company</h6>
                         <Link to={'/about-us'} className="text-black cursor-pointer  link link-hover">About Us</Link>
-                        <a href={'https://bellmfb.com/security.html'} target={'_blank'} className="link text-black link-hover">Security</a>
+                        <Link to={'/security'}  className="link cursor-pointer  text-black link-hover">Security</Link>
                         <a href={''} target={'_blank'} className="link  text-black link-hover">Help center</a>
                         <a href={''} target={'_blank'} className="link  text-black link-hover">API documentation</a>
                     </nav>

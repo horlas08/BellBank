@@ -17,6 +17,7 @@ import Portfolio from "./pages/Personal";
 import Company from "./pages/Company";
 import Policy from "./pages/Policy";
 import Terms from "./pages/Terms";
+import Security from "./pages/Security";
 
 
 function App() {
@@ -68,6 +69,7 @@ function App() {
       <Route path="/company" element={<Company />} />
       <Route path="/terms" element={<Terms />} />
       <Route path="/policy" element={<Policy />} />
+      <Route path="/security" element={<Security />} />
       <Route path="*" element={<Homepage />} />
     </Routes>
   );
