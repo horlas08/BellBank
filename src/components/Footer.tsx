@@ -30,8 +30,8 @@ const Footer: FunctionComponent<FrameComponentType> = ({propTop}) => {
                         </div>
                     </div>
                     <div
-                        className="w-[166px] rounded-lg cursor-pointer  bg-mediumseagreen md:h-[45px] flex flex-row items-center justify-center py-[8px] md:py-[11px] px-5 box-border text-center text-mini text-floralwhite">
-                        <div className="relative cursor-pointer font-medium" onClick={()=> window.location.href = 'https://app.bellmfb.com/account/register/'}>Get started today</div>
+                        className="rounded-lg cursor-pointer  bg-mediumseagreen md:h-[45px] flex flex-row items-center justify-center py-[8px] md:py-[11px] px-5 box-border text-center text-mini text-floralwhite">
+                        <div className="relative cursor-pointer font-outfit capitalize font-bold" onClick={()=> window.location.href = 'https://app.bellmfb.com/account/register/'}>Get started</div>
                     </div>
                 </div>
             </div>

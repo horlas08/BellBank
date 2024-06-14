@@ -30,13 +30,16 @@ export const FlipWords = ({
             }, duration);
     }, [isAnimating, duration, startAnimation]);
 
+    const map = currentWord.split((/(?=&nbsp)?(?=.*)/gm));
     return (
         <AnimatePresence
+
             onExitComplete={() => {
                 setIsAnimating(false);
             }}
         >
             <motion.div
+                style={{ whiteSpace: "pre-wrap" }}
                 initial={{
                     opacity: 0,
                     y: 10,
@@ -66,20 +69,28 @@ export const FlipWords = ({
                 )}
                 key={currentWord}
             >
-                {currentWord.split([" ",""]).map((letter, index) => (
-                    <motion.span
-                        key={currentWord + index}
-                        initial={{ opacity: 0, y: 10, filter: "blur(8px)" }}
-                        animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-                        transition={{
-                            delay: index * 0.08,
-                            duration: 0.4,
-                        }}
-                        className="inline-block"
-                    >
-                        {letter}
-                    </motion.span>
-                ))}
+                {map.map((letter, index) => {
+                    if (letter == ' '){
+                        return ' ';
+                    }
+                   return (
+
+                        <motion.span
+                            style={{whiteSpace: "pre-wrap"}}
+                            key={currentWord + index}
+                            initial={{opacity: 0, y: 10, filter: "blur(8px)"}}
+                            animate={{opacity: 1, y: 0, filter: "blur(0px)"}}
+                            transition={{
+                                delay: index * 0.08,
+                                duration: 0.4,
+                            }}
+
+                            className="inline-flex"
+                        >
+                            {letter}{letter.includes(' ') ?? ' '}
+                        </motion.span>
+                    )
+                })}
             </motion.div>
         </AnimatePresence>
     );

@@ -11,7 +11,7 @@ export type Card = {
     thumbnail: string;
 };
 
-export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
+export default function LayoutGrid ({ cards }: { cards: Card[] }) {
     const [selected, setSelected] = useState<Card | null>(null);
     const [lastSelected, setLastSelected] = useState<Card | null>(null);
 
@@ -26,7 +26,7 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
     };
 
     return (
-        <div className="w-full h-full p-10 grid grid-cols-1 md:grid-cols-3  max-w-7xl mx-auto gap-4 relative">
+        <div className="w-full h-[4c00px] p-10 grid grid-cols-1 md:grid-cols-3  max-w-7xl mx-auto gap-4 relative">
             {cards.map((card, i) => (
                 <div key={i} className={cn(card.className, "")}>
                     <motion.div
@@ -67,7 +67,7 @@ const BlurImage = ({ card }: { card: Card }) => {
             src={card.thumbnail}
             height="500"
             width="500"
-            onLoad={() => setLoaded(true)}
+            // onLoad={() => setLoaded(true)}
             className={cn(
                 "object-cover object-top absolute inset-0 h-full w-full transition duration-200",
                 loaded ? "blur-none" : "blur-md"
