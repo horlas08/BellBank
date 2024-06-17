@@ -112,6 +112,7 @@ const Security: FunctionComponent = () => {
     const cards = [
         {
             id: 1,
+            title: "Your Identity Documents",
             content: <SkeletonOne />,
             className: "md:col-span-2",
             thumbnail:
@@ -119,6 +120,7 @@ const Security: FunctionComponent = () => {
         },
         {
             id: 2,
+            title: "Your Facial Identity",
             content: <SkeletonTwo />,
             className: "col-span-1",
             thumbnail:
@@ -126,6 +128,7 @@ const Security: FunctionComponent = () => {
         },
         {
             id: 3,
+            title: "Your Password",
             content: <SkeletonThree />,
             className: "col-span-1",
             thumbnail:
@@ -133,6 +136,7 @@ const Security: FunctionComponent = () => {
         },
         {
             id: 4,
+            title: "Your PINs",
             content: <SkeletonFour />,
             className: "md:col-span-2",
             thumbnail:
@@ -151,8 +155,8 @@ const Security: FunctionComponent = () => {
                 propBorderBottom="border-gray-100"
                 propColor="white"
                 chevronColor="black"
-
             />
+
             <div className="text-black flex flex-col items-center bg-black">
                 <div className="max-w-[550px]  mx-auto mt-[40px]">
                     <h3 style={{ whiteSpace: "pre-wrap" }} className="w-full text-white text-16xl  md:text-[45px] text-center mb-0">
@@ -177,6 +181,7 @@ const Security: FunctionComponent = () => {
 
                 </div>
             </div>
+
             <ApproveBy/>
             <LayoutGrid cards={cards}/>
             <Faq/>

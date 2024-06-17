@@ -1,5 +1,5 @@
-import React, { useState} from "react";
-import { motion } from "framer-motion";
+import React, {useState} from "react";
+import {motion} from "framer-motion";
 import {cn} from "../../../utils/cn";
 
 
@@ -7,14 +7,16 @@ export type Card = {
     id: number;
     content: JSX.Element | React.ReactNode | string;
     className: string;
+    title: string;
     thumbnail: string;
 };
 
-export default function LayoutGrid ({ cards }: { cards: Card[] }) {
+export default function LayoutGrid({cards}: { cards: Card[] }) {
     const [selected, setSelected] = useState<Card | null>(null);
     const [lastSelected, setLastSelected] = useState<Card | null>(null);
 
     const handleClick = (card: Card) => {
+
         setLastSelected(selected);
         setSelected(card);
     };
@@ -25,7 +27,8 @@ export default function LayoutGrid ({ cards }: { cards: Card[] }) {
     };
 
     return (
-        <div className="w-[90%] justify-center mt-[90px] mb-[30px] h-[4c00px] grid grid-cols-1 md:grid-cols-3  max-w-7xl mx-auto gap-4 relative">
+        <div
+            className="w-[90%] justify-center mt-[90px] mb-[30px] h-[4c00px] grid grid-cols-1 md:grid-cols-3  max-w-7xl mx-auto gap-4 relative">
             {cards.map((card, i) => (
                 <div key={i} className={cn(card.className, "")}>
                     <motion.div
@@ -41,8 +44,11 @@ export default function LayoutGrid ({ cards }: { cards: Card[] }) {
                         )}
                         layout
                     >
-                        {selected?.id === card.id && <SelectedCard selected={selected} />}
-                        <BlurImage card={card} />
+                        {selected?.id === card.id && <SelectedCard selected={selected}/>}
+                        <div>
+
+                            <BlurImage card={card}/>
+                        </div>
                     </motion.div>
                 </div>
             ))}
@@ -52,36 +58,47 @@ export default function LayoutGrid ({ cards }: { cards: Card[] }) {
                     "absolute h-full w-full left-0 top-0 bg-black opacity-0 z-10",
                     selected?.id ? "pointer-events-auto" : "pointer-events-none"
                 )}
-                animate={{ opacity: selected?.id ? 0.3 : 0 }}
+                animate={{opacity: selected?.id ? 0.3 : 0}}
             />
         </div>
     );
 };
 
-const BlurImage = ({ card }: { card: Card }) => {
+const BlurImage = ({card}: { card: Card }) => {
+
     const [loaded, setLoaded] = useState(false);
+
     return (
+        <div className={`bg-[url('/assets/images/rectangle-34624349@2x.png')] securityCard justify-center items-center flex h-[300px] object-center bg-center  inset-0 max-h-[300px]`}>
+            <div className="grid h-full z-[11]">
+                <div className="place-content-center">
+                 <h2 className={"text-[30px]  text-center"}>{card.title}</h2>
+                 <h6 className={"text-[30px]  text-center m-0"}>Read More.....</h6>
 
-        <img
-            src={card.thumbnail}
-            height="300"
-            width="500"
-            onLoad={() => {
-
-                setLoaded(true)
-            }}
-            className={cn(
-                "object-cover object-top  inset-0 max-h-[300px] h-full w-full transition duration-200",
-                loaded ? "blur-none" : "blur-md"
-            )}
-            alt="thumbnail"
-        />
+                </div>
+            </div>
+        </div>
+        // <img
+        //     src={card.thumbnail}
+        //     height="300"
+        //     width="500"
+        //     onLoad={() => {
+        //
+        //         setLoaded(true)
+        //     }}
+        //     className={cn(
+        //         "object-cover object-top  inset-0 max-h-[300px] h-full w-full transition duration-200",
+        //         loaded ? "blur-none" : "blur-md"
+        //     )}
+        //     alt="thumbnail"
+        // />
     );
 };
 
-const SelectedCard = ({ selected }: { selected: Card | null }) => {
+const SelectedCard = ({selected}: { selected: Card | null }) => {
     return (
-        <div className="bg-mediumseagreen m-10 !mx-auto h-full w-full flex flex-col justify-end rounded-lg shadow-2xl relative z-[60]">
+        <div
+            className="bg-mediumseagreen m-10 !mx-auto h-full w-full flex flex-col justify-end rounded-lg shadow-2xl relative z-[60]">
             <motion.div
                 initial={{
                     opacity: 0,
