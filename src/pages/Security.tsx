@@ -14,11 +14,10 @@ import {appleUrl} from "../../utils/cn";
 const SkeletonOne = () => {
     return (
         <div>
-            <p className="font-bold text-4xl text-white">House in the woods</p>
+            <p className="font-bold text-[30px] text-white">Your Identity Documents</p>
             <p className="font-normal text-base text-white"></p>
             <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-                A serene and tranquil retreat, this house in the woods offers a peaceful
-                escape from the hustle and bustle of city life.
+                We ask everyone who opens a BellBank account to give us their BVN (Bank Verification Number) and a valid ID issued by the government (driver’s license, voter’s card, national ID card or NIN slip). This helps us prevent identity fraud by confirming that everyone who uses BellBank, including you, is who they say they are.
             </p>
         </div>
     );
@@ -27,12 +26,11 @@ const SkeletonOne = () => {
 const SkeletonTwo = () => {
     return (
         <div>
-            <p className="font-bold text-4xl text-white">House above the clouds</p>
+            <p className="font-bold text-4xl text-white">Your Facial Identity</p>
             <p className="font-normal text-base text-white"></p>
             <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-                Perched high above the world, this house offers breathtaking views and a
-                unique living experience. It&apos;s a place where the sky meets home,
-                and tranquility is a way of life.
+                It’s mandatory for anyone opening a BellBank account to take a photo of their face during the account opening process so that we can confirm they’re opening the account themselves.
+                This also helps prevent identity fraud.
             </p>
         </div>
     );
@@ -40,11 +38,10 @@ const SkeletonTwo = () => {
 const SkeletonThree = () => {
     return (
         <div>
-            <p className="font-bold text-4xl text-white">Greens all over</p>
+            <p className="font-bold text-4xl text-white">Your Password</p>
             <p className="font-normal text-base text-white"></p>
             <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-                A house surrounded by greenery and nature&apos;s beauty. It&apos;s the
-                perfect place to relax, unwind, and enjoy life.
+                When you’re opening your BellBank account, we ask that you create a password (with any combination of letters, numbers and special characters) to secure your account. We may ask for your password to authorise any changes you make to your account information.
             </p>
         </div>
     );
@@ -52,11 +49,10 @@ const SkeletonThree = () => {
 const SkeletonFour = () => {
     return (
         <div>
-            <p className="font-bold text-4xl text-white">Rivers are serene</p>
+            <p className="font-bold text-4xl text-white">Your PINs</p>
             <p className="font-normal text-base text-white"></p>
             <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-                A house by the river is a place of peace and tranquility. It&apos;s the
-                perfect place to relax, unwind, and enjoy life.
+                Every BellBank account is secured with a unique six-digit PIN that only the account holder should have access to. You can’t use your BellBank account without first setting your sign-in PIN. Your transactions on the app are also secured with a transaction PIN, and your BellBank Card has its own four-digit PIN.
             </p>
         </div>
     );
@@ -140,7 +136,7 @@ const Security: FunctionComponent = () => {
             content: <SkeletonFour />,
             className: "md:col-span-2",
             thumbnail:
-                "http://localhost:5173/assets/images/rectangle-34624349@2x.png",
+                "/assets/images/rectangle-34624349@2x.png",
         },
     ];
 

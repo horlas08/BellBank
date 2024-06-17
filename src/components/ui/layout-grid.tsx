@@ -1,5 +1,4 @@
-"use client";
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState} from "react";
 import { motion } from "framer-motion";
 import {cn} from "../../../utils/cn";
 
@@ -26,7 +25,7 @@ export default function LayoutGrid ({ cards }: { cards: Card[] }) {
     };
 
     return (
-        <div className="w-full h-[4c00px] p-10 grid grid-cols-1 md:grid-cols-3  max-w-7xl mx-auto gap-4 relative">
+        <div className="w-[90%] justify-center mt-[90px] mb-[30px] h-[4c00px] grid grid-cols-1 md:grid-cols-3  max-w-7xl mx-auto gap-4 relative">
             {cards.map((card, i) => (
                 <div key={i} className={cn(card.className, "")}>
                     <motion.div
@@ -65,11 +64,14 @@ const BlurImage = ({ card }: { card: Card }) => {
 
         <img
             src={card.thumbnail}
-            height="500"
+            height="300"
             width="500"
-            // onLoad={() => setLoaded(true)}
+            onLoad={() => {
+
+                setLoaded(true)
+            }}
             className={cn(
-                "object-cover object-top absolute inset-0 h-full w-full transition duration-200",
+                "object-cover object-top  inset-0 max-h-[300px] h-full w-full transition duration-200",
                 loaded ? "blur-none" : "blur-md"
             )}
             alt="thumbnail"
@@ -79,7 +81,7 @@ const BlurImage = ({ card }: { card: Card }) => {
 
 const SelectedCard = ({ selected }: { selected: Card | null }) => {
     return (
-        <div className="bg-transparent h-full w-full flex flex-col justify-end rounded-lg shadow-2xl relative z-[60]">
+        <div className="bg-mediumseagreen m-10 !mx-auto h-full w-full flex flex-col justify-end rounded-lg shadow-2xl relative z-[60]">
             <motion.div
                 initial={{
                     opacity: 0,
