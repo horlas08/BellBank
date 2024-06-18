@@ -90,11 +90,23 @@ const Header: FunctionComponent<HeaderProps> = ({
                 </div>
                 {/*larger area */}
                 <Popover.Group className="hidden  lg:flex lg:gap-x-12">
+
+
+                    <Link to="/about-us" style={productsStyle} className={` text-sm  no-underline leading-6 `}>
+                        About us
+                    </Link>
+
+                    <Link to="/personal" style={productsStyle} className={`text-sm  no-underline leading-6`}>
+                        Personal
+                    </Link>
+                    <Link to="/company" style={productsStyle} className={`text-sm  no-underline  leading-6`}>
+                        Company
+                    </Link>
                     <Popover className="relative bg-none border-0">
                         <Popover.Button as={'div'}  onMouseEnter={()=>{
 
                         }}
-                            className={`flex cursor-pointer dropDown bg-transparent  border-0 focus-visible:border-none items-center gap-x-1 text-sm leading-6 .text-gray-1100 ${propColor}`}>
+                                        className={`flex cursor-pointer dropDown bg-transparent  border-0 focus-visible:border-none items-center gap-x-1 text-sm leading-6 .text-gray-1100 ${propColor}`}>
                             Learn More
                             <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" fill={chevronColor}
                                              aria-hidden="true"/>
@@ -131,17 +143,6 @@ const Header: FunctionComponent<HeaderProps> = ({
                             </Popover.Panel>
                         </Transition>
                     </Popover>
-
-                    <Link to="/about-us" style={productsStyle} className={` text-sm  no-underline leading-6 `}>
-                        About us
-                    </Link>
-
-                    <Link to="/personal" style={productsStyle} className={`text-sm  no-underline leading-6`}>
-                        Personal
-                    </Link>
-                    <Link to="/company" style={productsStyle} className={`text-sm  no-underline  leading-6`}>
-                        Company
-                    </Link>
                 </Popover.Group>
                 <div className="hidden lg:flex gap-x-[20px] lg:flex-1 lg:justify-end">
 

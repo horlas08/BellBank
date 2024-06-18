@@ -2,12 +2,11 @@ import {FunctionComponent, useCallback, useEffect, useRef, useState} from "react
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import {Swiper, SwiperRef, SwiperSlide} from 'swiper/react';
-import {Pagination, EffectFade, Navigation} from 'swiper/modules';
 import ApproveBy from "../components/ApproveBy";
 
 import {FlipWords} from "../components/ui/FlipWord";
 import Faq from "../components/Faq";
-import LayoutGrid, {Card} from "../components/ui/layout-grid";
+import LayoutGrid from "../components/ui/layout-grid";
 import {appleUrl} from "../../utils/cn";
 
 
@@ -22,11 +21,10 @@ const SkeletonOne = () => {
         </div>
     );
 };
-
 const SkeletonTwo = () => {
     return (
         <div>
-            <p className="font-bold text-4xl text-white">Your Facial Identity</p>
+            <p className="font-bold text-[30px] text-white">Your Facial Identity</p>
             <p className="font-normal text-base text-white"></p>
             <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
                 It’s mandatory for anyone opening a BellBank account to take a photo of their face during the account opening process so that we can confirm they’re opening the account themselves.
@@ -38,7 +36,7 @@ const SkeletonTwo = () => {
 const SkeletonThree = () => {
     return (
         <div>
-            <p className="font-bold text-4xl text-white">Your Password</p>
+            <p className="font-bold text-[30px] text-white">Your Password</p>
             <p className="font-normal text-base text-white"></p>
             <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
                 When you’re opening your BellBank account, we ask that you create a password (with any combination of letters, numbers and special characters) to secure your account. We may ask for your password to authorise any changes you make to your account information.
@@ -49,7 +47,7 @@ const SkeletonThree = () => {
 const SkeletonFour = () => {
     return (
         <div>
-            <p className="font-bold text-4xl text-white">Your PINs</p>
+            <p className="font-bold text-[30px] text-white">Your PINs</p>
             <p className="font-normal text-base text-white"></p>
             <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
                 Every BellBank account is secured with a unique six-digit PIN that only the account holder should have access to. You can’t use your BellBank account without first setting your sign-in PIN. Your transactions on the app are also secured with a transaction PIN, and your BellBank Card has its own four-digit PIN.
@@ -58,7 +56,7 @@ const SkeletonFour = () => {
     );
 };
 
-const Security: FunctionComponent = () => {
+export default function Security(){
 
     const sliderRef = useRef<SwiperRef>(null);
     const sliderRef2 = useRef<SwiperRef>(null);
@@ -184,10 +182,11 @@ const Security: FunctionComponent = () => {
 
             <ApproveBy/>
             <LayoutGrid cards={cards}/>
+            <LayoutGrid cards={cards}/>
             <Faq/>
             <Footer/>
         </div>
     );
 };
 
-export default Security;
+ // Security;

@@ -18,6 +18,7 @@ import Company from "./pages/Company";
 import Policy from "./pages/Policy";
 import Terms from "./pages/Terms";
 import Security from "./pages/Security";
+import FaqsPage from "./pages/Faq";
 
 
 function App() {
@@ -70,6 +71,7 @@ function App() {
       <Route path="/terms" element={<Terms />} />
       <Route path="/policy" element={<Policy />} />
       <Route path="/security" element={<Security />} />
+      <Route path="/faq" element={<FaqsPage />} />
       <Route path="*" element={<Homepage />} />
     </Routes>
   );

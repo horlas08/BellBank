@@ -14,6 +14,7 @@ export type Card = {
 export default function LayoutGrid({cards}: { cards: Card[] }) {
     const [selected, setSelected] = useState<Card | null>(null);
     const [lastSelected, setLastSelected] = useState<Card | null>(null);
+    const [isBlur, setIsBlur] = useState(false);
 
     const handleClick = (card: Card) => {
 
@@ -24,6 +25,7 @@ export default function LayoutGrid({cards}: { cards: Card[] }) {
     const handleOutsideClick = () => {
         setLastSelected(selected);
         setSelected(null);
+        setIsBlur(false)
     };
 
     return (
@@ -32,9 +34,13 @@ export default function LayoutGrid({cards}: { cards: Card[] }) {
             {cards.map((card, i) => (
                 <div key={i} className={cn(card.className, "")}>
                     <motion.div
-                        onClick={() => handleClick(card)}
+                        onClick={(e) => {
+                            setIsBlur(true)
+                            handleClick(card)
+                        }}
                         className={cn(
                             card.className,
+                            !isBlur ?'securityCard': '',
                             "relative overflow-hidden",
                             selected?.id === card.id
                                 ? "rounded-lg cursor-pointer absolute inset-0 h-1/2 w-full md:w-1/2 m-auto z-50 flex justify-center items-center flex-wrap flex-col"
@@ -69,11 +75,11 @@ const BlurImage = ({card}: { card: Card }) => {
     const [loaded, setLoaded] = useState(false);
 
     return (
-        <div className={`bg-[url('/assets/images/rectangle-34624349@2x.png')] securityCard justify-center items-center flex h-[300px] object-center bg-center  inset-0 max-h-[300px]`}>
+        <div className={`bg-[url('/assets/images/rectangle-34624349@2x.png')] cursor-pointer  justify-center items-center flex h-[300px] object-center bg-center  inset-0 max-h-[300px]`}>
             <div className="grid h-full z-[11]">
                 <div className="place-content-center">
                  <h2 className={"text-[30px]  text-center"}>{card.title}</h2>
-                 <h6 className={"text-[30px]  text-center m-0"}>Read More.....</h6>
+                 <h6 className={"text-[30px]  text-center m-0"}>Read More...</h6>
 
                 </div>
             </div>
