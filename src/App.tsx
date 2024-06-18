@@ -19,6 +19,7 @@ import Policy from "./pages/Policy";
 import Terms from "./pages/Terms";
 import Security from "./pages/Security";
 import FaqsPage from "./pages/Faq";
+import Business from "./pages/products/Business";
 
 
 function App() {
@@ -67,6 +68,7 @@ function App() {
       <Route path="/" element={<Homepage />} />
       <Route path="/about-us" element={<AboutUs />} />
       <Route path="/personal" element={<Portfolio />} />
+      <Route path="/business" element={<Business />} />
       <Route path="/company" element={<Company />} />
       <Route path="/terms" element={<Terms />} />
       <Route path="/policy" element={<Policy />} />

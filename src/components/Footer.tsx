@@ -1,5 +1,5 @@
 import {FunctionComponent, useMemo, type CSSProperties} from "react";
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import AppBtn from "./AppBtn";
 
 export type FooterPropsType = {
@@ -8,7 +8,8 @@ export type FooterPropsType = {
     defaultType?: boolean;
 };
 
-const Footer: FunctionComponent = ({propTop, defaultType = true}: FooterPropsType) => {
+const Footer = ({propTop, defaultType = true}: FooterPropsType) => {
+    const navigate = useNavigate();
     const styleMemo: CSSProperties = useMemo(() => {
         return {
             top: propTop,
@@ -39,26 +40,20 @@ const Footer: FunctionComponent = ({propTop, defaultType = true}: FooterPropsTyp
                 </div>
 
             ): (
-                <div className="w-[70%] flex flex-col justify-center py-5 md:py-0 px-9 !md:pl-[50px] mx-auto relative rounded-3xl bg-darkslategray-100 h-[240px] md:h-[340px] overflow-hidden text-38xl">
+                <div className="w-[70%] md:w-[50%] flex flex-col justify-center py-5 md:py-0 px-9 !md:pl-[50px] mx-auto relative rounded-3xl bg-darkslategray-100 h-[140px] md:h-[240px] overflow-hidden text-38xl">
 
-                    <div className=" flex flex-col items-start justify-start gap-[30px]">
-                        <div className="flex flex-col items-start justify-start gap-[15px]">
-                            <b className="text-white relative text-xl sm:text-16xl md:text-23xl leading-7 md:leading-[60px] ">
-                                Get an account that suits you.
+                    <div className=" flex flex-col items-center justify-start gap-[30px]">
+                        <div className="flex flex-col items-center justify-start gap-[15px]">
+                            <b className="text-white relative text-center text-xl sm:text-16xl md:text-23xl leading-7 md:leading-[60px] ">
+                                Still have questions?
                             </b>
-                            <div
-                                className="max-w-[420px] relative text-sm lg:text-[15px] leading-[20px] md:leading-[24px] font-medium text-gray-1100 inline-block md:min-h-[152px] ">
-                                At BellBank, we understand that every individual and business is unique. That's why we
-                                offer a range of accounts tailored to suit your specific needs. Whether you're looking
-                                for a personal account, a business account, or something in between, we've got you
-                                covered.
-                            </div>
+
                         </div>
                         <div
                             className="rounded-lg cursor-pointer  bg-mediumseagreen md:h-[45px] flex flex-row items-center justify-center py-[8px] md:py-[11px] px-5 box-border text-center text-mini text-floralwhite">
                             <div className="relative cursor-pointer font-outfit capitalize font-bold"
-                                 onClick={() => window.location.href = 'https://app.bellmfb.com/account/register/'}>Get
-                                started
+                                 onClick={() => navigate('/contact')}>Get
+                                In Touch With Us
                             </div>
                         </div>
                     </div>
@@ -82,7 +77,7 @@ const Footer: FunctionComponent = ({propTop, defaultType = true}: FooterPropsTyp
                         <h6 className="footer-title mt-0 text-xl sm:text-inherit">Company</h6>
                         <Link to={'/about-us'} className="text-black cursor-pointer  link link-hover">About Us</Link>
                         <Link to={'/security'} className="link cursor-pointer  text-black link-hover">Security</Link>
-                        <a href={''} target={'_blank'} className="link  text-black link-hover">Help center</a>
+                        <Link to={'/contact'} className="link cursor-pointer  text-black link-hover">Help center</Link>
                         <a href={''} target={'_blank'} className="link  text-black link-hover">API documentation</a>
                     </nav>
                     <nav className="flex flex-col my-[25px] sm:my-0">
@@ -92,6 +87,13 @@ const Footer: FunctionComponent = ({propTop, defaultType = true}: FooterPropsTyp
                         <Link to={'/faq'} className="link text-black link-hover">FAQs</Link>
                         <Link to={'/terms'} className="link text-black  link-hover">Terms and condition</Link>
                         <Link to={'/policy'} className="link link-hover text-black ">Privacy Policy</Link>
+                    </nav>
+                    <nav className="flex flex-col my-[25px] sm:my-0">
+                        <h6 className="mt-0 footer-title text-xl sm:text-inherit">Products</h6>
+                        <Link to={'/personal'} className="link text-black link-hover">Personal</Link>
+                        <Link to={'/business'} className="link text-black link-hover">Business</Link>
+                        {/*<Link to={'/fintech'} className="link text-black  link-hover">Fintech</Link>*/}
+                        <Link to={'/enaira'} className="link link-hover text-black ">E-Naira</Link>
                     </nav>
                     <nav className="flex flex-col my-[25px] sm:my-0">
                         <h6 className="mt-0 footer-title text-xl sm:text-inherit">Get in touch</h6>
