@@ -13,10 +13,11 @@ import Faq from "../components/Faq";
 import ApproveBy from "../components/ApproveBy";
 import Notification from "../components/Notification";
 import Sponsor from "../components/Sponsor";
+import Faq2 from "../components/Faq2";
 
 const Homepage: FunctionComponent = () => {
     return (
-        <div className="w-full relative bg-white h-full text-left text-xs text-white font-aeonik overflow-hidden!">
+        <div className="w-full !overflow-hidden relative bg-white h-full text-left text-xs text-white font-aeonik overflow-hidden!">
             <Notification/>
             <div className="w-full">
                 <Header
@@ -34,7 +35,7 @@ const Homepage: FunctionComponent = () => {
                 <Protecting/>
 
                 <Api/>
-                <Faq/>
+                <Faq2/>
                 <Sponsor/>
                 <Testimonial
                     image="/assets/images/testimonial.png"/>

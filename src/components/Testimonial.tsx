@@ -49,7 +49,7 @@ const Testimonial: FunctionComponent<TestimonialType> = ({
 
         <div className={'relative  w-full mt-[50px] overflow-hidden'}>
             <div className={'w-full text-black text-center'}>
-                <h1 className="md:w-[678px] text-16xl md:text-23xl mx-auto">
+                <h1 className="md:w-[678px] max-w-[80%] text-16xl md:text-23xl mx-auto">
                     Loved by people and businesses that care about their
                     finances
                 </h1>
@@ -84,8 +84,7 @@ const Testimonial: FunctionComponent<TestimonialType> = ({
                         },
                     },
                     mediaQuery: 'min',
-                    // autoplay: true,
-                    // perPage: 3,
+
                     gap: 20,
                     pauseOnHover: true,
                     focus: 'center',

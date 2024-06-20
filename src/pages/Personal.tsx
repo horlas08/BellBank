@@ -231,9 +231,9 @@ const Personal: FunctionComponent = () => {
                     </div>
                 </div>
             </div>
-            <div className="container mx-auto pt-[100px] pb-[200px]">
+            <div className=" mx-auto pt-[100px] pb-[2px]">
                 <div className="w-[90%] mx-auto ">
-                    <div className="flex md:flex-row flex-col justify-between items-end gap-[70px]">
+                    <div className="flex md:flex-row flex-col justify-center md:justify-between  gap-[70px]">
                         <div className="left flex flex-col justify-between">
                             <div className="top">
                                 <div className="relative text-mediumseagreen uppercase font-medium">
@@ -316,21 +316,21 @@ const Personal: FunctionComponent = () => {
                         </div>
 
                         <Swiper ref={sliderRef2} noSwiping={true} allowTouchMove={false}
-                            className={'right flex-1 md:bg-dimgray-light select-none grid place-content-center items-end  !h-[80%]'}>
+                            className={'right flex-1 md:bg-dimgray-light select-none grid place-content-center items-center !h-[80%]'}>
                             <SwiperSlide className={'overflow-hidden !w-full'}>
-                                <img draggable={false} src="/assets/images/group_phone.png" className={'mt-[100px] flex justify-center max-w-[90%] mx-auto'}
+                                <img draggable={false} src="/assets/images/group_phone.png" className={'md:mt-[100px] md:flex justify-center max-w-[90%] mx-auto'}
                                      style={{}} alt={'d'}/>
                             </SwiperSlide>
                             <SwiperSlide className={' overflow-hidden !w-full '}>
-                                <img draggable={false} src="/assets/images/group_phone.png" className={'mt-[100px] flex justify-center max-w-[90%] mx-auto'}
+                                <img draggable={false} src="/assets/images/group_phone.png" className={'md:mt-[100px] md:flex justify-center max-w-[90%] mx-auto'}
                                      style={{}} alt={'d'}/>
                             </SwiperSlide>
                             <SwiperSlide className={' overflow-hidden !w-full'}>
-                                <img draggable={false} src="/assets/images/group_phone.png" className={'mt-[100px] flex justify-center max-w-[90%] mx-auto'}
+                                <img draggable={false} src="/assets/images/group_phone.png" className={'md:mt-[100px] md:flex justify-center max-w-[90%] mx-auto'}
                                      style={{}} alt={'d'}/>
                             </SwiperSlide>
                             <SwiperSlide className={' overflow-hidden !w-full'}>
-                                <img draggable={false} src="/assets/images/group_phone.png" className={'mt-[100px] flex justify-center max-w-[90%] mx-auto'}
+                                <img draggable={false} src="/assets/images/group_phone.png" className={'md:mt-[100px] md:flex justify-center max-w-[90%] mx-auto'}
                                      style={{}} alt={'d'}/>
                             </SwiperSlide>
 

@@ -66,21 +66,19 @@ export default function Faq() {
     }
     return (
         <div className={'relative w-full mx-auto py-[50px] overflow-hidden'} id={'#faq'} >
-        <div className={'relative w-[80%] flex-col lg:flex-row mx-auto flex justify-center items-start'}>
-            <div className="h-[232px] flex flex-col items-start justify-start gap-[16px]">
+        <div className={'relative w-[90%] md:w-[80%] flex-col lg:flex-row mx-auto flex justify-center items-start'}>
+            <div className=" flex flex-col items-center justify-cente gap-[16px]">
                 <div className="flex w-full flex-col items-start justify-start gap-[16px]">
 
                     <b className="lg:w-[406px] w-full relative text-16xl md:text-23xl flex text-gray-400 items-center">
-                                      <span className="w-full">
-                                        <p className="m-0 block text-center lg:hidden">Let's put your mind at ease.</p>
-                                        <p className="m-0  hidden lg:block">Let's put your</p>
-                                        <p className="m-0 hidden lg:block">mind at ease.</p>
+                                      <span className="w-full mx-auto">
+                                        <p className="m-0 block text-center">Let's put your mind at ease.</p>
                                       </span>
                     </b>
                 </div>
                 <div className="lg:w-[361px] relative text-lg leading-[25px] font-medium flex items-center text-dimgray-100">
-                                    <span className="w-full my-[20px]">
-                                      <span>{`Can’t find the answer you’re looking for? Reach out to our `}</span>
+                                    <span className="w-full my-[20px] mx-auto">
+                                      <span className={'mx-auto text-center'}>{`Can’t find the answer you’re looking for? Reach out to our `}</span>
                                       <Link to={'/support'} className="cursor-pointer no-underline inline-block text-mediumseagreen">
                                         customer support
                                       </Link>

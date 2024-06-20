@@ -1,14 +1,13 @@
 import {FunctionComponent, useCallback, useEffect, useRef, useState} from "react";
 
 import {Swiper, SwiperRef, SwiperSlide} from 'swiper/react';
-import {Pagination, EffectFade, Navigation} from 'swiper/modules';
 
-import {FaArrowLeft, FaArrowRight} from "react-icons/fa6";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import ApproveBy from "../../components/ApproveBy";
 import {FaCommentDollar, FaCube, FaIdCard} from "react-icons/fa";
 import Faq from "../../components/Faq";
+import Faq2 from "../../components/Faq2";
 
 
 export default function Business(){
@@ -255,7 +254,7 @@ export default function Business(){
                     </div>
                 </div>
             </div>
-            <Faq/>
+            <Faq2/>
             <Footer/>
         </div>
     );

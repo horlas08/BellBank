@@ -8,6 +8,7 @@ import {FlipWords} from "../components/ui/FlipWord";
 import Faq from "../components/Faq";
 import LayoutGrid from "../components/ui/layout-grid";
 import {appleUrl} from "../../utils/cn";
+import Faq2 from "../components/Faq2";
 
 
 const SkeletonOne = () => {
@@ -183,7 +184,7 @@ export default function Security(){
             <ApproveBy/>
             <LayoutGrid cards={cards}/>
             <LayoutGrid cards={cards}/>
-            <Faq/>
+            <Faq2/>
             <Footer/>
         </div>
     );

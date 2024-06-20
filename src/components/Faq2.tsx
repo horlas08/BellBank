@@ -1,6 +1,4 @@
-import CardLeft from "./CardLeft";
 import {Link} from "react-router-dom";
-import ExperienceItem from "./ExperienceItem";
 import React, {useState} from "react";
 import FaqItem from "./FaqItem";
 
@@ -36,7 +34,7 @@ export default function Faq2() {
             title: "Are there any fees associated with BellBank's services?",
             answer: "While some services may have associated fees, BellBank is committed to transparency. We clearly outline any applicable fees during the account opening process and in our terms and conditions.",
             show: false
-        },{
+        }, {
             id: 6,
             title: "How does BellBank support African businesses in receiving payments?",
             answer: "BellBank is on a mission to simplify and accelerate how African businesses receive payments. We provide innovative solutions to enhance the payment experience, making it easier for businesses to transact locally and internationally What customer support options are available?",
@@ -46,20 +44,20 @@ export default function Faq2() {
 
     const [faqs, setFaqs] = useState(faq)
 
-    const handleFold = (index: number)=>{
+    const handleFold = (index: number) => {
 
-        let newF= faqs.map((value,i, array)=>{
-            if (value.show){
+        let newF = faqs.map((value, i, array) => {
+            if (value.show) {
                 value = {...value, show: false}
             }
-           if (value.id == index){
+            if (value.id == index) {
 
-              value = {...value, show: !array[i].show}
+                value = {...value, show: !array[i].show}
 
-               // return value
-           }
-           return value
-       })
+                // return value
+            }
+            return value
+        })
 
         setFaqs(newF)
 
@@ -69,7 +67,7 @@ export default function Faq2() {
             <div className=" flex flex-col my-[60px]  items-center justify-center gap-[16px]">
                 <div className="flex w-full   flex-col items-start justify-start gap-[16px]">
 
-                    <b className="mx-auto text-center w-full relative text-16xl md:text-23xl flex text-gray-400 items-center">
+                    <b className="mx-auto text-center w-full max-w-[80%] relative text-16xl md:text-23xl flex text-gray-400 items-center">
                                       <span className="w-full">
                                         <p className="m-0 block text-center">Let's put your mind at ease.</p>
 
@@ -77,15 +75,12 @@ export default function Faq2() {
                     </b>
                 </div>
                 <div
-                    className="relative text-lg leading-[25px] font-medium flex items-center text-dimgray-100">
-                                    <span className="w-full my-[20px]">
-                                      <span>{`Can’t find the answer you’re looking for? Reach out to our `}</span>
-                                      <Link to={'/support'}
-                                            className="cursor-pointer no-underline inline-block text-mediumseagreen">
-                                        customer support
-                                      </Link>
-                                      <span> team.</span>
-                                    </span>
+                    className="relative text-lg leading-[25px] font-medium max-w-[80%] mx-auto items-center text-dimgray-100">
+                    {`Can’t find the answer you’re looking for? Reach out to our `}<Link to={'/support'}
+                                                                                         className="cursor-pointer no-underline inline-block text-mediumseagreen">
+                    customer support
+                </Link> team.
+
                 </div>
             </div>
 
