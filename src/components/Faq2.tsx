@@ -84,7 +84,7 @@ export default function Faq2() {
                 </div>
             </div>
 
-            <div className={'relative w-[70%] flex-col lg:flex-row mx-auto flex justify-center items-start'}>
+            <div className={'relative w-[85%] flex-col lg:flex-row mx-auto flex justify-center items-start'}>
 
                 <div
                     className="flex-1 flex flex-col items-start my-10 lg:my-0 justify-center w-full lg:w-auto lg:justify-start gap-[18px]">
