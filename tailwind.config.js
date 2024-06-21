@@ -74,6 +74,16 @@ module.exports = {
         mini: "15px",
         "3xs": "10px",
       },
+      backgroundImage:  theme => ({
+        'id': "url('/assets/images/security/id.png')",
+        'face_id': "url('/assets/images/security/face_id.jpg')",
+        'security': "url('/assets/images/security/security.jpg')",
+        'pin': "url('/assets/images/security/pin.jpg')",
+        'pins': "url('/assets/images/security/pin.jpg')",
+        'fingerprint': "url('/assets/images/security/fingerprint.jpg')",
+        'unsaved': "url('/assets/images/security/unsaved.jpg')",
+        'personal': "url('/assets/images/security/personal.jpg')",
+      })
     },
     fontSize: {
       sm: "14px",

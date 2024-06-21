@@ -56,6 +56,54 @@ const SkeletonFour = () => {
         </div>
     );
 };
+const SkeletonFive = () => {
+    return (
+        <div>
+            <p className="font-bold text-[30px] text-white">Biometric</p>
+            <p className="font-normal text-base text-white"></p>
+            <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+                The BellBank app is enabled for biometrics (fingerprint and Face ID options) to add an extra layer of security when you’re signing in to the app or authorising transactions,
+                if your device has a fingerprint scanner or Face ID.
+            </p>
+        </div>
+    );
+};
+const SkeletonSix = () => {
+    return (
+        <div>
+            <p className="font-bold text-[30px] text-white">Confirming Your Unsaved Beneficiaries</p>
+            <p className="font-normal text-base text-white"></p>
+            <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+                When you’re sending money to a beneficiary you haven’t saved, we ask you to confirm that you’re sure you want to make the transfer.
+                We do this to give you some time to double check that you’re not being scammed - completed transfers are almost impossible to reverse.
+            </p>
+        </div>
+    );
+};
+const SkeletonSeven = () => {
+    return (
+        <div>
+            <p className="font-bold text-[30px] text-white">3D Secure (3DS) Card Payments</p>
+            <p className="font-normal text-base text-white"></p>
+            <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+                3D Secure is an extra layer of security for card payments you make online.
+                When paying with your card online,
+                we’ll send you a code by SMS and/or email to authorise the payment.
+            </p>
+        </div>
+    );
+};
+const SkeletonEight = () => {
+    return (
+        <div>
+            <p className="font-bold text-[30px] text-white">Your Personal Information</p>
+            <p className="font-normal text-base text-white"></p>
+            <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+                We use the highest level of encryption to protect your personal information including your identity and confidential account details. We don’t share your information with unauthorised third parties, we would never sell your information and we don’t use your BVN to access any other bank account(s) you may have.
+            </p>
+        </div>
+    );
+};
 
 export default function Security(){
 
@@ -115,7 +163,7 @@ export default function Security(){
             content: <SkeletonOne />,
             className: "md:col-span-2",
             thumbnail:
-                "assets/images/rectangle-34624349@2x.png",
+                "bg-id",
         },
         {
             id: 2,
@@ -123,7 +171,7 @@ export default function Security(){
             content: <SkeletonTwo />,
             className: "col-span-1",
             thumbnail:
-                "assets/images/rectangle-34624349@2x.png",
+                "bg-face_id",
         },
         {
             id: 3,
@@ -131,7 +179,7 @@ export default function Security(){
             content: <SkeletonThree />,
             className: "col-span-1",
             thumbnail:
-                "assets/images/rectangle-34624349@2x.png",
+                "bg-security",
         },
         {
             id: 4,
@@ -139,7 +187,41 @@ export default function Security(){
             content: <SkeletonFour />,
             className: "md:col-span-2",
             thumbnail:
-                "/assets/images/rectangle-34624349@2x.png",
+                "bg-pin",
+        },
+    ];
+    const card2 = [
+        {
+            id: 5,
+            title: "Biometric",
+            content: <SkeletonFive />,
+            className: "md:col-span-2",
+            thumbnail:
+                "bg-fingerprint",
+        },
+        {
+            id: 6,
+            title: "Confirming Your Unsaved Beneficiaries",
+            content: <SkeletonSix />,
+            className: "col-span-1",
+            thumbnail:
+                "bg-unsaved",
+        },
+        {
+            id: 7,
+            title: "3D Secure (3DS) Card Payments",
+            content: <SkeletonSeven />,
+            className: "col-span-1",
+            thumbnail:
+                "bg-security",
+        },
+        {
+            id: 8,
+            title: "Your Personal Information",
+            content: <SkeletonEight />,
+            className: "md:col-span-2",
+            thumbnail:
+                "bg-personal",
         },
     ];
 
@@ -153,7 +235,7 @@ export default function Security(){
                 propBackgroundColor="bg-black"
                 propBorderBottom="border-gray-100"
                 propColor="white"
-                chevronColor="black"
+                chevronColor="white"
             />
 
             <div className="text-black flex flex-col items-center bg-black">
@@ -183,7 +265,7 @@ export default function Security(){
 
             <ApproveBy/>
             <LayoutGrid cards={cards}/>
-            <LayoutGrid cards={cards}/>
+            <LayoutGrid cards={card2}/>
             <Faq2/>
             <Footer/>
         </div>

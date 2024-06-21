@@ -75,11 +75,17 @@ const BlurImage = ({card}: { card: Card }) => {
     const [loaded, setLoaded] = useState(false);
 
     return (
-        <div className={`bg-[url('/assets/images/rectangle-34624349@2x.png')] cursor-pointer  justify-center items-center flex h-[300px] object-center bg-center  inset-0 max-h-[300px]`}>
+        <div className={cn(
+            `cursor-pointer justify-center items-center flex h-[300px] object-center bg-center bg-cover inset-0 max-h-[300px]`,
+            `${card.thumbnail}`
+        )}>
             <div className="grid h-full z-[11]">
-                <div className="place-content-center">
-                 <h2 className={"text-[30px]  text-center"}>{card.title}</h2>
-                 <h6 className={"text-[30px]  text-center m-0"}>Read More...</h6>
+                <div className="place-content-center place-items-center">
+                    <div className="">
+                        <h2 className={"text-[30px]  text-center"}>{card.title}</h2>
+                        <h6 className={"text-[30px]  text-center m-0"}>Read More...</h6>
+                    </div>
+
 
                 </div>
             </div>
