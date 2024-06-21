@@ -36,7 +36,7 @@ export default function FaqsPage(){
                 propBackgroundColor="bg-black"
                 propBorderBottom="border-gray-100"
                 propColor="white"
-                chevronColor="black"
+                chevronColor="white"
             />
 
             <div className="text-black flex flex-col items-center bg-black">

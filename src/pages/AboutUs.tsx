@@ -8,7 +8,7 @@ import Notification from "../components/Notification";
 const AboutUs: FunctionComponent = () => {
     return (
         <div className="w-full relative bg-white overflow-hidden text-left text-sm text-mediumseagreen font-aeonik">
-            <Notification/>
+            {/*<Notification/>*/}
             <Header
                 vector="/assets/images/svg/vector2.svg"
                 sVG="/assets/images/svg/svg3.svg"

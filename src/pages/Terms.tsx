@@ -15,7 +15,7 @@ const Terms: FunctionComponent = () => {
         window.location.href = `#${path}`
     }
     return (<div className="w-full relative bg-white  text-left text-sm text-mediumseagreen font-aeonik">
-        <Notification/>
+        {/*<Notification/>*/}
         <Header
             vector="/assets/images/svg/vector2.svg"
             sVG="/assets/images/svg/svg3.svg"
@@ -1090,7 +1090,7 @@ const Terms: FunctionComponent = () => {
         </main>
 
 
-        <Footer/>
+        <Footer defaultType={false}/>
     </div>);
 };
 

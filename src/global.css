@@ -347,7 +347,10 @@ li.term-category{
   width: 10px;
   flex-shrink: 0;
 }
-
+.blog-detail-content-list-item p{
+  color: grey;
+  font-size: 20px;
+}
 .term-category{
   font-size: 20px;
   padding: 0;
