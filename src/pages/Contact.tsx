@@ -10,6 +10,7 @@ import ApproveBy from "../components/ApproveBy";
 import {FaCommentDollar, FaCube, FaIdCard} from "react-icons/fa";
 import Faq from "../components/Faq";
 import Faq2 from "../components/Faq2";
+import FormCarry from "../components/ui/FormCarry";
 
 
 export default function Contact(){
@@ -98,6 +99,7 @@ export default function Contact(){
                         Chat with our friendly team.
                     </p>
                 </div>
+                <FormCarry/>
                 <div className="flex md:flex-row flex-col justify-evenly gap-x-[20] gap-y-[50] mt-[4rem]">
                     <div className="my-7">
                         <div className="flex justify-center w-full mx-auto">
