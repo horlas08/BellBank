@@ -5,6 +5,7 @@ import Testimonial from "../components/Testimonial";
 import AppBtn from "../components/AppBtn";
 import ApproveBy from "../components/ApproveBy";
 import Notification from "../components/Notification";
+import Faq2 from "../components/Faq2";
 
 const Company: FunctionComponent = () => {
     return (
@@ -78,6 +79,7 @@ const Company: FunctionComponent = () => {
                     </div>
                 </div>
             </div>
+            <Faq2/>
             <Footer/>
         </div>
     );

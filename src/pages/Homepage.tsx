@@ -18,7 +18,7 @@ import Faq2 from "../components/Faq2";
 const Homepage: FunctionComponent = () => {
     return (
         <div className="w-full !overflow-hidden relative bg-white h-full text-left text-xs text-white font-aeonik overflow-hidden!">
-            <Notification/>
+            {/*<Notification/>*/}
             <div className="w-full">
                 <Header
                     vector="/assets/images/svg/vector.svg"
