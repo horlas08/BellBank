@@ -6,6 +6,7 @@ import {Pagination, EffectFade, Navigation} from 'swiper/modules';
 import ApproveBy from "../components/ApproveBy";
 import Notification from "../components/Notification";
 import {FaArrowLeft, FaArrowRight} from "react-icons/fa6";
+import {appleUrl, playStoreUrl} from "../../utils/cn";
 
 
 const Personal: FunctionComponent = () => {
@@ -77,10 +78,10 @@ const Personal: FunctionComponent = () => {
                         and more.
                     </p>
                     <div className="img_wrapper flex gap-[24px] my-[35px] justify-center">
-                        <div className="cursor-pointer">
+                        <div className="cursor-pointer"  onClick={()=> window.location.href = playStoreUrl}>
                             <img src="/assets/images/playstore_dark.png" alt={''}/>
                         </div>
-                        <div className="cursor-pointer">
+                        <div className="cursor-pointer"  onClick={()=> window.location.href = appleUrl}>
                             <img src="/assets/images/apple_black.png" alt={''}/>
                         </div>
                     </div>

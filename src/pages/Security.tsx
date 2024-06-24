@@ -7,7 +7,7 @@ import ApproveBy from "../components/ApproveBy";
 import {FlipWords} from "../components/ui/FlipWord";
 import Faq from "../components/Faq";
 import LayoutGrid from "../components/ui/layout-grid";
-import {appleUrl} from "../../utils/cn";
+import {appleUrl, playStoreUrl} from "../../utils/cn";
 import Faq2 from "../components/Faq2";
 
 
@@ -248,9 +248,7 @@ export default function Security(){
                         and more.
                     </p>
                     <div className="img_wrapper flex gap-[24px] my-[35px] justify-center">
-                        <div onClick={()=> {
-                            window.location.replace('https://')
-                        }} className="cursor-pointer">
+                        <div  onClick={()=> window.location.href = playStoreUrl} className="cursor-pointer">
                             <img src="/assets/images/playstore_dark.png" alt={''}/>
                         </div>
                         <div onClick={()=> {

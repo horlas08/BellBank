@@ -6,6 +6,7 @@ import AppBtn from "../components/AppBtn";
 import ApproveBy from "../components/ApproveBy";
 import Notification from "../components/Notification";
 import Faq2 from "../components/Faq2";
+import {appleUrl, playStoreUrl} from "../../utils/cn";
 
 const Company: FunctionComponent = () => {
     return (
@@ -28,10 +29,10 @@ const Company: FunctionComponent = () => {
                         and more.
                     </p>
                     <div className="img_wrapper flex gap-[24px] my-[35px] justify-center">
-                        <div className="cursor-pointer">
+                        <div className="cursor-pointer" onClick={()=> window.location.href = playStoreUrl}>
                             <img src="/assets/images/playstore_dark.png" alt={''}/>
                         </div>
-                        <div className="cursor-pointer">
+                        <div className="cursor-pointer"  onClick={()=> window.location.href = appleUrl}>
                             <img src="/assets/images/apple_black.png" alt={''}/>
                         </div>
                     </div>

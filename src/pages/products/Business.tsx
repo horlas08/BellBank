@@ -8,6 +8,7 @@ import ApproveBy from "../../components/ApproveBy";
 import {FaCommentDollar, FaCube, FaIdCard} from "react-icons/fa";
 import Faq from "../../components/Faq";
 import Faq2 from "../../components/Faq2";
+import {appleUrl, playStoreUrl} from "../../../utils/cn";
 
 
 export default function Business(){
@@ -77,10 +78,10 @@ export default function Business(){
                         Get a POS terminal and enjoy high commission on all your transaction
                     </p>
                     <div className="img_wrapper flex gap-[24px] my-[35px] justify-center">
-                        <div className="cursor-pointer">
+                        <div className="cursor-pointer"  onClick={()=> window.location.href = playStoreUrl}>
                             <img src="/assets/images/playstore_dark.png" alt={''}/>
                         </div>
-                        <div className="cursor-pointer">
+                        <div className="cursor-pointer"  onClick={()=> window.location.href = appleUrl}>
                             <img src="/assets/images/apple_black.png" alt={''}/>
                         </div>
                     </div>
