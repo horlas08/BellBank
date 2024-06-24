@@ -1,5 +1,6 @@
 import { FunctionComponent } from "react";
 import SwiperItem from "./SwiperItem";
+import {appleUrl, playStoreUrl} from "../../utils/cn";
 
 const Banner: FunctionComponent = () => {
   return (
@@ -31,16 +32,24 @@ const Banner: FunctionComponent = () => {
                       </div>
 
                   </div>
-                  <img
-                      className="w-[263.7px] relative h-[40.1px]"
-                      alt=""
-                      src="/assets/images/svg/group-427322510.svg"
-                  />
+                  <div className="img_wrapper flex gap-[24px] my-[35px] justify-center">
+                      <div className="cursor-pointer" onClick={() => window.location.href = playStoreUrl}>
+                          <img src="/assets/images/playstore_white.png" alt={''}/>
+                      </div>
+                      <div className="cursor-pointer" onClick={() => window.location.href = appleUrl}>
+                          <img src="/assets/images/apple_white.png" alt={''}/>
+                      </div>
+                  </div>
+                  {/*<img*/}
+                  {/*    className="w-[263.7px] relative h-[40.1px]"*/}
+                  {/*    alt=""*/}
+                  {/*    src="/assets/images/svg/group-427322510.svg"*/}
+                  {/*/>*/}
               </div>
 
           </div>
           <div className={'mb-8'}></div>
-          <SwiperItem />
+          <SwiperItem/>
           <div className={'mb-8'}></div>
       </div>
   );

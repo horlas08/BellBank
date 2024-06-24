@@ -11,7 +11,7 @@ import {FaCommentDollar, FaCube, FaIdCard} from "react-icons/fa";
 import Faq from "../components/Faq";
 import Faq2 from "../components/Faq2";
 import FormCarry from "../components/ui/FormCarry";
-import {appleUrl} from "../../utils/cn";
+import {appleUrl, playStoreUrl} from "../../utils/cn";
 
 
 export default function Contact(){
